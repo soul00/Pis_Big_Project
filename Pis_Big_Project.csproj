@@ -74,24 +74,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="About.Designer.cs">
-      <DependentUpon>About.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Запити\Torgoviy_Zamovnik.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Запити\Torgoviy_Zamovnik.Designer.cs">
-      <DependentUpon>Torgoviy_Zamovnik.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Товари\Baton.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Товари\Baton.Designer.cs">
-      <DependentUpon>Baton.cs</DependentUpon>
-    </Compile>
     <Compile Include="Big_16_04DataSet.cs">
       <DependentUpon>Big_16_04DataSet.xsd</DependentUpon>
     </Compile>
@@ -99,30 +81,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Big_16_04DataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Товари\Biscuit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Товари\Biscuit.Designer.cs">
-      <DependentUpon>Biscuit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Товари\Candies.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Товари\Candies.Designer.cs">
-      <DependentUpon>Candies.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Товари\Chocolate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Товари\Chocolate.Designer.cs">
-      <DependentUpon>Chocolate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Товари\Cookies.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Товари\Cookies.Designer.cs">
-      <DependentUpon>Cookies.cs</DependentUpon>
     </Compile>
     <Compile Include="Document.cs">
       <SubType>Form</SubType>
@@ -142,17 +100,11 @@
     <Compile Include="Grafik.Designer.cs">
       <DependentUpon>Grafik.cs</DependentUpon>
     </Compile>
-    <Compile Include="Товари\Waffles.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Товари\Waffles.Designer.cs">
-      <DependentUpon>Waffles.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Zamov_User_Control.cs">
+    <Compile Include="Klienty_User_Control.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Zamov_User_Control.Designer.cs">
-      <DependentUpon>Zamov_User_Control.cs</DependentUpon>
+    <Compile Include="Klienty_User_Control.Designer.cs">
+      <DependentUpon>Klienty_User_Control.cs</DependentUpon>
     </Compile>
     <Compile Include="Main_Menu_Control.cs">
       <SubType>UserControl</SubType>
@@ -229,22 +181,22 @@
     <Compile Include="Zamovnik.Designer.cs">
       <DependentUpon>Zamovnik.cs</DependentUpon>
     </Compile>
-    <Compile Include="Запити\Zamovn_vid_200_tis.cs">
+    <Compile Include="Zamovn_vid_200_tis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Запити\Zamovn_vid_200_tis.Designer.cs">
+    <Compile Include="Zamovn_vid_200_tis.Designer.cs">
       <DependentUpon>Zamovn_vid_200_tis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Запити\Zapyt_Data_Poshuk.cs">
+    <Compile Include="Zapyt_Data_Poshuk.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Запити\Zapyt_Data_Poshuk.Designer.cs">
+    <Compile Include="Zapyt_Data_Poshuk.Designer.cs">
       <DependentUpon>Zapyt_Data_Poshuk.cs</DependentUpon>
     </Compile>
-    <Compile Include="Запити\Zapyt_Zamov_Grafik.cs">
+    <Compile Include="Zapyt_Zamov_Grafik.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Запити\Zapyt_Zamov_Grafik.Designer.cs">
+    <Compile Include="Zapyt_Zamov_Grafik.Designer.cs">
       <DependentUpon>Zapyt_Zamov_Grafik.cs</DependentUpon>
     </Compile>
     <Compile Include="Zvit_User_Control.cs">
@@ -253,9 +205,6 @@
     <Compile Include="Zvit_User_Control.Designer.cs">
       <DependentUpon>Zvit_User_Control.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="About.resx">
-      <DependentUpon>About.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Document.resx">
       <DependentUpon>Document.cs</DependentUpon>
     </EmbeddedResource>
@@ -265,8 +214,8 @@
     <EmbeddedResource Include="Grafik.resx">
       <DependentUpon>Grafik.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Zamov_User_Control.resx">
-      <DependentUpon>Zamov_User_Control.cs</DependentUpon>
+    <EmbeddedResource Include="Klienty_User_Control.resx">
+      <DependentUpon>Klienty_User_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Menu_Control.resx">
       <DependentUpon>Main_Menu_Control.cs</DependentUpon>
@@ -313,16 +262,13 @@
     <EmbeddedResource Include="Zamovnik.resx">
       <DependentUpon>Zamovnik.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Запити\Torgoviy_Zamovnik.resx">
-      <DependentUpon>Torgoviy_Zamovnik.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Запити\Zamovn_vid_200_tis.resx">
+    <EmbeddedResource Include="Zamovn_vid_200_tis.resx">
       <DependentUpon>Zamovn_vid_200_tis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Запити\Zapyt_Data_Poshuk.resx">
+    <EmbeddedResource Include="Zapyt_Data_Poshuk.resx">
       <DependentUpon>Zapyt_Data_Poshuk.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Запити\Zapyt_Zamov_Grafik.resx">
+    <EmbeddedResource Include="Zapyt_Zamov_Grafik.resx">
       <DependentUpon>Zapyt_Zamov_Grafik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Zvit_User_Control.resx">
@@ -368,6 +314,5 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

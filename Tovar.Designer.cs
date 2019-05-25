@@ -195,7 +195,7 @@
             this.товарBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.товарBindingNavigator.Name = "товарBindingNavigator";
             this.товарBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.товарBindingNavigator.Size = new System.Drawing.Size(706, 25);
+            this.товарBindingNavigator.Size = new System.Drawing.Size(923, 25);
             this.товарBindingNavigator.TabIndex = 0;
             this.товарBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -307,10 +307,9 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.товарDataGridView.DataSource = this.товарBindingSource;
-            this.товарDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.товарDataGridView.Location = new System.Drawing.Point(0, 191);
+            this.товарDataGridView.Location = new System.Drawing.Point(13, 200);
             this.товарDataGridView.Name = "товарDataGridView";
-            this.товарDataGridView.Size = new System.Drawing.Size(706, 220);
+            this.товарDataGridView.Size = new System.Drawing.Size(852, 220);
             this.товарDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -452,7 +451,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(706, 411);
+            this.ClientSize = new System.Drawing.Size(923, 458);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -471,9 +470,8 @@
             this.Controls.Add(this.термін_зберіганняTextBox);
             this.Controls.Add(this.товарDataGridView);
             this.Controls.Add(this.товарBindingNavigator);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Tovar";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Товари";
             this.Load += new System.EventHandler(this.Tovar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();

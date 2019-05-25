@@ -75,10 +75,5 @@ namespace Pis_Big_Project
         {
 
         }
-
-        private void Button8_Click(object sender, EventArgs e)
-        {
-            new About().ShowDialog();
-        }
     }
 }

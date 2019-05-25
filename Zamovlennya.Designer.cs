@@ -228,10 +228,9 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.зведені_ЗамовленняDataGridView.DataSource = this.зведені_ЗамовленняBindingSource;
-            this.зведені_ЗамовленняDataGridView.Dock = System.Windows.Forms.DockStyle.Top;
-            this.зведені_ЗамовленняDataGridView.Location = new System.Drawing.Point(0, 25);
+            this.зведені_ЗамовленняDataGridView.Location = new System.Drawing.Point(12, 28);
             this.зведені_ЗамовленняDataGridView.Name = "зведені_ЗамовленняDataGridView";
-            this.зведені_ЗамовленняDataGridView.Size = new System.Drawing.Size(800, 220);
+            this.зведені_ЗамовленняDataGridView.Size = new System.Drawing.Size(757, 220);
             this.зведені_ЗамовленняDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn3
@@ -268,12 +267,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 245);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.зведені_ЗамовленняDataGridView);
             this.Controls.Add(this.зведені_ЗамовленняBindingNavigator);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Zamovlennya";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Замовлення";
             this.Load += new System.EventHandler(this.Zamovlennya_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();

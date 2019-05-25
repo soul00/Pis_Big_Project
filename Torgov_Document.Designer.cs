@@ -262,7 +262,6 @@
             this.Controls.Add(this.торговий___документDataGridView);
             this.Controls.Add(this.торговий___документBindingNavigator);
             this.Name = "Torgov_Document";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Torgov_Document";
             this.Load += new System.EventHandler(this.Torgov_Document_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();

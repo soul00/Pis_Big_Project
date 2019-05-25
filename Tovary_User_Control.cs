@@ -16,10 +16,5 @@ namespace Pis_Big_Project
         {
             InitializeComponent();
         }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            new Tovar().ShowDialog();
-        }
     }
 }

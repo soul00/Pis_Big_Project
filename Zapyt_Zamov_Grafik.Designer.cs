@@ -1,6 +1,6 @@
 ﻿namespace Pis_Big_Project
 {
-    partial class Zamovn_vid_200_tis
+    partial class Zapyt_Zamov_Grafik
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Zamovn_vid_200_tis));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Zapyt_Zamov_Grafik));
             this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
-            this.замовлення_від_200_тисBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.замовлення_від_200_тисTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.Замовлення_від_200_тисTableAdapter();
+            this.запит_замовник___ГрафікBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.запит_замовник___ГрафікTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.Запит_замовник___ГрафікTableAdapter();
             this.tableAdapterManager = new Pis_Big_Project.Big_16_04DataSetTableAdapters.TableAdapterManager();
-            this.замовлення_від_200_тисBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.запит_замовник___ГрафікBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
@@ -46,19 +46,22 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.замовлення_від_200_тисBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.замовлення_від_200_тисDataGridView = new System.Windows.Forms.DataGridView();
+            this.запит_замовник___ГрафікBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.fillToolStrip = new System.Windows.Forms.ToolStrip();
+            this.typeToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.typeToolStripTextBox = new System.Windows.Forms.ToolStripComboBox();
+            this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.запит_замовник___ГрафікDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.замовлення_від_200_тисBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.замовлення_від_200_тисBindingNavigator)).BeginInit();
-            this.замовлення_від_200_тисBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.замовлення_від_200_тисDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.запит_замовник___ГрафікBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.запит_замовник___ГрафікBindingNavigator)).BeginInit();
+            this.запит_замовник___ГрафікBindingNavigator.SuspendLayout();
+            this.fillToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.запит_замовник___ГрафікDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // big_16_04DataSet
@@ -66,14 +69,14 @@
             this.big_16_04DataSet.DataSetName = "Big_16_04DataSet";
             this.big_16_04DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // замовлення_від_200_тисBindingSource
+            // запит_замовник___ГрафікBindingSource
             // 
-            this.замовлення_від_200_тисBindingSource.DataMember = "Замовлення від 200 тис";
-            this.замовлення_від_200_тисBindingSource.DataSource = this.big_16_04DataSet;
+            this.запит_замовник___ГрафікBindingSource.DataMember = "Запит замовник + Графік";
+            this.запит_замовник___ГрафікBindingSource.DataSource = this.big_16_04DataSet;
             // 
-            // замовлення_від_200_тисTableAdapter
+            // запит_замовник___ГрафікTableAdapter
             // 
-            this.замовлення_від_200_тисTableAdapter.ClearBeforeFill = true;
+            this.запит_замовник___ГрафікTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
@@ -92,13 +95,13 @@
             this.tableAdapterManager.ТоварTableAdapter = null;
             this.tableAdapterManager.Торговий_представникTableAdapter = null;
             // 
-            // замовлення_від_200_тисBindingNavigator
+            // запит_замовник___ГрафікBindingNavigator
             // 
-            this.замовлення_від_200_тисBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.замовлення_від_200_тисBindingNavigator.BindingSource = this.замовлення_від_200_тисBindingSource;
-            this.замовлення_від_200_тисBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.замовлення_від_200_тисBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.замовлення_від_200_тисBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.запит_замовник___ГрафікBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.запит_замовник___ГрафікBindingNavigator.BindingSource = this.запит_замовник___ГрафікBindingSource;
+            this.запит_замовник___ГрафікBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.запит_замовник___ГрафікBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.запит_замовник___ГрафікBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -110,17 +113,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.замовлення_від_200_тисBindingNavigatorSaveItem});
-            this.замовлення_від_200_тисBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.замовлення_від_200_тисBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.замовлення_від_200_тисBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.замовлення_від_200_тисBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.замовлення_від_200_тисBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.замовлення_від_200_тисBindingNavigator.Name = "замовлення_від_200_тисBindingNavigator";
-            this.замовлення_від_200_тисBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.замовлення_від_200_тисBindingNavigator.Size = new System.Drawing.Size(800, 25);
-            this.замовлення_від_200_тисBindingNavigator.TabIndex = 0;
-            this.замовлення_від_200_тисBindingNavigator.Text = "bindingNavigator1";
+            this.запит_замовник___ГрафікBindingNavigatorSaveItem});
+            this.запит_замовник___ГрафікBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.запит_замовник___ГрафікBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.запит_замовник___ГрафікBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.запит_замовник___ГрафікBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.запит_замовник___ГрафікBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.запит_замовник___ГрафікBindingNavigator.Name = "запит_замовник___ГрафікBindingNavigator";
+            this.запит_замовник___ГрафікBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.запит_замовник___ГрафікBindingNavigator.Size = new System.Drawing.Size(800, 25);
+            this.запит_замовник___ГрафікBindingNavigator.TabIndex = 0;
+            this.запит_замовник___ГрафікBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -207,85 +210,108 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // замовлення_від_200_тисBindingNavigatorSaveItem
+            // запит_замовник___ГрафікBindingNavigatorSaveItem
             // 
-            this.замовлення_від_200_тисBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.замовлення_від_200_тисBindingNavigatorSaveItem.Enabled = false;
-            this.замовлення_від_200_тисBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("замовлення_від_200_тисBindingNavigatorSaveItem.Image")));
-            this.замовлення_від_200_тисBindingNavigatorSaveItem.Name = "замовлення_від_200_тисBindingNavigatorSaveItem";
-            this.замовлення_від_200_тисBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.замовлення_від_200_тисBindingNavigatorSaveItem.Text = "Сохранить данные";
+            this.запит_замовник___ГрафікBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.запит_замовник___ГрафікBindingNavigatorSaveItem.Enabled = false;
+            this.запит_замовник___ГрафікBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("запит_замовник___ГрафікBindingNavigatorSaveItem.Image")));
+            this.запит_замовник___ГрафікBindingNavigatorSaveItem.Name = "запит_замовник___ГрафікBindingNavigatorSaveItem";
+            this.запит_замовник___ГрафікBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.запит_замовник___ГрафікBindingNavigatorSaveItem.Text = "Сохранить данные";
             // 
-            // замовлення_від_200_тисDataGridView
+            // fillToolStrip
             // 
-            this.замовлення_від_200_тисDataGridView.AutoGenerateColumns = false;
-            this.замовлення_від_200_тисDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.замовлення_від_200_тисDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.fillToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.typeToolStripLabel,
+            this.typeToolStripTextBox,
+            this.fillToolStripButton});
+            this.fillToolStrip.Location = new System.Drawing.Point(0, 25);
+            this.fillToolStrip.Name = "fillToolStrip";
+            this.fillToolStrip.Size = new System.Drawing.Size(800, 25);
+            this.fillToolStrip.TabIndex = 1;
+            this.fillToolStrip.Text = "fillToolStrip";
+            // 
+            // typeToolStripLabel
+            // 
+            this.typeToolStripLabel.Name = "typeToolStripLabel";
+            this.typeToolStripLabel.Size = new System.Drawing.Size(113, 22);
+            this.typeToolStripLabel.Text = "Введіть тип графіку";
+            this.typeToolStripLabel.Click += new System.EventHandler(this.TypeToolStripLabel_Click);
+            // 
+            // typeToolStripTextBox
+            // 
+            this.typeToolStripTextBox.Items.AddRange(new object[] {
+            "Одноразовий",
+            "Постійний"});
+            this.typeToolStripTextBox.Name = "typeToolStripTextBox";
+            this.typeToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // fillToolStripButton
+            // 
+            this.fillToolStripButton.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillToolStripButton.Name = "fillToolStripButton";
+            this.fillToolStripButton.Size = new System.Drawing.Size(48, 22);
+            this.fillToolStripButton.Text = "пошук";
+            this.fillToolStripButton.Click += new System.EventHandler(this.FillToolStripButton_Click);
+            // 
+            // запит_замовник___ГрафікDataGridView
+            // 
+            this.запит_замовник___ГрафікDataGridView.AutoGenerateColumns = false;
+            this.запит_замовник___ГрафікDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.запит_замовник___ГрафікDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.замовлення_від_200_тисDataGridView.DataSource = this.замовлення_від_200_тисBindingSource;
-            this.замовлення_від_200_тисDataGridView.Location = new System.Drawing.Point(0, 28);
-            this.замовлення_від_200_тисDataGridView.Name = "замовлення_від_200_тисDataGridView";
-            this.замовлення_від_200_тисDataGridView.Size = new System.Drawing.Size(741, 223);
-            this.замовлення_від_200_тисDataGridView.TabIndex = 1;
+            this.dataGridViewTextBoxColumn4});
+            this.запит_замовник___ГрафікDataGridView.DataSource = this.запит_замовник___ГрафікBindingSource;
+            this.запит_замовник___ГрафікDataGridView.Location = new System.Drawing.Point(12, 75);
+            this.запит_замовник___ГрафікDataGridView.Name = "запит_замовник___ГрафікDataGridView";
+            this.запит_замовник___ГрафікDataGridView.Size = new System.Drawing.Size(524, 220);
+            this.запит_замовник___ГрафікDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Сума";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Сума";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Назва_Підприємства";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Назва_Підприємства";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Дата_оформлення";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Дата_оформлення";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Телефон";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Телефон";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Вид_документу";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Вид_документу";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Контактна_особа";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Контактна_особа";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Назва_Підприємства";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Назва_Підприємства";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Тип_графіку";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Тип_графіку";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Контактна_особа";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Контактна_особа";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Телефон";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Телефон";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // Zamovn_vid_200_tis
+            // Zapyt_Zamov_Grafik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.замовлення_від_200_тисDataGridView);
-            this.Controls.Add(this.замовлення_від_200_тисBindingNavigator);
-            this.Name = "Zamovn_vid_200_tis";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Замовники від 200 тис";
-            this.Load += new System.EventHandler(this.Zamovn_vid_200_tis_Load);
+            this.Controls.Add(this.запит_замовник___ГрафікDataGridView);
+            this.Controls.Add(this.fillToolStrip);
+            this.Controls.Add(this.запит_замовник___ГрафікBindingNavigator);
+            this.Name = "Zapyt_Zamov_Grafik";
+            this.Text = "Запит за типом графіку";
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.замовлення_від_200_тисBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.замовлення_від_200_тисBindingNavigator)).EndInit();
-            this.замовлення_від_200_тисBindingNavigator.ResumeLayout(false);
-            this.замовлення_від_200_тисBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.замовлення_від_200_тисDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.запит_замовник___ГрафікBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.запит_замовник___ГрафікBindingNavigator)).EndInit();
+            this.запит_замовник___ГрафікBindingNavigator.ResumeLayout(false);
+            this.запит_замовник___ГрафікBindingNavigator.PerformLayout();
+            this.fillToolStrip.ResumeLayout(false);
+            this.fillToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.запит_замовник___ГрафікDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,10 +320,10 @@
         #endregion
 
         private Big_16_04DataSet big_16_04DataSet;
-        private System.Windows.Forms.BindingSource замовлення_від_200_тисBindingSource;
-        private Big_16_04DataSetTableAdapters.Замовлення_від_200_тисTableAdapter замовлення_від_200_тисTableAdapter;
+        private System.Windows.Forms.BindingSource запит_замовник___ГрафікBindingSource;
+        private Big_16_04DataSetTableAdapters.Запит_замовник___ГрафікTableAdapter запит_замовник___ГрафікTableAdapter;
         private Big_16_04DataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator замовлення_від_200_тисBindingNavigator;
+        private System.Windows.Forms.BindingNavigator запит_замовник___ГрафікBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -309,13 +335,15 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton замовлення_від_200_тисBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView замовлення_від_200_тисDataGridView;
+        private System.Windows.Forms.ToolStripButton запит_замовник___ГрафікBindingNavigatorSaveItem;
+        private System.Windows.Forms.ToolStrip fillToolStrip;
+        private System.Windows.Forms.ToolStripLabel typeToolStripLabel;
+        private System.Windows.Forms.ToolStripButton fillToolStripButton;
+        private System.Windows.Forms.DataGridView запит_замовник___ГрафікDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.ToolStripComboBox typeToolStripTextBox;
     }
 }

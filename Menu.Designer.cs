@@ -47,7 +47,7 @@
             this.main_Menu_Control1 = new Pis_Big_Project.Main_Menu_Control();
             this.zvit_User_Control1 = new Pis_Big_Project.Zvit_User_Control();
             this.torg_predst_Control1 = new Pis_Big_Project.Torg_predst_Control();
-            this.klienty_User_Control1 = new Pis_Big_Project.Zamov_User_Control();
+            this.klienty_User_Control1 = new Pis_Big_Project.Klienty_User_Control();
             this.tovary_User_Control1 = new Pis_Big_Project.Tovary_User_Control();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -85,7 +85,6 @@
             this.button8.Text = "?";
             this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.Button8_Click);
             // 
             // SidePanel
             // 
@@ -218,10 +217,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(124, 82);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(124, 95);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
@@ -229,12 +228,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(374, 25);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(360, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(299, 28);
+            this.label2.Size = new System.Drawing.Size(248, 44);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Формування замовлень";
+            this.label2.Text = "Інформаційна система \r\nформування замовлень";
             // 
             // button7
             // 
@@ -244,7 +243,7 @@
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(746, 25);
+            this.button7.Location = new System.Drawing.Point(746, 13);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(35, 32);
             this.button7.TabIndex = 6;
@@ -345,7 +344,7 @@
         private Main_Menu_Control main_Menu_Control1;
         private Zvit_User_Control zvit_User_Control1;
         private Torg_predst_Control torg_predst_Control1;
-        private Zamov_User_Control klienty_User_Control1;
+        private Klienty_User_Control klienty_User_Control1;
         private Tovary_User_Control tovary_User_Control1;
     }
 }

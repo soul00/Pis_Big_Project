@@ -293,7 +293,6 @@
             this.Controls.Add(this.зведений_РахунокBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Rahunki";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Рахунки";
             this.Load += new System.EventHandler(this.Rahunki_Load);
             ((System.ComponentModel.ISupportInitialize)(this.зведений_РахунокBindingNavigator)).EndInit();

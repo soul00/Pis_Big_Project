@@ -16,20 +16,5 @@ namespace Pis_Big_Project
         {
             InitializeComponent();
         }
-
-        private void Button3_Click(object sender, EventArgs e)
-        {
-            new Torg_Predst().ShowDialog();
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            new Torgov_Document().ShowDialog();
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            new Запити.Torgoviy_Zamovnik().ShowDialog();
-        }
     }
 }

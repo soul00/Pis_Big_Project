@@ -143,7 +143,6 @@
             this.Controls.Add(this.зведені_накладніDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Nakladni";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nakladni";
             this.Load += new System.EventHandler(this.Nakladni_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
