@@ -21,5 +21,10 @@ namespace Pis_Big_Project
         {
 
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            new Запити.Zvit_vid_sum().ShowDialog();
+        }
     }
 }

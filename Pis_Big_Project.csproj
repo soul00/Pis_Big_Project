@@ -86,6 +86,12 @@
     <Compile Include="Запити\Torgoviy_Zamovnik.Designer.cs">
       <DependentUpon>Torgoviy_Zamovnik.cs</DependentUpon>
     </Compile>
+    <Compile Include="Запити\Zvit_vid_sum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Запити\Zvit_vid_sum.Designer.cs">
+      <DependentUpon>Zvit_vid_sum.cs</DependentUpon>
+    </Compile>
     <Compile Include="Товари\Baton.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,12 +235,6 @@
     <Compile Include="Zamovnik.Designer.cs">
       <DependentUpon>Zamovnik.cs</DependentUpon>
     </Compile>
-    <Compile Include="Запити\Zamovn_vid_200_tis.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Запити\Zamovn_vid_200_tis.Designer.cs">
-      <DependentUpon>Zamovn_vid_200_tis.cs</DependentUpon>
-    </Compile>
     <Compile Include="Запити\Zapyt_Data_Poshuk.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -316,9 +316,6 @@
     <EmbeddedResource Include="Запити\Torgoviy_Zamovnik.resx">
       <DependentUpon>Torgoviy_Zamovnik.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Запити\Zamovn_vid_200_tis.resx">
-      <DependentUpon>Zamovn_vid_200_tis.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Запити\Zapyt_Data_Poshuk.resx">
       <DependentUpon>Zapyt_Data_Poshuk.cs</DependentUpon>
     </EmbeddedResource>
@@ -327,6 +324,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Zvit_User_Control.resx">
       <DependentUpon>Zvit_User_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Запити\Zvit_vid_sum.resx">
+      <DependentUpon>Zvit_vid_sum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Товари\Baton.resx">
       <DependentUpon>Baton.cs</DependentUpon>

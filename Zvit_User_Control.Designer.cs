@@ -65,6 +65,7 @@
             this.button2.Text = "Замовлення сумою \r\nбільше ...";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Zvit_User_Control
             // 

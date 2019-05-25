@@ -48,7 +48,7 @@ namespace Pis_Big_Project {
         
         private _Запит_замовник___ГрафікDataTable _tableЗапит_замовник___Графік;
         
-        private Замовлення_від_200_тисDataTable tableЗамовлення_від_200_тис;
+        private Замовлення_від_сумиDataTable tableЗамовлення_від_суми;
         
         private _Торговий___документDataTable _tableТорговий___документ;
         
@@ -160,8 +160,8 @@ namespace Pis_Big_Project {
                 if ((ds.Tables["Запит замовник + Графік"] != null)) {
                     base.Tables.Add(new _Запит_замовник___ГрафікDataTable(ds.Tables["Запит замовник + Графік"]));
                 }
-                if ((ds.Tables["Замовлення від 200 тис"] != null)) {
-                    base.Tables.Add(new Замовлення_від_200_тисDataTable(ds.Tables["Замовлення від 200 тис"]));
+                if ((ds.Tables["Замовлення від суми"] != null)) {
+                    base.Tables.Add(new Замовлення_від_сумиDataTable(ds.Tables["Замовлення від суми"]));
                 }
                 if ((ds.Tables["Торговий + документ"] != null)) {
                     base.Tables.Add(new _Торговий___документDataTable(ds.Tables["Торговий + документ"]));
@@ -341,9 +341,9 @@ namespace Pis_Big_Project {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Замовлення_від_200_тисDataTable Замовлення_від_200_тис {
+        public Замовлення_від_сумиDataTable Замовлення_від_суми {
             get {
-                return this.tableЗамовлення_від_200_тис;
+                return this.tableЗамовлення_від_суми;
             }
         }
         
@@ -570,8 +570,8 @@ namespace Pis_Big_Project {
                 if ((ds.Tables["Запит замовник + Графік"] != null)) {
                     base.Tables.Add(new _Запит_замовник___ГрафікDataTable(ds.Tables["Запит замовник + Графік"]));
                 }
-                if ((ds.Tables["Замовлення від 200 тис"] != null)) {
-                    base.Tables.Add(new Замовлення_від_200_тисDataTable(ds.Tables["Замовлення від 200 тис"]));
+                if ((ds.Tables["Замовлення від суми"] != null)) {
+                    base.Tables.Add(new Замовлення_від_сумиDataTable(ds.Tables["Замовлення від суми"]));
                 }
                 if ((ds.Tables["Торговий + документ"] != null)) {
                     base.Tables.Add(new _Торговий___документDataTable(ds.Tables["Торговий + документ"]));
@@ -714,10 +714,10 @@ namespace Pis_Big_Project {
                     this._tableЗапит_замовник___Графік.InitVars();
                 }
             }
-            this.tableЗамовлення_від_200_тис = ((Замовлення_від_200_тисDataTable)(base.Tables["Замовлення від 200 тис"]));
+            this.tableЗамовлення_від_суми = ((Замовлення_від_сумиDataTable)(base.Tables["Замовлення від суми"]));
             if ((initTable == true)) {
-                if ((this.tableЗамовлення_від_200_тис != null)) {
-                    this.tableЗамовлення_від_200_тис.InitVars();
+                if ((this.tableЗамовлення_від_суми != null)) {
+                    this.tableЗамовлення_від_суми.InitVars();
                 }
             }
             this._tableТорговий___документ = ((_Торговий___документDataTable)(base.Tables["Торговий + документ"]));
@@ -837,8 +837,8 @@ namespace Pis_Big_Project {
             base.Tables.Add(this.tableТорговий_представник);
             this._tableЗапит_замовник___Графік = new _Запит_замовник___ГрафікDataTable();
             base.Tables.Add(this._tableЗапит_замовник___Графік);
-            this.tableЗамовлення_від_200_тис = new Замовлення_від_200_тисDataTable();
-            base.Tables.Add(this.tableЗамовлення_від_200_тис);
+            this.tableЗамовлення_від_суми = new Замовлення_від_сумиDataTable();
+            base.Tables.Add(this.tableЗамовлення_від_суми);
             this._tableТорговий___документ = new _Торговий___документDataTable();
             base.Tables.Add(this._tableТорговий___документ);
             this._tableЗамовник___документ = new _Замовник___документDataTable();
@@ -985,7 +985,7 @@ namespace Pis_Big_Project {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeЗамовлення_від_200_тис() {
+        private bool ShouldSerializeЗамовлення_від_суми() {
             return false;
         }
         
@@ -1153,7 +1153,7 @@ namespace Pis_Big_Project {
         public delegate void _Запит_замовник___ГрафікRowChangeEventHandler(object sender, _Запит_замовник___ГрафікRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void Замовлення_від_200_тисRowChangeEventHandler(object sender, Замовлення_від_200_тисRowChangeEvent e);
+        public delegate void Замовлення_від_сумиRowChangeEventHandler(object sender, Замовлення_від_сумиRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void _Торговий___документRowChangeEventHandler(object sender, _Торговий___документRowChangeEvent e);
@@ -4964,7 +4964,7 @@ namespace Pis_Big_Project {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Замовлення_від_200_тисDataTable : global::System.Data.TypedTableBase<Замовлення_від_200_тисRow> {
+        public partial class Замовлення_від_сумиDataTable : global::System.Data.TypedTableBase<Замовлення_від_сумиRow> {
             
             private global::System.Data.DataColumn columnСума;
             
@@ -4980,8 +4980,8 @@ namespace Pis_Big_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Замовлення_від_200_тисDataTable() {
-                this.TableName = "Замовлення від 200 тис";
+            public Замовлення_від_сумиDataTable() {
+                this.TableName = "Замовлення від суми";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -4989,7 +4989,7 @@ namespace Pis_Big_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal Замовлення_від_200_тисDataTable(global::System.Data.DataTable table) {
+            internal Замовлення_від_сумиDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -5006,7 +5006,7 @@ namespace Pis_Big_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected Замовлення_від_200_тисDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Замовлення_від_сумиDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -5070,34 +5070,34 @@ namespace Pis_Big_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Замовлення_від_200_тисRow this[int index] {
+            public Замовлення_від_сумиRow this[int index] {
                 get {
-                    return ((Замовлення_від_200_тисRow)(this.Rows[index]));
+                    return ((Замовлення_від_сумиRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Замовлення_від_200_тисRowChangeEventHandler Замовлення_від_200_тисRowChanging;
+            public event Замовлення_від_сумиRowChangeEventHandler Замовлення_від_сумиRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Замовлення_від_200_тисRowChangeEventHandler Замовлення_від_200_тисRowChanged;
+            public event Замовлення_від_сумиRowChangeEventHandler Замовлення_від_сумиRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Замовлення_від_200_тисRowChangeEventHandler Замовлення_від_200_тисRowDeleting;
+            public event Замовлення_від_сумиRowChangeEventHandler Замовлення_від_сумиRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Замовлення_від_200_тисRowChangeEventHandler Замовлення_від_200_тисRowDeleted;
+            public event Замовлення_від_сумиRowChangeEventHandler Замовлення_від_сумиRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddЗамовлення_від_200_тисRow(Замовлення_від_200_тисRow row) {
+            public void AddЗамовлення_від_сумиRow(Замовлення_від_сумиRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Замовлення_від_200_тисRow AddЗамовлення_від_200_тисRow(int Сума, System.DateTime Дата_оформлення, string Вид_документу, string Назва_Підприємства, string Контактна_особа, string Телефон) {
-                Замовлення_від_200_тисRow rowЗамовлення_від_200_тисRow = ((Замовлення_від_200_тисRow)(this.NewRow()));
+            public Замовлення_від_сумиRow AddЗамовлення_від_сумиRow(int Сума, System.DateTime Дата_оформлення, string Вид_документу, string Назва_Підприємства, string Контактна_особа, string Телефон) {
+                Замовлення_від_сумиRow rowЗамовлення_від_сумиRow = ((Замовлення_від_сумиRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Сума,
                         Дата_оформлення,
@@ -5105,15 +5105,15 @@ namespace Pis_Big_Project {
                         Назва_Підприємства,
                         Контактна_особа,
                         Телефон};
-                rowЗамовлення_від_200_тисRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowЗамовлення_від_200_тисRow);
-                return rowЗамовлення_від_200_тисRow;
+                rowЗамовлення_від_сумиRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowЗамовлення_від_сумиRow);
+                return rowЗамовлення_від_сумиRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Замовлення_від_200_тисDataTable cln = ((Замовлення_від_200_тисDataTable)(base.Clone()));
+                Замовлення_від_сумиDataTable cln = ((Замовлення_від_сумиDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -5121,7 +5121,7 @@ namespace Pis_Big_Project {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Замовлення_від_200_тисDataTable();
+                return new Замовлення_від_сумиDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5158,28 +5158,28 @@ namespace Pis_Big_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Замовлення_від_200_тисRow NewЗамовлення_від_200_тисRow() {
-                return ((Замовлення_від_200_тисRow)(this.NewRow()));
+            public Замовлення_від_сумиRow NewЗамовлення_від_сумиRow() {
+                return ((Замовлення_від_сумиRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Замовлення_від_200_тисRow(builder);
+                return new Замовлення_від_сумиRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Замовлення_від_200_тисRow);
+                return typeof(Замовлення_від_сумиRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Замовлення_від_200_тисRowChanged != null)) {
-                    this.Замовлення_від_200_тисRowChanged(this, new Замовлення_від_200_тисRowChangeEvent(((Замовлення_від_200_тисRow)(e.Row)), e.Action));
+                if ((this.Замовлення_від_сумиRowChanged != null)) {
+                    this.Замовлення_від_сумиRowChanged(this, new Замовлення_від_сумиRowChangeEvent(((Замовлення_від_сумиRow)(e.Row)), e.Action));
                 }
             }
             
@@ -5187,8 +5187,8 @@ namespace Pis_Big_Project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Замовлення_від_200_тисRowChanging != null)) {
-                    this.Замовлення_від_200_тисRowChanging(this, new Замовлення_від_200_тисRowChangeEvent(((Замовлення_від_200_тисRow)(e.Row)), e.Action));
+                if ((this.Замовлення_від_сумиRowChanging != null)) {
+                    this.Замовлення_від_сумиRowChanging(this, new Замовлення_від_сумиRowChangeEvent(((Замовлення_від_сумиRow)(e.Row)), e.Action));
                 }
             }
             
@@ -5196,8 +5196,8 @@ namespace Pis_Big_Project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Замовлення_від_200_тисRowDeleted != null)) {
-                    this.Замовлення_від_200_тисRowDeleted(this, new Замовлення_від_200_тисRowChangeEvent(((Замовлення_від_200_тисRow)(e.Row)), e.Action));
+                if ((this.Замовлення_від_сумиRowDeleted != null)) {
+                    this.Замовлення_від_сумиRowDeleted(this, new Замовлення_від_сумиRowChangeEvent(((Замовлення_від_сумиRow)(e.Row)), e.Action));
                 }
             }
             
@@ -5205,14 +5205,14 @@ namespace Pis_Big_Project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Замовлення_від_200_тисRowDeleting != null)) {
-                    this.Замовлення_від_200_тисRowDeleting(this, new Замовлення_від_200_тисRowChangeEvent(((Замовлення_від_200_тисRow)(e.Row)), e.Action));
+                if ((this.Замовлення_від_сумиRowDeleting != null)) {
+                    this.Замовлення_від_сумиRowDeleting(this, new Замовлення_від_сумиRowChangeEvent(((Замовлення_від_сумиRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveЗамовлення_від_200_тисRow(Замовлення_від_200_тисRow row) {
+            public void RemoveЗамовлення_від_сумиRow(Замовлення_від_сумиRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -5239,7 +5239,7 @@ namespace Pis_Big_Project {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Замовлення_від_200_тисDataTable";
+                attribute2.FixedValue = "Замовлення_від_сумиDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -10792,15 +10792,15 @@ namespace Pis_Big_Project {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Замовлення_від_200_тисRow : global::System.Data.DataRow {
+        public partial class Замовлення_від_сумиRow : global::System.Data.DataRow {
             
-            private Замовлення_від_200_тисDataTable tableЗамовлення_від_200_тис;
+            private Замовлення_від_сумиDataTable tableЗамовлення_від_суми;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal Замовлення_від_200_тисRow(global::System.Data.DataRowBuilder rb) : 
+            internal Замовлення_від_сумиRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableЗамовлення_від_200_тис = ((Замовлення_від_200_тисDataTable)(this.Table));
+                this.tableЗамовлення_від_суми = ((Замовлення_від_сумиDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10808,14 +10808,14 @@ namespace Pis_Big_Project {
             public int Сума {
                 get {
                     try {
-                        return ((int)(this[this.tableЗамовлення_від_200_тис.СумаColumn]));
+                        return ((int)(this[this.tableЗамовлення_від_суми.СумаColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Сума\' в таблице \'Замовлення від 200 тис\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Сума\' в таблице \'Замовлення від суми\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableЗамовлення_від_200_тис.СумаColumn] = value;
+                    this[this.tableЗамовлення_від_суми.СумаColumn] = value;
                 }
             }
             
@@ -10824,15 +10824,15 @@ namespace Pis_Big_Project {
             public System.DateTime Дата_оформлення {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableЗамовлення_від_200_тис.Дата_оформленняColumn]));
+                        return ((global::System.DateTime)(this[this.tableЗамовлення_від_суми.Дата_оформленняColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Дата_оформлення\' в таблице \'Замовлення від 200 тис\' равно D" +
-                                "BNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Дата_оформлення\' в таблице \'Замовлення від суми\' равно DBNu" +
+                                "ll.", e);
                     }
                 }
                 set {
-                    this[this.tableЗамовлення_від_200_тис.Дата_оформленняColumn] = value;
+                    this[this.tableЗамовлення_від_суми.Дата_оформленняColumn] = value;
                 }
             }
             
@@ -10841,15 +10841,15 @@ namespace Pis_Big_Project {
             public string Вид_документу {
                 get {
                     try {
-                        return ((string)(this[this.tableЗамовлення_від_200_тис.Вид_документуColumn]));
+                        return ((string)(this[this.tableЗамовлення_від_суми.Вид_документуColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Вид_документу\' в таблице \'Замовлення від 200 тис\' равно DBN" +
-                                "ull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Вид_документу\' в таблице \'Замовлення від суми\' равно DBNull" +
+                                ".", e);
                     }
                 }
                 set {
-                    this[this.tableЗамовлення_від_200_тис.Вид_документуColumn] = value;
+                    this[this.tableЗамовлення_від_суми.Вид_документуColumn] = value;
                 }
             }
             
@@ -10858,15 +10858,15 @@ namespace Pis_Big_Project {
             public string Назва_Підприємства {
                 get {
                     try {
-                        return ((string)(this[this.tableЗамовлення_від_200_тис.Назва_ПідприємстваColumn]));
+                        return ((string)(this[this.tableЗамовлення_від_суми.Назва_ПідприємстваColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Назва_Підприємства\' в таблице \'Замовлення від 200 тис\' равн" +
-                                "о DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Назва_Підприємства\' в таблице \'Замовлення від суми\' равно D" +
+                                "BNull.", e);
                     }
                 }
                 set {
-                    this[this.tableЗамовлення_від_200_тис.Назва_ПідприємстваColumn] = value;
+                    this[this.tableЗамовлення_від_суми.Назва_ПідприємстваColumn] = value;
                 }
             }
             
@@ -10875,15 +10875,15 @@ namespace Pis_Big_Project {
             public string Контактна_особа {
                 get {
                     try {
-                        return ((string)(this[this.tableЗамовлення_від_200_тис.Контактна_особаColumn]));
+                        return ((string)(this[this.tableЗамовлення_від_суми.Контактна_особаColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Контактна_особа\' в таблице \'Замовлення від 200 тис\' равно D" +
-                                "BNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Контактна_особа\' в таблице \'Замовлення від суми\' равно DBNu" +
+                                "ll.", e);
                     }
                 }
                 set {
-                    this[this.tableЗамовлення_від_200_тис.Контактна_особаColumn] = value;
+                    this[this.tableЗамовлення_від_суми.Контактна_особаColumn] = value;
                 }
             }
             
@@ -10892,87 +10892,87 @@ namespace Pis_Big_Project {
             public string Телефон {
                 get {
                     try {
-                        return ((string)(this[this.tableЗамовлення_від_200_тис.ТелефонColumn]));
+                        return ((string)(this[this.tableЗамовлення_від_суми.ТелефонColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Телефон\' в таблице \'Замовлення від 200 тис\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Телефон\' в таблице \'Замовлення від суми\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableЗамовлення_від_200_тис.ТелефонColumn] = value;
+                    this[this.tableЗамовлення_від_суми.ТелефонColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsСумаNull() {
-                return this.IsNull(this.tableЗамовлення_від_200_тис.СумаColumn);
+                return this.IsNull(this.tableЗамовлення_від_суми.СумаColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetСумаNull() {
-                this[this.tableЗамовлення_від_200_тис.СумаColumn] = global::System.Convert.DBNull;
+                this[this.tableЗамовлення_від_суми.СумаColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsДата_оформленняNull() {
-                return this.IsNull(this.tableЗамовлення_від_200_тис.Дата_оформленняColumn);
+                return this.IsNull(this.tableЗамовлення_від_суми.Дата_оформленняColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetДата_оформленняNull() {
-                this[this.tableЗамовлення_від_200_тис.Дата_оформленняColumn] = global::System.Convert.DBNull;
+                this[this.tableЗамовлення_від_суми.Дата_оформленняColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsВид_документуNull() {
-                return this.IsNull(this.tableЗамовлення_від_200_тис.Вид_документуColumn);
+                return this.IsNull(this.tableЗамовлення_від_суми.Вид_документуColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetВид_документуNull() {
-                this[this.tableЗамовлення_від_200_тис.Вид_документуColumn] = global::System.Convert.DBNull;
+                this[this.tableЗамовлення_від_суми.Вид_документуColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsНазва_ПідприємстваNull() {
-                return this.IsNull(this.tableЗамовлення_від_200_тис.Назва_ПідприємстваColumn);
+                return this.IsNull(this.tableЗамовлення_від_суми.Назва_ПідприємстваColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetНазва_ПідприємстваNull() {
-                this[this.tableЗамовлення_від_200_тис.Назва_ПідприємстваColumn] = global::System.Convert.DBNull;
+                this[this.tableЗамовлення_від_суми.Назва_ПідприємстваColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsКонтактна_особаNull() {
-                return this.IsNull(this.tableЗамовлення_від_200_тис.Контактна_особаColumn);
+                return this.IsNull(this.tableЗамовлення_від_суми.Контактна_особаColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetКонтактна_особаNull() {
-                this[this.tableЗамовлення_від_200_тис.Контактна_особаColumn] = global::System.Convert.DBNull;
+                this[this.tableЗамовлення_від_суми.Контактна_особаColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsТелефонNull() {
-                return this.IsNull(this.tableЗамовлення_від_200_тис.ТелефонColumn);
+                return this.IsNull(this.tableЗамовлення_від_суми.ТелефонColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetТелефонNull() {
-                this[this.tableЗамовлення_від_200_тис.ТелефонColumn] = global::System.Convert.DBNull;
+                this[this.tableЗамовлення_від_суми.ТелефонColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -13524,22 +13524,22 @@ namespace Pis_Big_Project {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class Замовлення_від_200_тисRowChangeEvent : global::System.EventArgs {
+        public class Замовлення_від_сумиRowChangeEvent : global::System.EventArgs {
             
-            private Замовлення_від_200_тисRow eventRow;
+            private Замовлення_від_сумиRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Замовлення_від_200_тисRowChangeEvent(Замовлення_від_200_тисRow row, global::System.Data.DataRowAction action) {
+            public Замовлення_від_сумиRowChangeEvent(Замовлення_від_сумиRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Замовлення_від_200_тисRow Row {
+            public Замовлення_від_сумиRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -18318,7 +18318,7 @@ WHERE        (Графік.Тип_графіку = @type)";
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Замовлення_від_200_тисTableAdapter : global::System.ComponentModel.Component {
+    public partial class Замовлення_від_сумиTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -18332,7 +18332,7 @@ WHERE        (Графік.Тип_графіку = @type)";
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public Замовлення_від_200_тисTableAdapter() {
+        public Замовлення_від_сумиTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -18429,7 +18429,7 @@ WHERE        (Графік.Тип_графіку = @type)";
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Замовлення від 200 тис";
+            tableMapping.DataSetTable = "Замовлення від суми";
             tableMapping.ColumnMappings.Add("Сума", "Сума");
             tableMapping.ColumnMappings.Add("Дата_оформлення", "Дата_оформлення");
             tableMapping.ColumnMappings.Add("Вид_документу", "Вид_документу");
@@ -18455,17 +18455,24 @@ WHERE        (Графік.Тип_графіку = @type)";
             this._commandCollection[0].CommandText = @"SELECT        Документ.Сума, Документ.Дата_оформлення, Документ.Вид_документу, Замовник.Назва_Підприємства, Замовник.Контактна_особа, Замовник.Телефон
 FROM            Документ INNER JOIN
                          Замовник ON Документ.Код_Замовника = Замовник.Код_Замовника
-WHERE        (Документ.Сума > 200000)
+WHERE        (Документ.Сума > @sum)
 ORDER BY Документ.Сума";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@sum", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Сума", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Big_16_04DataSet.Замовлення_від_200_тисDataTable dataTable) {
+        public virtual int Fill(Big_16_04DataSet.Замовлення_від_сумиDataTable dataTable, global::System.Nullable<int> sum) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((sum.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(sum.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -18477,9 +18484,15 @@ ORDER BY Документ.Сума";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Big_16_04DataSet.Замовлення_від_200_тисDataTable GetData() {
+        public virtual Big_16_04DataSet.Замовлення_від_сумиDataTable GetData(global::System.Nullable<int> sum) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Big_16_04DataSet.Замовлення_від_200_тисDataTable dataTable = new Big_16_04DataSet.Замовлення_від_200_тисDataTable();
+            if ((sum.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(sum.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            Big_16_04DataSet.Замовлення_від_сумиDataTable dataTable = new Big_16_04DataSet.Замовлення_від_сумиDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
