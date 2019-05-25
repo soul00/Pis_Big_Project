@@ -17,6 +17,7 @@ namespace Pis_Big_Project
             InitializeComponent();
             SidePanel.Height = button1.Height;
             SidePanel.Top = button1.Top;
+            main_Menu_Control1.BringToFront();
         }
 
         private void Menu_Load(object sender, EventArgs e)
@@ -45,21 +46,25 @@ namespace Pis_Big_Project
         {
             SidePanel.Height = button3.Height;
             SidePanel.Top = button3.Top;
+            zvit_User_Control1.BringToFront();
         }
         private void Button4_Click(object sender, EventArgs e)
         {
             SidePanel.Height = button4.Height;
             SidePanel.Top = button4.Top;
+            torg_predst_Control1.BringToFront();
         }
         private void Button5_Click(object sender, EventArgs e)
         {
             SidePanel.Height = button5.Height;
             SidePanel.Top = button5.Top;
+            klienty_User_Control1.BringToFront();
         }
         private void Button6_Click(object sender, EventArgs e)
         {
             SidePanel.Height = button6.Height;
             SidePanel.Top = button6.Top;
+            tovary_User_Control1.BringToFront();
         }
         private void Button7_Click(object sender, EventArgs e)
         {

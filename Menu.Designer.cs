@@ -45,6 +45,10 @@
             this.button7 = new System.Windows.Forms.Button();
             this.document_Control1 = new Pis_Big_Project.Document_Control();
             this.main_Menu_Control1 = new Pis_Big_Project.Main_Menu_Control();
+            this.zvit_User_Control1 = new Pis_Big_Project.Zvit_User_Control();
+            this.torg_predst_Control1 = new Pis_Big_Project.Torg_predst_Control();
+            this.klienty_User_Control1 = new Pis_Big_Project.Klienty_User_Control();
+            this.tovary_User_Control1 = new Pis_Big_Project.Tovary_User_Control();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -262,12 +266,44 @@
             this.main_Menu_Control1.Size = new System.Drawing.Size(587, 346);
             this.main_Menu_Control1.TabIndex = 8;
             // 
+            // zvit_User_Control1
+            // 
+            this.zvit_User_Control1.Location = new System.Drawing.Point(194, 101);
+            this.zvit_User_Control1.Name = "zvit_User_Control1";
+            this.zvit_User_Control1.Size = new System.Drawing.Size(587, 346);
+            this.zvit_User_Control1.TabIndex = 9;
+            // 
+            // torg_predst_Control1
+            // 
+            this.torg_predst_Control1.Location = new System.Drawing.Point(194, 101);
+            this.torg_predst_Control1.Name = "torg_predst_Control1";
+            this.torg_predst_Control1.Size = new System.Drawing.Size(587, 346);
+            this.torg_predst_Control1.TabIndex = 10;
+            // 
+            // klienty_User_Control1
+            // 
+            this.klienty_User_Control1.Location = new System.Drawing.Point(194, 101);
+            this.klienty_User_Control1.Name = "klienty_User_Control1";
+            this.klienty_User_Control1.Size = new System.Drawing.Size(587, 346);
+            this.klienty_User_Control1.TabIndex = 11;
+            // 
+            // tovary_User_Control1
+            // 
+            this.tovary_User_Control1.Location = new System.Drawing.Point(194, 101);
+            this.tovary_User_Control1.Name = "tovary_User_Control1";
+            this.tovary_User_Control1.Size = new System.Drawing.Size(587, 346);
+            this.tovary_User_Control1.TabIndex = 12;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(781, 447);
+            this.Controls.Add(this.tovary_User_Control1);
+            this.Controls.Add(this.klienty_User_Control1);
+            this.Controls.Add(this.torg_predst_Control1);
+            this.Controls.Add(this.zvit_User_Control1);
             this.Controls.Add(this.main_Menu_Control1);
             this.Controls.Add(this.document_Control1);
             this.Controls.Add(this.button7);
@@ -306,6 +342,10 @@
         private System.Windows.Forms.Button button7;
         private Document_Control document_Control1;
         private Main_Menu_Control main_Menu_Control1;
+        private Zvit_User_Control zvit_User_Control1;
+        private Torg_predst_Control torg_predst_Control1;
+        private Klienty_User_Control klienty_User_Control1;
+        private Tovary_User_Control tovary_User_Control1;
     }
 }
 
