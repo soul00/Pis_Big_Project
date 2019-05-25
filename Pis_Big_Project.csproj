@@ -88,17 +88,23 @@
     <Compile Include="Document.Designer.cs">
       <DependentUpon>Document.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Document_Control.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Document_Control.Designer.cs">
+      <DependentUpon>Document_Control.cs</DependentUpon>
     </Compile>
     <Compile Include="Grafik.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Grafik.Designer.cs">
       <DependentUpon>Grafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Menu_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main_Menu_Control.Designer.cs">
+      <DependentUpon>Main_Menu_Control.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -178,11 +184,14 @@
     <EmbeddedResource Include="Document.resx">
       <DependentUpon>Document.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Document_Control.resx">
+      <DependentUpon>Document_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Grafik.resx">
       <DependentUpon>Grafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Menu_Control.resx">
+      <DependentUpon>Main_Menu_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -202,7 +211,6 @@
     <EmbeddedResource Include="Rahunki.resx">
       <DependentUpon>Rahunki.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Torgov_Document.resx">
       <DependentUpon>Torgov_Document.cs</DependentUpon>
     </EmbeddedResource>

@@ -28,196 +28,261 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.загальніДаніToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.документиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.накладніToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.замовленняToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.рахункифактуриToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.замовникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.графікиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.торговіПредставникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.товариToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.запитиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.пошукЗамовникаЗаТипомГрафікуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.запитЗамовникToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.замовникиЗЗапитомВід200ТисToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.торговіПредставникиТаЇхЗамовленняToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.пошукДокументівЗаДатоюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.звітиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zvitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.SidePanel = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.document_Control1 = new Pis_Big_Project.Document_Control();
+            this.main_Menu_Control1 = new Pis_Big_Project.Main_Menu_Control();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // contextMenuStrip1
+            // panel1
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.SidePanel);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(194, 447);
+            this.panel1.TabIndex = 0;
             // 
-            // menuStrip1
+            // button8
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.загальніДаніToolStripMenuItem,
-            this.запитиToolStripMenuItem,
-            this.звітиToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(700, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Location = new System.Drawing.Point(153, 412);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(35, 32);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "?";
+            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button8.UseVisualStyleBackColor = true;
             // 
-            // загальніДаніToolStripMenuItem
+            // SidePanel
             // 
-            this.загальніДаніToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.документиToolStripMenuItem,
-            this.замовникиToolStripMenuItem,
-            this.торговіПредставникиToolStripMenuItem,
-            this.товариToolStripMenuItem});
-            this.загальніДаніToolStripMenuItem.Name = "загальніДаніToolStripMenuItem";
-            this.загальніДаніToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
-            this.загальніДаніToolStripMenuItem.Text = "Загальні дані";
+            this.SidePanel.BackColor = System.Drawing.Color.PapayaWhip;
+            this.SidePanel.Location = new System.Drawing.Point(0, 12);
+            this.SidePanel.Name = "SidePanel";
+            this.SidePanel.Size = new System.Drawing.Size(10, 59);
+            this.SidePanel.TabIndex = 4;
             // 
-            // документиToolStripMenuItem
+            // button6
             // 
-            this.документиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.накладніToolStripMenuItem,
-            this.замовленняToolStripMenuItem,
-            this.рахункифактуриToolStripMenuItem});
-            this.документиToolStripMenuItem.Name = "документиToolStripMenuItem";
-            this.документиToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.документиToolStripMenuItem.Text = "Документи";
-            this.документиToolStripMenuItem.Click += new System.EventHandler(this.ДокументиToolStripMenuItem_Click);
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(12, 349);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(182, 59);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "      Товари";
+            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
-            // накладніToolStripMenuItem
+            // button5
             // 
-            this.накладніToolStripMenuItem.Name = "накладніToolStripMenuItem";
-            this.накладніToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.накладніToolStripMenuItem.Text = "Накладні";
-            this.накладніToolStripMenuItem.Click += new System.EventHandler(this.НакладніToolStripMenuItem_Click);
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(12, 284);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(182, 59);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "      Клієнти";
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
-            // замовленняToolStripMenuItem
+            // button4
             // 
-            this.замовленняToolStripMenuItem.Name = "замовленняToolStripMenuItem";
-            this.замовленняToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.замовленняToolStripMenuItem.Text = "Замовлення";
-            this.замовленняToolStripMenuItem.Click += new System.EventHandler(this.ЗамовленняToolStripMenuItem_Click);
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(12, 216);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(182, 59);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "      Працівники";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
-            // рахункифактуриToolStripMenuItem
+            // button3
             // 
-            this.рахункифактуриToolStripMenuItem.Name = "рахункифактуриToolStripMenuItem";
-            this.рахункифактуриToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.рахункифактуриToolStripMenuItem.Text = "Рахунки-фактури";
-            this.рахункифактуриToolStripMenuItem.Click += new System.EventHandler(this.РахункифактуриToolStripMenuItem_Click);
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(12, 148);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(182, 59);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "      Звіти";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // замовникиToolStripMenuItem
+            // button2
             // 
-            this.замовникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.графікиToolStripMenuItem});
-            this.замовникиToolStripMenuItem.Name = "замовникиToolStripMenuItem";
-            this.замовникиToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.замовникиToolStripMenuItem.Text = "Замовники";
-            this.замовникиToolStripMenuItem.Click += new System.EventHandler(this.ЗамовникиToolStripMenuItem_Click);
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(12, 80);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(182, 59);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "      Документи";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // графікиToolStripMenuItem
+            // button1
             // 
-            this.графікиToolStripMenuItem.Name = "графікиToolStripMenuItem";
-            this.графікиToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.графікиToolStripMenuItem.Text = "Графіки відвідувань";
-            this.графікиToolStripMenuItem.Click += new System.EventHandler(this.ГрафікиToolStripMenuItem_Click);
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(182, 59);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "      Головна";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // торговіПредставникиToolStripMenuItem
+            // panel2
             // 
-            this.торговіПредставникиToolStripMenuItem.Name = "торговіПредставникиToolStripMenuItem";
-            this.торговіПредставникиToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.торговіПредставникиToolStripMenuItem.Text = "Торгові представники";
-            this.торговіПредставникиToolStripMenuItem.Click += new System.EventHandler(this.ТорговіПредставникиToolStripMenuItem_Click);
+            this.panel2.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(194, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(587, 13);
+            this.panel2.TabIndex = 1;
             // 
-            // товариToolStripMenuItem
+            // panel3
             // 
-            this.товариToolStripMenuItem.Name = "товариToolStripMenuItem";
-            this.товариToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.товариToolStripMenuItem.Text = "Товари";
-            this.товариToolStripMenuItem.Click += new System.EventHandler(this.ТовариToolStripMenuItem_Click);
+            this.panel3.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Location = new System.Drawing.Point(229, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(125, 82);
+            this.panel3.TabIndex = 2;
             // 
-            // запитиToolStripMenuItem
+            // pictureBox1
             // 
-            this.запитиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.пошукЗамовникаЗаТипомГрафікуToolStripMenuItem,
-            this.запитЗамовникToolStripMenuItem,
-            this.замовникиЗЗапитомВід200ТисToolStripMenuItem,
-            this.торговіПредставникиТаЇхЗамовленняToolStripMenuItem,
-            this.пошукДокументівЗаДатоюToolStripMenuItem});
-            this.запитиToolStripMenuItem.Name = "запитиToolStripMenuItem";
-            this.запитиToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.запитиToolStripMenuItem.Text = "Запити";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(124, 95);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
-            // пошукЗамовникаЗаТипомГрафікуToolStripMenuItem
+            // label2
             // 
-            this.пошукЗамовникаЗаТипомГрафікуToolStripMenuItem.Name = "пошукЗамовникаЗаТипомГрафікуToolStripMenuItem";
-            this.пошукЗамовникаЗаТипомГрафікуToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
-            this.пошукЗамовникаЗаТипомГрафікуToolStripMenuItem.Text = "Пошук замовників за типом графіку";
-            this.пошукЗамовникаЗаТипомГрафікуToolStripMenuItem.Click += new System.EventHandler(this.ПошукЗамовникаЗаТипомГрафікуToolStripMenuItem_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(360, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(248, 44);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Інформаційна система \r\nформування замовлень";
             // 
-            // запитЗамовникToolStripMenuItem
+            // button7
             // 
-            this.запитЗамовникToolStripMenuItem.Name = "запитЗамовникToolStripMenuItem";
-            this.запитЗамовникToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
-            this.запитЗамовникToolStripMenuItem.Text = "Замовники та їх документи";
-            this.запитЗамовникToolStripMenuItem.Click += new System.EventHandler(this.ЗапитЗамовникToolStripMenuItem_Click);
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(746, 12);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(35, 32);
+            this.button7.TabIndex = 6;
+            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.Button7_Click);
             // 
-            // замовникиЗЗапитомВід200ТисToolStripMenuItem
+            // document_Control1
             // 
-            this.замовникиЗЗапитомВід200ТисToolStripMenuItem.Name = "замовникиЗЗапитомВід200ТисToolStripMenuItem";
-            this.замовникиЗЗапитомВід200ТисToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
-            this.замовникиЗЗапитомВід200ТисToolStripMenuItem.Text = "Замовлення з сумою від 200 тис.";
-            this.замовникиЗЗапитомВід200ТисToolStripMenuItem.Click += new System.EventHandler(this.ЗамовникиЗЗапитомВід200ТисToolStripMenuItem_Click);
+            this.document_Control1.Location = new System.Drawing.Point(194, 101);
+            this.document_Control1.Name = "document_Control1";
+            this.document_Control1.Size = new System.Drawing.Size(587, 346);
+            this.document_Control1.TabIndex = 7;
+            this.document_Control1.Load += new System.EventHandler(this.Document_Control1_Load);
             // 
-            // торговіПредставникиТаЇхЗамовленняToolStripMenuItem
+            // main_Menu_Control1
             // 
-            this.торговіПредставникиТаЇхЗамовленняToolStripMenuItem.Name = "торговіПредставникиТаЇхЗамовленняToolStripMenuItem";
-            this.торговіПредставникиТаЇхЗамовленняToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
-            this.торговіПредставникиТаЇхЗамовленняToolStripMenuItem.Text = "Торгові представники та їх замовлення";
-            this.торговіПредставникиТаЇхЗамовленняToolStripMenuItem.Click += new System.EventHandler(this.ТорговіПредставникиТаЇхЗамовленняToolStripMenuItem_Click);
-            // 
-            // пошукДокументівЗаДатоюToolStripMenuItem
-            // 
-            this.пошукДокументівЗаДатоюToolStripMenuItem.Name = "пошукДокументівЗаДатоюToolStripMenuItem";
-            this.пошукДокументівЗаДатоюToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
-            this.пошукДокументівЗаДатоюToolStripMenuItem.Text = "Пошук документів за датою";
-            this.пошукДокументівЗаДатоюToolStripMenuItem.Click += new System.EventHandler(this.ПошукДокументівЗаДатоюToolStripMenuItem_Click);
-            // 
-            // звітиToolStripMenuItem
-            // 
-            this.звітиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.zvitToolStripMenuItem});
-            this.звітиToolStripMenuItem.Name = "звітиToolStripMenuItem";
-            this.звітиToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
-            this.звітиToolStripMenuItem.Text = "Звіти";
-            // 
-            // zvitToolStripMenuItem
-            // 
-            this.zvitToolStripMenuItem.Name = "zvitToolStripMenuItem";
-            this.zvitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.zvitToolStripMenuItem.Text = "zvit";
-            this.zvitToolStripMenuItem.Click += new System.EventHandler(this.ZvitToolStripMenuItem_Click);
+            this.main_Menu_Control1.Location = new System.Drawing.Point(194, 101);
+            this.main_Menu_Control1.Name = "main_Menu_Control1";
+            this.main_Menu_Control1.Size = new System.Drawing.Size(587, 346);
+            this.main_Menu_Control1.TabIndex = 8;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(700, 409);
-            this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MainMenuStrip = this.menuStrip1;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(781, 447);
+            this.Controls.Add(this.main_Menu_Control1);
+            this.Controls.Add(this.document_Control1);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Меню замовлення";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Load += new System.EventHandler(this.Menu_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,25 +290,22 @@
 
         #endregion
 
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem загальніДаніToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem документиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem накладніToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem замовленняToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem рахункифактуриToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem замовникиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem торговіПредставникиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem товариToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem графікиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem звітиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem запитиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem пошукЗамовникаЗаТипомГрафікуToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem запитЗамовникToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem замовникиЗЗапитомВід200ТисToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem торговіПредставникиТаЇхЗамовленняToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem пошукДокументівЗаДатоюToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem zvitToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Panel SidePanel;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button7;
+        private Document_Control document_Control1;
+        private Main_Menu_Control main_Menu_Control1;
     }
 }
 

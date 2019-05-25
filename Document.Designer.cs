@@ -33,7 +33,7 @@
             System.Windows.Forms.Label дата_оформленняLabel;
             System.Windows.Forms.Label вид_документуLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Document));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
             this.документBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.документTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ДокументTableAdapter();
@@ -73,24 +73,24 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.замовленняBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.замовленняDataGridView = new System.Windows.Forms.DataGridView();
-            this.накладна_відправленняBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.накладна_відправленняDataGridView = new System.Windows.Forms.DataGridView();
-            this.рахунок_фактураBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.рахунок_фактураDataGridView = new System.Windows.Forms.DataGridView();
-            this.товарTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ТоварTableAdapter();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.накладна_відправленняBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.накладна_відправленняDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.рахунок_фактураBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.рахунок_фактураDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.товарTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ТоварTableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             сумаLabel = new System.Windows.Forms.Label();
             дата_оформленняLabel = new System.Windows.Forms.Label();
             вид_документуLabel = new System.Windows.Forms.Label();
@@ -198,6 +198,7 @@
             this.документBindingNavigator.BindingSource = this.документBindingSource;
             this.документBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.документBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.документBindingNavigator.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.документBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -387,6 +388,7 @@
             // рядок_замовленняDataGridView
             // 
             this.рядок_замовленняDataGridView.AutoGenerateColumns = false;
+            this.рядок_замовленняDataGridView.BackgroundColor = System.Drawing.Color.MintCream;
             this.рядок_замовленняDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.рядок_замовленняDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -402,8 +404,8 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Код_Рядка";
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewTextBoxColumn1.HeaderText = "Код_Рядка";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
@@ -446,6 +448,7 @@
             // замовленняDataGridView
             // 
             this.замовленняDataGridView.AutoGenerateColumns = false;
+            this.замовленняDataGridView.BackgroundColor = System.Drawing.Color.PapayaWhip;
             this.замовленняDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.замовленняDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn5,
@@ -456,68 +459,6 @@
             this.замовленняDataGridView.Name = "замовленняDataGridView";
             this.замовленняDataGridView.Size = new System.Drawing.Size(185, 72);
             this.замовленняDataGridView.TabIndex = 14;
-            // 
-            // накладна_відправленняBindingSource
-            // 
-            this.накладна_відправленняBindingSource.DataMember = "FK__Накладна___Код_д__1A14E395";
-            this.накладна_відправленняBindingSource.DataSource = this.документBindingSource;
-            // 
-            // накладна_відправленняDataGridView
-            // 
-            this.накладна_відправленняDataGridView.AutoGenerateColumns = false;
-            this.накладна_відправленняDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.накладна_відправленняDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
-            this.накладна_відправленняDataGridView.DataSource = this.накладна_відправленняBindingSource;
-            this.накладна_відправленняDataGridView.Location = new System.Drawing.Point(366, 111);
-            this.накладна_відправленняDataGridView.Name = "накладна_відправленняDataGridView";
-            this.накладна_відправленняDataGridView.Size = new System.Drawing.Size(185, 79);
-            this.накладна_відправленняDataGridView.TabIndex = 15;
-            // 
-            // рахунок_фактураBindingSource
-            // 
-            this.рахунок_фактураBindingSource.DataMember = "FK__Рахунок_ф__Код_д__173876EA";
-            this.рахунок_фактураBindingSource.DataSource = this.документBindingSource;
-            // 
-            // рахунок_фактураDataGridView
-            // 
-            this.рахунок_фактураDataGridView.AutoGenerateColumns = false;
-            this.рахунок_фактураDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.рахунок_фактураDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15});
-            this.рахунок_фактураDataGridView.DataSource = this.рахунок_фактураBindingSource;
-            this.рахунок_фактураDataGridView.Location = new System.Drawing.Point(16, 196);
-            this.рахунок_фактураDataGridView.Name = "рахунок_фактураDataGridView";
-            this.рахунок_фактураDataGridView.Size = new System.Drawing.Size(535, 216);
-            this.рахунок_фактураDataGridView.TabIndex = 16;
-            // 
-            // товарTableAdapter
-            // 
-            this.товарTableAdapter.ClearBeforeFill = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Підприємство:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 13);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Торговий представник";
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -540,6 +481,26 @@
             this.dataGridViewTextBoxColumn7.HeaderText = "Статус";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
+            // накладна_відправленняBindingSource
+            // 
+            this.накладна_відправленняBindingSource.DataMember = "FK__Накладна___Код_д__1A14E395";
+            this.накладна_відправленняBindingSource.DataSource = this.документBindingSource;
+            // 
+            // накладна_відправленняDataGridView
+            // 
+            this.накладна_відправленняDataGridView.AutoGenerateColumns = false;
+            this.накладна_відправленняDataGridView.BackgroundColor = System.Drawing.Color.PapayaWhip;
+            this.накладна_відправленняDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.накладна_відправленняDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10});
+            this.накладна_відправленняDataGridView.DataSource = this.накладна_відправленняBindingSource;
+            this.накладна_відправленняDataGridView.Location = new System.Drawing.Point(366, 111);
+            this.накладна_відправленняDataGridView.Name = "накладна_відправленняDataGridView";
+            this.накладна_відправленняDataGridView.Size = new System.Drawing.Size(185, 79);
+            this.накладна_відправленняDataGridView.TabIndex = 15;
+            // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "Код_Накладної";
@@ -560,6 +521,28 @@
             this.dataGridViewTextBoxColumn10.DataPropertyName = "Дата_відвантаження";
             this.dataGridViewTextBoxColumn10.HeaderText = "Дата відвантаження";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // рахунок_фактураBindingSource
+            // 
+            this.рахунок_фактураBindingSource.DataMember = "FK__Рахунок_ф__Код_д__173876EA";
+            this.рахунок_фактураBindingSource.DataSource = this.документBindingSource;
+            // 
+            // рахунок_фактураDataGridView
+            // 
+            this.рахунок_фактураDataGridView.AutoGenerateColumns = false;
+            this.рахунок_фактураDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.рахунок_фактураDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.рахунок_фактураDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15});
+            this.рахунок_фактураDataGridView.DataSource = this.рахунок_фактураBindingSource;
+            this.рахунок_фактураDataGridView.Location = new System.Drawing.Point(16, 196);
+            this.рахунок_фактураDataGridView.Name = "рахунок_фактураDataGridView";
+            this.рахунок_фактураDataGridView.Size = new System.Drawing.Size(535, 216);
+            this.рахунок_фактураDataGridView.TabIndex = 16;
             // 
             // dataGridViewTextBoxColumn11
             // 
@@ -594,6 +577,28 @@
             this.dataGridViewTextBoxColumn15.HeaderText = "Підстава";
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
             // 
+            // товарTableAdapter
+            // 
+            this.товарTableAdapter.ClearBeforeFill = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Підприємство:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(123, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Торговий представник";
+            // 
             // Document
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -614,7 +619,9 @@
             this.Controls.Add(this.дата_оформленняDateTimePicker);
             this.Controls.Add(вид_документуLabel);
             this.Controls.Add(this.документBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Document";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Document";
             this.Load += new System.EventHandler(this.Document_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();

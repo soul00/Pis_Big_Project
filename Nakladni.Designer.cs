@@ -156,8 +156,6 @@
         private System.Windows.Forms.BindingSource зведені_накладніBindingSource;
         private Big_16_04DataSetTableAdapters.Зведені_накладніTableAdapter зведені_накладніTableAdapter;
         private Big_16_04DataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.BindingSource зведені_ЗамовленняBindingSource;
         private Big_16_04DataSetTableAdapters.Зведені_ЗамовленняTableAdapter зведені_ЗамовленняTableAdapter;
         private System.Windows.Forms.DataGridView зведені_накладніDataGridView;

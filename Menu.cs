@@ -15,76 +15,60 @@ namespace Pis_Big_Project
         public Menu()
         {
             InitializeComponent();
+            SidePanel.Height = button1.Height;
+            SidePanel.Top = button1.Top;
         }
 
-        private void ДокументиToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Menu_Load(object sender, EventArgs e)
         {
-            new Document().ShowDialog();
+
         }
 
-        private void ЗамовникиToolStripMenuItem_Click(object sender, EventArgs e)
+        private void PictureBox1_Click(object sender, EventArgs e)
         {
-            new Zamovnik().ShowDialog();
+
         }
 
-        private void ТорговіПредставникиToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            new Torg_Predst().ShowDialog();
+            SidePanel.Height = button1.Height;
+            SidePanel.Top = button1.Top;
+            main_Menu_Control1.BringToFront();
+        }
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button2.Height;
+            SidePanel.Top = button2.Top;
+            document_Control1.BringToFront();            
+        }
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button3.Height;
+            SidePanel.Top = button3.Top;
+        }
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button4.Height;
+            SidePanel.Top = button4.Top;
+        }
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button5.Height;
+            SidePanel.Top = button5.Top;
+        }
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button6.Height;
+            SidePanel.Top = button6.Top;
+        }
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
-        private void ТовариToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Document_Control1_Load(object sender, EventArgs e)
         {
-            new Tovar().ShowDialog();
-        }
 
-        private void НакладніToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new Nakladni().ShowDialog();
-        }
-
-        private void ГрафікиToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new Grafik().ShowDialog();
-        }
-
-        private void ПошукЗамовникаЗаТипомГрафікуToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new Zapyt_Zamov_Grafik().ShowDialog();
-        }
-
-        private void ЗапитЗамовникToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new Zamov_Document().ShowDialog();
-        }
-
-        private void ЗамовникиЗЗапитомВід200ТисToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new Zamovn_vid_200_tis().ShowDialog();
-        }
-
-        private void ТорговіПредставникиТаЇхЗамовленняToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new Torgov_Document().ShowDialog();
-        }
-
-        private void ЗамовленняToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new Zamovlennya().ShowDialog();
-        }
-
-        private void РахункифактуриToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new Rahunki().ShowDialog();
-        }
-
-        private void ПошукДокументівЗаДатоюToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new Zapyt_Data_Poshuk().ShowDialog();
-        }
-
-        private void ZvitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new Form1().ShowDialog();
         }
     }
 }
