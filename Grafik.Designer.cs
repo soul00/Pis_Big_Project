@@ -302,7 +302,7 @@
             this.одноразовий_графікDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.одноразовий_графікDataGridView.Location = new System.Drawing.Point(3, 3);
             this.одноразовий_графікDataGridView.Name = "одноразовий_графікDataGridView";
-            this.одноразовий_графікDataGridView.Size = new System.Drawing.Size(299, 125);
+            this.одноразовий_графікDataGridView.Size = new System.Drawing.Size(361, 125);
             this.одноразовий_графікDataGridView.TabIndex = 11;
             // 
             // dataGridViewTextBoxColumn1
@@ -382,7 +382,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 91);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(313, 157);
+            this.tabControl1.Size = new System.Drawing.Size(375, 157);
             this.tabControl1.TabIndex = 14;
             // 
             // tabPage1
@@ -391,7 +391,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(305, 131);
+            this.tabPage1.Size = new System.Drawing.Size(367, 131);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Одноразовий";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -420,6 +420,7 @@
             this.Controls.Add(this.графікBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Grafik";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Графік";
             this.Load += new System.EventHandler(this.Grafik_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();

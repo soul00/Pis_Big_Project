@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Pis_Big_Project
 {
-    public partial class Tovary_User_Control : UserControl
+    public partial class Waffles : Form
     {
-        public Tovary_User_Control()
+        public Waffles()
         {
             InitializeComponent();
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            new Tovar().ShowDialog();
         }
     }
 }

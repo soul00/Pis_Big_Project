@@ -174,7 +174,7 @@
             this.замовникBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.замовникBindingNavigator.Name = "замовникBindingNavigator";
             this.замовникBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.замовникBindingNavigator.Size = new System.Drawing.Size(829, 25);
+            this.замовникBindingNavigator.Size = new System.Drawing.Size(810, 25);
             this.замовникBindingNavigator.TabIndex = 0;
             this.замовникBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -401,9 +401,10 @@
             this.dataGridViewTextBoxColumn11,
             this.dataGridViewTextBoxColumn12});
             this.замовникDataGridView.DataSource = this.замовникBindingSource;
-            this.замовникDataGridView.Location = new System.Drawing.Point(15, 209);
+            this.замовникDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.замовникDataGridView.Location = new System.Drawing.Point(0, 193);
             this.замовникDataGridView.Name = "замовникDataGridView";
-            this.замовникDataGridView.Size = new System.Drawing.Size(783, 220);
+            this.замовникDataGridView.Size = new System.Drawing.Size(810, 220);
             this.замовникDataGridView.TabIndex = 16;
             // 
             // dataGridViewTextBoxColumn6
@@ -504,7 +505,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(829, 482);
+            this.ClientSize = new System.Drawing.Size(810, 413);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -523,8 +524,9 @@
             this.Controls.Add(e_MailLabel);
             this.Controls.Add(this.e_MailTextBox);
             this.Controls.Add(this.замовникBindingNavigator);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Zamovnik";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Замовник";
             this.Load += new System.EventHandler(this.Zamovnik_Load);
             ((System.ComponentModel.ISupportInitialize)(this.замовникBindingNavigator)).EndInit();

@@ -332,6 +332,7 @@
             this.Controls.Add(this.торговий_представникBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Torg_Predst";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Торгові представники";
             this.Load += new System.EventHandler(this.Torg_Predst_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();

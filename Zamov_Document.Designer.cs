@@ -327,6 +327,7 @@
             this.Controls.Add(this.замовник___документDataGridView);
             this.Controls.Add(this.замовник___документBindingNavigator);
             this.Name = "Zamov_Document";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Замовники та їх документи";
             this.Load += new System.EventHandler(this.Zamov_Document_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
