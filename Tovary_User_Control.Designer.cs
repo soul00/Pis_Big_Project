@@ -70,6 +70,7 @@
             this.button2.Text = "Шоколад";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button3
             // 
@@ -86,6 +87,7 @@
             this.button3.Text = "Печиво";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button4
             // 
@@ -102,6 +104,7 @@
             this.button4.Text = "Вафлі";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // button5
             // 
@@ -118,6 +121,7 @@
             this.button5.Text = "Батончики";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // button6
             // 
@@ -134,6 +138,7 @@
             this.button6.Text = "Бісквіти";
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // button7
             // 
@@ -150,6 +155,7 @@
             this.button7.Text = "Цукерки";
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.Button7_Click);
             // 
             // Tovary_User_Control
             // 

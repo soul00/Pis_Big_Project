@@ -16,5 +16,20 @@ namespace Pis_Big_Project
         {
             InitializeComponent();
         }
+
+        private void ВафліBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.вафліBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.big_16_04DataSet);
+
+        }
+
+        private void Waffles_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "big_16_04DataSet.Вафлі". При необходимости она может быть перемещена или удалена.
+            this.вафліTableAdapter.Fill(this.big_16_04DataSet.Вафлі);
+
+        }
     }
 }

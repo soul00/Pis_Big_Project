@@ -328,6 +328,24 @@
     <EmbeddedResource Include="Zvit_User_Control.resx">
       <DependentUpon>Zvit_User_Control.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Товари\Baton.resx">
+      <DependentUpon>Baton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Товари\Biscuit.resx">
+      <DependentUpon>Biscuit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Товари\Candies.resx">
+      <DependentUpon>Candies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Товари\Chocolate.resx">
+      <DependentUpon>Chocolate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Товари\Cookies.resx">
+      <DependentUpon>Cookies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Товари\Waffles.resx">
+      <DependentUpon>Waffles.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Big_16_04DataSet.xsc">
       <DependentUpon>Big_16_04DataSet.xsd</DependentUpon>
     </None>

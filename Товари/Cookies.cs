@@ -16,5 +16,20 @@ namespace Pis_Big_Project
         {
             InitializeComponent();
         }
+
+        private void ПечивоBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.печивоBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.big_16_04DataSet);
+
+        }
+
+        private void Cookies_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "big_16_04DataSet.Печиво". При необходимости она может быть перемещена или удалена.
+            this.печивоTableAdapter.Fill(this.big_16_04DataSet.Печиво);
+
+        }
     }
 }

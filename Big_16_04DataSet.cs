@@ -6,3 +6,10 @@
     {
     }
 }
+
+namespace Pis_Big_Project.Big_16_04DataSetTableAdapters {
+    
+    
+    public partial class Торговий___ЗамовникTableAdapter {
+    }
+}
