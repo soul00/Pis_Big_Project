@@ -97,6 +97,7 @@
             this.зведені_ЗамовленняBindingNavigator.BindingSource = this.зведені_ЗамовленняBindingSource;
             this.зведені_ЗамовленняBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.зведені_ЗамовленняBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.зведені_ЗамовленняBindingNavigator.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.зведені_ЗамовленняBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -218,6 +219,7 @@
             // зведені_ЗамовленняDataGridView
             // 
             this.зведені_ЗамовленняDataGridView.AutoGenerateColumns = false;
+            this.зведені_ЗамовленняDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
             this.зведені_ЗамовленняDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.зведені_ЗамовленняDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3,
@@ -268,8 +270,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.зведені_ЗамовленняDataGridView);
             this.Controls.Add(this.зведені_ЗамовленняBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Zamovlennya";
-            this.Text = "Zamovlennya";
+            this.Text = "Замовлення";
             this.Load += new System.EventHandler(this.Zamovlennya_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.зведені_ЗамовленняBindingSource)).EndInit();

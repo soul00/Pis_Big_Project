@@ -33,7 +33,7 @@
             System.Windows.Forms.Label дата_оформленняLabel;
             System.Windows.Forms.Label вид_документуLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Document));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
             this.документBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.документTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ДокументTableAdapter();
@@ -388,7 +388,7 @@
             // рядок_замовленняDataGridView
             // 
             this.рядок_замовленняDataGridView.AutoGenerateColumns = false;
-            this.рядок_замовленняDataGridView.BackgroundColor = System.Drawing.Color.MintCream;
+            this.рядок_замовленняDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
             this.рядок_замовленняDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.рядок_замовленняDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -404,8 +404,8 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Код_Рядка";
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewTextBoxColumn1.HeaderText = "Код_Рядка";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
@@ -448,7 +448,7 @@
             // замовленняDataGridView
             // 
             this.замовленняDataGridView.AutoGenerateColumns = false;
-            this.замовленняDataGridView.BackgroundColor = System.Drawing.Color.PapayaWhip;
+            this.замовленняDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
             this.замовленняDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.замовленняDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn5,
@@ -489,7 +489,7 @@
             // накладна_відправленняDataGridView
             // 
             this.накладна_відправленняDataGridView.AutoGenerateColumns = false;
-            this.накладна_відправленняDataGridView.BackgroundColor = System.Drawing.Color.PapayaWhip;
+            this.накладна_відправленняDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
             this.накладна_відправленняDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.накладна_відправленняDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn8,
@@ -530,7 +530,7 @@
             // рахунок_фактураDataGridView
             // 
             this.рахунок_фактураDataGridView.AutoGenerateColumns = false;
-            this.рахунок_фактураDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.рахунок_фактураDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
             this.рахунок_фактураDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.рахунок_фактураDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn11,
@@ -622,7 +622,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Document";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Document";
+            this.Text = "Документ";
             this.Load += new System.EventHandler(this.Document_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.документBindingSource)).EndInit();

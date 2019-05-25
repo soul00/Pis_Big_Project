@@ -52,7 +52,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.SidePanel);
             this.panel1.Controls.Add(this.button6);
@@ -194,7 +194,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(194, 0);
             this.panel2.Name = "panel2";
@@ -213,7 +213,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(124, 95);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -239,7 +239,7 @@
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(746, 12);
+            this.button7.Location = new System.Drawing.Point(746, 13);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(35, 32);
             this.button7.TabIndex = 6;

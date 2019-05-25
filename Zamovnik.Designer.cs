@@ -38,6 +38,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Zamovnik));
             this.замовникBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.замовникBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -57,6 +59,11 @@
             this.e_MailTextBox = new System.Windows.Forms.TextBox();
             this.графікBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.графікDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.замовникDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,13 +72,6 @@
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.замовникBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.замовникTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ЗамовникTableAdapter();
             this.tableAdapterManager = new Pis_Big_Project.Big_16_04DataSetTableAdapters.TableAdapterManager();
             this.графікTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ГрафікTableAdapter();
@@ -86,11 +86,11 @@
             e_MailLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.замовникBindingNavigator)).BeginInit();
             this.замовникBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.замовникBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.графікBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.графікDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.замовникDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.замовникBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // назва_ПідприємстваLabel
@@ -153,6 +153,7 @@
             this.замовникBindingNavigator.BindingSource = this.замовникBindingSource;
             this.замовникBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.замовникBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.замовникBindingNavigator.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.замовникBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -185,6 +186,16 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // замовникBindingSource
+            // 
+            this.замовникBindingSource.DataMember = "Замовник";
+            this.замовникBindingSource.DataSource = this.big_16_04DataSet;
+            // 
+            // big_16_04DataSet
+            // 
+            this.big_16_04DataSet.DataSetName = "Big_16_04DataSet";
+            this.big_16_04DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -327,6 +338,7 @@
             // графікDataGridView
             // 
             this.графікDataGridView.AutoGenerateColumns = false;
+            this.графікDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
             this.графікDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.графікDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -340,9 +352,45 @@
             this.графікDataGridView.Size = new System.Drawing.Size(228, 158);
             this.графікDataGridView.TabIndex = 15;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Код_Графіку";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Код_Графіку";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Код_Замовника";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Код_Замовника";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Код_Замовлення";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Код_Замовлення";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Тип_графіку";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Тип_графіку";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Код_документу";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Код_документу";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Visible = false;
+            // 
             // замовникDataGridView
             // 
             this.замовникDataGridView.AutoGenerateColumns = false;
+            this.замовникDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
             this.замовникDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.замовникDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn6,
@@ -401,51 +449,6 @@
             this.dataGridViewTextBoxColumn12.DataPropertyName = "E_Mail";
             this.dataGridViewTextBoxColumn12.HeaderText = "E_Mail";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            // 
-            // замовникBindingSource
-            // 
-            this.замовникBindingSource.DataMember = "Замовник";
-            this.замовникBindingSource.DataSource = this.big_16_04DataSet;
-            // 
-            // big_16_04DataSet
-            // 
-            this.big_16_04DataSet.DataSetName = "Big_16_04DataSet";
-            this.big_16_04DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Код_Графіку";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Код_Графіку";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Код_Замовника";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Код_Замовника";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Код_Замовлення";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Код_Замовлення";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Тип_графіку";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Тип_графіку";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Код_документу";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Код_документу";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Visible = false;
             // 
             // замовникTableAdapter
             // 
@@ -520,17 +523,18 @@
             this.Controls.Add(e_MailLabel);
             this.Controls.Add(this.e_MailTextBox);
             this.Controls.Add(this.замовникBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Zamovnik";
             this.Text = "Замовник";
             this.Load += new System.EventHandler(this.Zamovnik_Load);
             ((System.ComponentModel.ISupportInitialize)(this.замовникBindingNavigator)).EndInit();
             this.замовникBindingNavigator.ResumeLayout(false);
             this.замовникBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.замовникBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.графікBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.графікDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.замовникDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.замовникBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

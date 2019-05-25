@@ -174,6 +174,7 @@
             this.товарBindingNavigator.BindingSource = this.товарBindingSource;
             this.товарBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.товарBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.товарBindingNavigator.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.товарBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -295,6 +296,7 @@
             // товарDataGridView
             // 
             this.товарDataGridView.AutoGenerateColumns = false;
+            this.товарDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
             this.товарDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.товарDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -468,6 +470,7 @@
             this.Controls.Add(this.термін_зберіганняTextBox);
             this.Controls.Add(this.товарDataGridView);
             this.Controls.Add(this.товарBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Tovar";
             this.Text = "Товари";
             this.Load += new System.EventHandler(this.Tovar_Load);

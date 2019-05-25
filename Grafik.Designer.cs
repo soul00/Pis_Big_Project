@@ -65,6 +65,9 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             тип_графікуLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.графікBindingSource)).BeginInit();
@@ -75,6 +78,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.одноразовий_графікDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.постійний_графікBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.постійний_графікDataGridView)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // тип_графікуLabel
@@ -134,6 +140,7 @@
             this.графікBindingNavigator.BindingSource = this.графікBindingSource;
             this.графікBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.графікBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.графікBindingNavigator.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.графікBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -154,7 +161,7 @@
             this.графікBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.графікBindingNavigator.Name = "графікBindingNavigator";
             this.графікBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.графікBindingNavigator.Size = new System.Drawing.Size(619, 25);
+            this.графікBindingNavigator.Size = new System.Drawing.Size(399, 25);
             this.графікBindingNavigator.TabIndex = 0;
             this.графікBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -285,15 +292,17 @@
             // одноразовий_графікDataGridView
             // 
             this.одноразовий_графікDataGridView.AutoGenerateColumns = false;
+            this.одноразовий_графікDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
             this.одноразовий_графікDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.одноразовий_графікDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.одноразовий_графікDataGridView.DataSource = this.одноразовий_графікBindingSource;
-            this.одноразовий_графікDataGridView.Location = new System.Drawing.Point(18, 106);
+            this.одноразовий_графікDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.одноразовий_графікDataGridView.Location = new System.Drawing.Point(3, 3);
             this.одноразовий_графікDataGridView.Name = "одноразовий_графікDataGridView";
-            this.одноразовий_графікDataGridView.Size = new System.Drawing.Size(269, 94);
+            this.одноразовий_графікDataGridView.Size = new System.Drawing.Size(299, 125);
             this.одноразовий_графікDataGridView.TabIndex = 11;
             // 
             // dataGridViewTextBoxColumn1
@@ -324,15 +333,17 @@
             // постійний_графікDataGridView
             // 
             this.постійний_графікDataGridView.AutoGenerateColumns = false;
+            this.постійний_графікDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
             this.постійний_графікDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.постійний_графікDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.постійний_графікDataGridView.DataSource = this.постійний_графікBindingSource;
-            this.постійний_графікDataGridView.Location = new System.Drawing.Point(311, 106);
+            this.постійний_графікDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.постійний_графікDataGridView.Location = new System.Drawing.Point(3, 3);
             this.постійний_графікDataGridView.Name = "постійний_графікDataGridView";
-            this.постійний_графікDataGridView.Size = new System.Drawing.Size(262, 94);
+            this.постійний_графікDataGridView.Size = new System.Drawing.Size(299, 125);
             this.постійний_графікDataGridView.TabIndex = 12;
             // 
             // dataGridViewTextBoxColumn4
@@ -364,20 +375,52 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Замовник";
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(12, 91);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(313, 157);
+            this.tabControl1.TabIndex = 14;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.одноразовий_графікDataGridView);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(305, 131);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Одноразовий";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.постійний_графікDataGridView);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(305, 131);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Постійний";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // Grafik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 236);
+            this.ClientSize = new System.Drawing.Size(399, 258);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.постійний_графікDataGridView);
-            this.Controls.Add(this.одноразовий_графікDataGridView);
             this.Controls.Add(this.код_ЗамовникаComboBox);
             this.Controls.Add(тип_графікуLabel);
             this.Controls.Add(this.тип_графікуTextBox);
             this.Controls.Add(this.графікBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Grafik";
-            this.Text = "Grafik";
+            this.Text = "Графік";
             this.Load += new System.EventHandler(this.Grafik_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.графікBindingSource)).EndInit();
@@ -389,6 +432,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.одноразовий_графікDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.постійний_графікBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.постійний_графікDataGridView)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,5 +476,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }

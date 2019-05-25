@@ -90,6 +90,7 @@
             // зведені_накладніDataGridView
             // 
             this.зведені_накладніDataGridView.AutoGenerateColumns = false;
+            this.зведені_накладніDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
             this.зведені_накладніDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.зведені_накладніDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3,
@@ -98,9 +99,10 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.зведені_накладніDataGridView.DataSource = this.зведені_накладніBindingSource;
-            this.зведені_накладніDataGridView.Location = new System.Drawing.Point(12, 12);
+            this.зведені_накладніDataGridView.Dock = System.Windows.Forms.DockStyle.Top;
+            this.зведені_накладніDataGridView.Location = new System.Drawing.Point(0, 0);
             this.зведені_накладніDataGridView.Name = "зведені_накладніDataGridView";
-            this.зведені_накладніDataGridView.Size = new System.Drawing.Size(733, 220);
+            this.зведені_накладніDataGridView.Size = new System.Drawing.Size(800, 233);
             this.зведені_накладніDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn3
@@ -139,6 +141,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.зведені_накладніDataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Nakladni";
             this.Text = "Nakladni";
             this.Load += new System.EventHandler(this.Nakladni_Load);

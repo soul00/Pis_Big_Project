@@ -131,6 +131,7 @@
             this.торговий_представникBindingNavigator.BindingSource = this.торговий_представникBindingSource;
             this.торговий_представникBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.торговий_представникBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.торговий_представникBindingNavigator.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.торговий_представникBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -276,6 +277,7 @@
             // торговий_представникDataGridView
             // 
             this.торговий_представникDataGridView.AutoGenerateColumns = false;
+            this.торговий_представникDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
             this.торговий_представникDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.торговий_представникDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -283,9 +285,10 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.торговий_представникDataGridView.DataSource = this.торговий_представникBindingSource;
-            this.торговий_представникDataGridView.Location = new System.Drawing.Point(13, 135);
+            this.торговий_представникDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.торговий_представникDataGridView.Location = new System.Drawing.Point(0, 149);
             this.торговий_представникDataGridView.Name = "торговий_представникDataGridView";
-            this.торговий_представникDataGridView.Size = new System.Drawing.Size(622, 220);
+            this.торговий_представникDataGridView.Size = new System.Drawing.Size(673, 220);
             this.торговий_представникDataGridView.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn1
@@ -327,6 +330,7 @@
             this.Controls.Add(телефон_представникаLabel);
             this.Controls.Add(this.телефон_представникаTextBox);
             this.Controls.Add(this.торговий_представникBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Torg_Predst";
             this.Text = "Торгові представники";
             this.Load += new System.EventHandler(this.Torg_Predst_Load);

@@ -70,6 +70,7 @@
             this.зведений_РахунокBindingNavigator.BindingSource = this.зведений_РахунокBindingSource;
             this.зведений_РахунокBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.зведений_РахунокBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.зведений_РахунокBindingNavigator.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.зведений_РахунокBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -231,6 +232,7 @@
             // зведений_РахунокDataGridView
             // 
             this.зведений_РахунокDataGridView.AutoGenerateColumns = false;
+            this.зведений_РахунокDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
             this.зведений_РахунокDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.зведений_РахунокDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -240,9 +242,10 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.зведений_РахунокDataGridView.DataSource = this.зведений_РахунокBindingSource;
-            this.зведений_РахунокDataGridView.Location = new System.Drawing.Point(12, 28);
+            this.зведений_РахунокDataGridView.Dock = System.Windows.Forms.DockStyle.Top;
+            this.зведений_РахунокDataGridView.Location = new System.Drawing.Point(0, 25);
             this.зведений_РахунокDataGridView.Name = "зведений_РахунокDataGridView";
-            this.зведений_РахунокDataGridView.Size = new System.Drawing.Size(788, 220);
+            this.зведений_РахунокDataGridView.Size = new System.Drawing.Size(800, 220);
             this.зведений_РахунокDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -288,8 +291,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.зведений_РахунокDataGridView);
             this.Controls.Add(this.зведений_РахунокBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Rahunki";
-            this.Text = "Rahunki";
+            this.Text = "Рахунки";
             this.Load += new System.EventHandler(this.Rahunki_Load);
             ((System.ComponentModel.ISupportInitialize)(this.зведений_РахунокBindingNavigator)).EndInit();
             this.зведений_РахунокBindingNavigator.ResumeLayout(false);

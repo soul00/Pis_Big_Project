@@ -100,6 +100,12 @@
     <Compile Include="Grafik.Designer.cs">
       <DependentUpon>Grafik.cs</DependentUpon>
     </Compile>
+    <Compile Include="Klienty_User_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Klienty_User_Control.Designer.cs">
+      <DependentUpon>Klienty_User_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main_Menu_Control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -139,11 +145,23 @@
     <Compile Include="Torg_Predst.Designer.cs">
       <DependentUpon>Torg_Predst.cs</DependentUpon>
     </Compile>
+    <Compile Include="Torg_predst_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Torg_predst_Control.Designer.cs">
+      <DependentUpon>Torg_predst_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tovar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tovar.Designer.cs">
       <DependentUpon>Tovar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tovary_User_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tovary_User_Control.Designer.cs">
+      <DependentUpon>Tovary_User_Control.cs</DependentUpon>
     </Compile>
     <Compile Include="Zamovlennya.cs">
       <SubType>Form</SubType>
@@ -181,6 +199,12 @@
     <Compile Include="Zapyt_Zamov_Grafik.Designer.cs">
       <DependentUpon>Zapyt_Zamov_Grafik.cs</DependentUpon>
     </Compile>
+    <Compile Include="Zvit_User_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Zvit_User_Control.Designer.cs">
+      <DependentUpon>Zvit_User_Control.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Document.resx">
       <DependentUpon>Document.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Grafik.resx">
       <DependentUpon>Grafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Klienty_User_Control.resx">
+      <DependentUpon>Klienty_User_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Menu_Control.resx">
       <DependentUpon>Main_Menu_Control.cs</DependentUpon>
@@ -217,8 +244,14 @@
     <EmbeddedResource Include="Torg_Predst.resx">
       <DependentUpon>Torg_Predst.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Torg_predst_Control.resx">
+      <DependentUpon>Torg_predst_Control.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tovar.resx">
       <DependentUpon>Tovar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tovary_User_Control.resx">
+      <DependentUpon>Tovary_User_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Zamovlennya.resx">
       <DependentUpon>Zamovlennya.cs</DependentUpon>
@@ -237,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Zapyt_Zamov_Grafik.resx">
       <DependentUpon>Zapyt_Zamov_Grafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zvit_User_Control.resx">
+      <DependentUpon>Zvit_User_Control.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Big_16_04DataSet.xsc">
       <DependentUpon>Big_16_04DataSet.xsd</DependentUpon>
