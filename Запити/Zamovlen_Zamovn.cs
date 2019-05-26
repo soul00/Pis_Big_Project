@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pis_Big_Project.Запити
+namespace Pis_Big_Project
 {
     public partial class Zamovlen_Zamovn : Form
     {
@@ -17,10 +17,16 @@ namespace Pis_Big_Project.Запити
             InitializeComponent();
         }
 
-        private void Zamovlen_Zamovn_Load(object sender, EventArgs e)
+        private void FillToolStripButton_Click(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "big_16_04DataSet._Замовник___документ". При необходимости она может быть перемещена или удалена.
-            this.замовник___документTableAdapter.Fill(this.big_16_04DataSet._Замовник___документ);
+            try
+            {
+                this.замовлення_ЗамовникаTableAdapter.Fill(this.big_16_04DataSet.Замовлення_Замовника, nameToolStripTextBox.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
 
         }
     }

@@ -1,4 +1,4 @@
-﻿namespace Pis_Big_Project.Запити
+﻿namespace Pis_Big_Project
 {
     partial class Zamovlen_Zamovn
     {
@@ -29,51 +29,184 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Zamovlen_Zamovn));
-            this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
-            this.замовник___документBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.замовник___документTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.Замовник___документTableAdapter();
-            this.tableAdapterManager = new Pis_Big_Project.Big_16_04DataSetTableAdapters.TableAdapterManager();
-            this.замовник___документBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.замовник___документBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.замовник___документDataGridView = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.fillToolStrip = new System.Windows.Forms.ToolStrip();
+            this.nameToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.nameToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.замовлення_ЗамовникаDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.замовлення_ЗамовникаBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
+            this.замовлення_ЗамовникаTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.Замовлення_ЗамовникаTableAdapter();
+            this.tableAdapterManager = new Pis_Big_Project.Big_16_04DataSetTableAdapters.TableAdapterManager();
+            this.fillToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.замовлення_ЗамовникаDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.замовлення_ЗамовникаBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.замовник___документBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.замовник___документBindingNavigator)).BeginInit();
-            this.замовник___документBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.замовник___документDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // fillToolStrip
+            // 
+            this.fillToolStrip.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.fillToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.fillToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nameToolStripLabel,
+            this.nameToolStripTextBox,
+            this.fillToolStripButton});
+            this.fillToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.fillToolStrip.Name = "fillToolStrip";
+            this.fillToolStrip.Size = new System.Drawing.Size(903, 25);
+            this.fillToolStrip.TabIndex = 1;
+            this.fillToolStrip.Text = "fillToolStrip";
+            // 
+            // nameToolStripLabel
+            // 
+            this.nameToolStripLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.nameToolStripLabel.Name = "nameToolStripLabel";
+            this.nameToolStripLabel.Size = new System.Drawing.Size(142, 22);
+            this.nameToolStripLabel.Text = "Назва підприємства";
+            // 
+            // nameToolStripTextBox
+            // 
+            this.nameToolStripTextBox.Name = "nameToolStripTextBox";
+            this.nameToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // fillToolStripButton
+            // 
+            this.fillToolStripButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
+            this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillToolStripButton.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.fillToolStripButton.ForeColor = System.Drawing.Color.White;
+            this.fillToolStripButton.Name = "fillToolStripButton";
+            this.fillToolStripButton.Size = new System.Drawing.Size(60, 22);
+            this.fillToolStripButton.Text = "Шукати";
+            this.fillToolStripButton.Click += new System.EventHandler(this.FillToolStripButton_Click);
+            // 
+            // замовлення_ЗамовникаDataGridView
+            // 
+            this.замовлення_ЗамовникаDataGridView.AutoGenerateColumns = false;
+            this.замовлення_ЗамовникаDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.замовлення_ЗамовникаDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.замовлення_ЗамовникаDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.замовлення_ЗамовникаDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.замовлення_ЗамовникаDataGridView.DataSource = this.замовлення_ЗамовникаBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.замовлення_ЗамовникаDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.замовлення_ЗамовникаDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.замовлення_ЗамовникаDataGridView.EnableHeadersVisualStyles = false;
+            this.замовлення_ЗамовникаDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
+            this.замовлення_ЗамовникаDataGridView.Location = new System.Drawing.Point(0, 25);
+            this.замовлення_ЗамовникаDataGridView.Name = "замовлення_ЗамовникаDataGridView";
+            this.замовлення_ЗамовникаDataGridView.Size = new System.Drawing.Size(903, 233);
+            this.замовлення_ЗамовникаDataGridView.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Назва_Підприємства";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Назва_Підприємства";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 141;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "ЄДРПОУ";
+            this.dataGridViewTextBoxColumn2.HeaderText = "ЄДРПОУ";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 79;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Адреса";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Адреса";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 69;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Контактна_особа";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Контактна_особа";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 121;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Телефон";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Телефон";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 77;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "E_Mail";
+            this.dataGridViewTextBoxColumn6.HeaderText = "E_Mail";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 64;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Статус";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Статус";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 66;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Вид_документу";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Вид_документу";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 110;
+            // 
+            // замовлення_ЗамовникаBindingSource
+            // 
+            this.замовлення_ЗамовникаBindingSource.DataMember = "Замовлення_Замовника";
+            this.замовлення_ЗамовникаBindingSource.DataSource = this.big_16_04DataSet;
             // 
             // big_16_04DataSet
             // 
             this.big_16_04DataSet.DataSetName = "Big_16_04DataSet";
             this.big_16_04DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // замовник___документBindingSource
+            // замовлення_ЗамовникаTableAdapter
             // 
-            this.замовник___документBindingSource.DataMember = "Замовник + документ";
-            this.замовник___документBindingSource.DataSource = this.big_16_04DataSet;
-            // 
-            // замовник___документTableAdapter
-            // 
-            this.замовник___документTableAdapter.ClearBeforeFill = true;
+            this.замовлення_ЗамовникаTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
@@ -98,204 +231,20 @@
             this.tableAdapterManager.ЦукеркиTableAdapter = null;
             this.tableAdapterManager.ШоколадTableAdapter = null;
             // 
-            // замовник___документBindingNavigator
-            // 
-            this.замовник___документBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.замовник___документBindingNavigator.BindingSource = this.замовник___документBindingSource;
-            this.замовник___документBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.замовник___документBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.замовник___документBindingNavigator.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.замовник___документBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.замовник___документBindingNavigatorSaveItem});
-            this.замовник___документBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.замовник___документBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.замовник___документBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.замовник___документBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.замовник___документBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.замовник___документBindingNavigator.Name = "замовник___документBindingNavigator";
-            this.замовник___документBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.замовник___документBindingNavigator.Size = new System.Drawing.Size(681, 25);
-            this.замовник___документBindingNavigator.TabIndex = 0;
-            this.замовник___документBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // замовник___документBindingNavigatorSaveItem
-            // 
-            this.замовник___документBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.замовник___документBindingNavigatorSaveItem.Enabled = false;
-            this.замовник___документBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("замовник___документBindingNavigatorSaveItem.Image")));
-            this.замовник___документBindingNavigatorSaveItem.Name = "замовник___документBindingNavigatorSaveItem";
-            this.замовник___документBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.замовник___документBindingNavigatorSaveItem.Text = "Сохранить данные";
-            // 
-            // замовник___документDataGridView
-            // 
-            this.замовник___документDataGridView.AutoGenerateColumns = false;
-            this.замовник___документDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
-            this.замовник___документDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.замовник___документDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.замовник___документDataGridView.DataSource = this.замовник___документBindingSource;
-            this.замовник___документDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.замовник___документDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            this.замовник___документDataGridView.Location = new System.Drawing.Point(0, 25);
-            this.замовник___документDataGridView.Name = "замовник___документDataGridView";
-            this.замовник___документDataGridView.Size = new System.Drawing.Size(681, 284);
-            this.замовник___документDataGridView.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Назва_Підприємства";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Назва_Підприємства";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Контактна_особа";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Контактна_особа";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Телефон";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Телефон";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Сума";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Сума";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Дата_оформлення";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Дата_оформлення";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Вид_документу";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Вид_документу";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
             // Zamovlen_Zamovn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(681, 309);
-            this.Controls.Add(this.замовник___документDataGridView);
-            this.Controls.Add(this.замовник___документBindingNavigator);
+            this.ClientSize = new System.Drawing.Size(903, 258);
+            this.Controls.Add(this.замовлення_ЗамовникаDataGridView);
+            this.Controls.Add(this.fillToolStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Zamovlen_Zamovn";
-            this.Text = "Zamovlen_Zamovn";
-            this.Load += new System.EventHandler(this.Zamovlen_Zamovn_Load);
+            this.fillToolStrip.ResumeLayout(false);
+            this.fillToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.замовлення_ЗамовникаDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.замовлення_ЗамовникаBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.замовник___документBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.замовник___документBindingNavigator)).EndInit();
-            this.замовник___документBindingNavigator.ResumeLayout(false);
-            this.замовник___документBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.замовник___документDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,28 +253,21 @@
         #endregion
 
         private Big_16_04DataSet big_16_04DataSet;
-        private System.Windows.Forms.BindingSource замовник___документBindingSource;
-        private Big_16_04DataSetTableAdapters.Замовник___документTableAdapter замовник___документTableAdapter;
+        private System.Windows.Forms.BindingSource замовлення_ЗамовникаBindingSource;
+        private Big_16_04DataSetTableAdapters.Замовлення_ЗамовникаTableAdapter замовлення_ЗамовникаTableAdapter;
         private Big_16_04DataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator замовник___документBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton замовник___документBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView замовник___документDataGridView;
+        private System.Windows.Forms.ToolStrip fillToolStrip;
+        private System.Windows.Forms.ToolStripLabel nameToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox nameToolStripTextBox;
+        private System.Windows.Forms.ToolStripButton fillToolStripButton;
+        private System.Windows.Forms.DataGridView замовлення_ЗамовникаDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }

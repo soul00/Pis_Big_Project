@@ -29,7 +29,7 @@ namespace Pis_Big_Project
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            new Запити.Zamovlen_Zamovn().ShowDialog();
+            new Zamovlen_Zamovn().ShowDialog();
         }
 
         private void Button4_Click(object sender, EventArgs e)

@@ -89,10 +89,10 @@
             // 
             // SidePanel
             // 
-            this.SidePanel.BackColor = System.Drawing.Color.PapayaWhip;
+            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
             this.SidePanel.Location = new System.Drawing.Point(0, 12);
             this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(10, 59);
+            this.SidePanel.Size = new System.Drawing.Size(11, 59);
             this.SidePanel.TabIndex = 4;
             // 
             // button6

@@ -63,13 +63,12 @@
             this.e_MailTextBox = new System.Windows.Forms.TextBox();
             this.графікBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.графікDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.замовникDataGridView = new System.Windows.Forms.DataGridView();
-            this.замовникTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ЗамовникTableAdapter();
-            this.tableAdapterManager = new Pis_Big_Project.Big_16_04DataSetTableAdapters.TableAdapterManager();
-            this.графікTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ГрафікTableAdapter();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,11 +76,12 @@
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.замовникTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ЗамовникTableAdapter();
+            this.tableAdapterManager = new Pis_Big_Project.Big_16_04DataSetTableAdapters.TableAdapterManager();
+            this.графікTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ГрафікTableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             назва_ПідприємстваLabel = new System.Windows.Forms.Label();
             єДРПОУLabel = new System.Windows.Forms.Label();
             адресаLabel = new System.Windows.Forms.Label();
@@ -100,54 +100,60 @@
             // назва_ПідприємстваLabel
             // 
             назва_ПідприємстваLabel.AutoSize = true;
+            назва_ПідприємстваLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             назва_ПідприємстваLabel.Location = new System.Drawing.Point(12, 39);
             назва_ПідприємстваLabel.Name = "назва_ПідприємстваLabel";
-            назва_ПідприємстваLabel.Size = new System.Drawing.Size(116, 13);
+            назва_ПідприємстваLabel.Size = new System.Drawing.Size(147, 17);
             назва_ПідприємстваLabel.TabIndex = 3;
             назва_ПідприємстваLabel.Text = "Назва Підприємства:";
             // 
             // єДРПОУLabel
             // 
             єДРПОУLabel.AutoSize = true;
+            єДРПОУLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             єДРПОУLabel.Location = new System.Drawing.Point(12, 65);
             єДРПОУLabel.Name = "єДРПОУLabel";
-            єДРПОУLabel.Size = new System.Drawing.Size(57, 13);
+            єДРПОУLabel.Size = new System.Drawing.Size(69, 17);
             єДРПОУLabel.TabIndex = 5;
             єДРПОУLabel.Text = "ЄДРПОУ:";
             // 
             // адресаLabel
             // 
             адресаLabel.AutoSize = true;
+            адресаLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             адресаLabel.Location = new System.Drawing.Point(12, 91);
             адресаLabel.Name = "адресаLabel";
-            адресаLabel.Size = new System.Drawing.Size(47, 13);
+            адресаLabel.Size = new System.Drawing.Size(63, 17);
             адресаLabel.TabIndex = 7;
             адресаLabel.Text = "Адреса:";
             // 
             // контактна_особаLabel
             // 
             контактна_особаLabel.AutoSize = true;
+            контактна_особаLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             контактна_особаLabel.Location = new System.Drawing.Point(12, 117);
             контактна_особаLabel.Name = "контактна_особаLabel";
-            контактна_особаLabel.Size = new System.Drawing.Size(96, 13);
+            контактна_особаLabel.Size = new System.Drawing.Size(128, 17);
             контактна_особаLabel.TabIndex = 9;
             контактна_особаLabel.Text = "Контактна особа:";
             // 
             // телефонLabel
             // 
             телефонLabel.AutoSize = true;
+            телефонLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             телефонLabel.Location = new System.Drawing.Point(12, 143);
             телефонLabel.Name = "телефонLabel";
-            телефонLabel.Size = new System.Drawing.Size(55, 13);
+            телефонLabel.Size = new System.Drawing.Size(71, 17);
             телефонLabel.TabIndex = 11;
             телефонLabel.Text = "Телефон:";
             // 
             // e_MailLabel
             // 
             e_MailLabel.AutoSize = true;
+            e_MailLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             e_MailLabel.Location = new System.Drawing.Point(12, 169);
             e_MailLabel.Name = "e_MailLabel";
-            e_MailLabel.Size = new System.Drawing.Size(39, 13);
+            e_MailLabel.Size = new System.Drawing.Size(49, 17);
             e_MailLabel.TabIndex = 13;
             e_MailLabel.Text = "E Mail:";
             // 
@@ -178,7 +184,7 @@
             this.замовникBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.замовникBindingNavigator.Name = "замовникBindingNavigator";
             this.замовникBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.замовникBindingNavigator.Size = new System.Drawing.Size(810, 25);
+            this.замовникBindingNavigator.Size = new System.Drawing.Size(855, 25);
             this.замовникBindingNavigator.TabIndex = 0;
             this.замовникBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -289,7 +295,7 @@
             // назва_ПідприємстваTextBox
             // 
             this.назва_ПідприємстваTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.замовникBindingSource, "Назва_Підприємства", true));
-            this.назва_ПідприємстваTextBox.Location = new System.Drawing.Point(134, 36);
+            this.назва_ПідприємстваTextBox.Location = new System.Drawing.Point(167, 36);
             this.назва_ПідприємстваTextBox.Name = "назва_ПідприємстваTextBox";
             this.назва_ПідприємстваTextBox.Size = new System.Drawing.Size(244, 20);
             this.назва_ПідприємстваTextBox.TabIndex = 4;
@@ -297,7 +303,7 @@
             // єДРПОУTextBox
             // 
             this.єДРПОУTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.замовникBindingSource, "ЄДРПОУ", true));
-            this.єДРПОУTextBox.Location = new System.Drawing.Point(134, 62);
+            this.єДРПОУTextBox.Location = new System.Drawing.Point(167, 62);
             this.єДРПОУTextBox.Name = "єДРПОУTextBox";
             this.єДРПОУTextBox.Size = new System.Drawing.Size(244, 20);
             this.єДРПОУTextBox.TabIndex = 6;
@@ -305,7 +311,7 @@
             // адресаTextBox
             // 
             this.адресаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.замовникBindingSource, "Адреса", true));
-            this.адресаTextBox.Location = new System.Drawing.Point(134, 88);
+            this.адресаTextBox.Location = new System.Drawing.Point(167, 88);
             this.адресаTextBox.Name = "адресаTextBox";
             this.адресаTextBox.Size = new System.Drawing.Size(244, 20);
             this.адресаTextBox.TabIndex = 8;
@@ -313,7 +319,7 @@
             // контактна_особаTextBox
             // 
             this.контактна_особаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.замовникBindingSource, "Контактна_особа", true));
-            this.контактна_особаTextBox.Location = new System.Drawing.Point(134, 114);
+            this.контактна_особаTextBox.Location = new System.Drawing.Point(167, 114);
             this.контактна_особаTextBox.Name = "контактна_особаTextBox";
             this.контактна_особаTextBox.Size = new System.Drawing.Size(244, 20);
             this.контактна_особаTextBox.TabIndex = 10;
@@ -321,7 +327,7 @@
             // телефонTextBox
             // 
             this.телефонTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.замовникBindingSource, "Телефон", true));
-            this.телефонTextBox.Location = new System.Drawing.Point(134, 140);
+            this.телефонTextBox.Location = new System.Drawing.Point(167, 140);
             this.телефонTextBox.Name = "телефонTextBox";
             this.телефонTextBox.Size = new System.Drawing.Size(244, 20);
             this.телефонTextBox.TabIndex = 12;
@@ -329,7 +335,7 @@
             // e_MailTextBox
             // 
             this.e_MailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.замовникBindingSource, "E_Mail", true));
-            this.e_MailTextBox.Location = new System.Drawing.Point(134, 166);
+            this.e_MailTextBox.Location = new System.Drawing.Point(167, 166);
             this.e_MailTextBox.Name = "e_MailTextBox";
             this.e_MailTextBox.Size = new System.Drawing.Size(244, 20);
             this.e_MailTextBox.TabIndex = 14;
@@ -369,10 +375,47 @@
             this.графікDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.графікDataGridView.EnableHeadersVisualStyles = false;
             this.графікDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            this.графікDataGridView.Location = new System.Drawing.Point(397, 28);
+            this.графікDataGridView.Location = new System.Drawing.Point(417, 28);
             this.графікDataGridView.Name = "графікDataGridView";
-            this.графікDataGridView.Size = new System.Drawing.Size(228, 158);
+            this.графікDataGridView.Size = new System.Drawing.Size(185, 158);
             this.графікDataGridView.TabIndex = 15;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Код_Графіку";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Код_Графіку";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Код_Замовника";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Код_Замовника";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Код_Замовлення";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Код_Замовлення";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Тип_графіку";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Тип_графіку";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 95;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Код_документу";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Код_документу";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Visible = false;
             // 
             // замовникDataGridView
             // 
@@ -407,66 +450,10 @@
             this.замовникDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.замовникDataGridView.EnableHeadersVisualStyles = false;
             this.замовникDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            this.замовникDataGridView.Location = new System.Drawing.Point(0, 193);
+            this.замовникDataGridView.Location = new System.Drawing.Point(0, 197);
             this.замовникDataGridView.Name = "замовникDataGridView";
-            this.замовникDataGridView.Size = new System.Drawing.Size(810, 220);
+            this.замовникDataGridView.Size = new System.Drawing.Size(855, 220);
             this.замовникDataGridView.TabIndex = 16;
-            // 
-            // замовникTableAdapter
-            // 
-            this.замовникTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.UpdateOrder = Pis_Big_Project.Big_16_04DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.БатончикTableAdapter = null;
-            this.tableAdapterManager.БісквітиTableAdapter = null;
-            this.tableAdapterManager.ВафліTableAdapter = null;
-            this.tableAdapterManager.ГрафікTableAdapter = this.графікTableAdapter;
-            this.tableAdapterManager.ДокументTableAdapter = null;
-            this.tableAdapterManager.ЗамовленняTableAdapter = null;
-            this.tableAdapterManager.ЗамовникTableAdapter = this.замовникTableAdapter;
-            this.tableAdapterManager.Накладна_відправленняTableAdapter = null;
-            this.tableAdapterManager.Одноразовий_графікTableAdapter = null;
-            this.tableAdapterManager.ПечивоTableAdapter = null;
-            this.tableAdapterManager.Постійний_графікTableAdapter = null;
-            this.tableAdapterManager.Рахунок_фактураTableAdapter = null;
-            this.tableAdapterManager.Рядок_замовленняTableAdapter = null;
-            this.tableAdapterManager.ТоварTableAdapter = null;
-            this.tableAdapterManager.Торговий_представникTableAdapter = null;
-            this.tableAdapterManager.ЦукеркиTableAdapter = null;
-            this.tableAdapterManager.ШоколадTableAdapter = null;
-            // 
-            // графікTableAdapter
-            // 
-            this.графікTableAdapter.ClearBeforeFill = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(643, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 13);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Пошук за номером телефону";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(646, 65);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 20);
-            this.textBox1.TabIndex = 18;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(687, 91);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Пошук";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -524,48 +511,69 @@
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             this.dataGridViewTextBoxColumn12.Width = 64;
             // 
-            // dataGridViewTextBoxColumn1
+            // замовникTableAdapter
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Код_Графіку";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Код_Графіку";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.замовникTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn2
+            // tableAdapterManager
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Код_Замовника";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Код_Замовника";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Visible = false;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.UpdateOrder = Pis_Big_Project.Big_16_04DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.БатончикTableAdapter = null;
+            this.tableAdapterManager.БісквітиTableAdapter = null;
+            this.tableAdapterManager.ВафліTableAdapter = null;
+            this.tableAdapterManager.ГрафікTableAdapter = this.графікTableAdapter;
+            this.tableAdapterManager.ДокументTableAdapter = null;
+            this.tableAdapterManager.ЗамовленняTableAdapter = null;
+            this.tableAdapterManager.ЗамовникTableAdapter = this.замовникTableAdapter;
+            this.tableAdapterManager.Накладна_відправленняTableAdapter = null;
+            this.tableAdapterManager.Одноразовий_графікTableAdapter = null;
+            this.tableAdapterManager.ПечивоTableAdapter = null;
+            this.tableAdapterManager.Постійний_графікTableAdapter = null;
+            this.tableAdapterManager.Рахунок_фактураTableAdapter = null;
+            this.tableAdapterManager.Рядок_замовленняTableAdapter = null;
+            this.tableAdapterManager.ТоварTableAdapter = null;
+            this.tableAdapterManager.Торговий_представникTableAdapter = null;
+            this.tableAdapterManager.ЦукеркиTableAdapter = null;
+            this.tableAdapterManager.ШоколадTableAdapter = null;
             // 
-            // dataGridViewTextBoxColumn3
+            // графікTableAdapter
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Код_Замовлення";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Код_Замовлення";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Visible = false;
+            this.графікTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn4
+            // label1
             // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Тип_графіку";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Тип_графіку";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 95;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label1.Location = new System.Drawing.Point(649, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(142, 34);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Пошук клієнта за \r\nномером телефону";
             // 
-            // dataGridViewTextBoxColumn5
+            // textBox1
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Код_документу";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Код_документу";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Visible = false;
+            this.textBox1.Location = new System.Drawing.Point(646, 65);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(152, 20);
+            this.textBox1.TabIndex = 18;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.button1.Location = new System.Drawing.Point(687, 91);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Пошук";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // Zamovnik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(810, 413);
+            this.ClientSize = new System.Drawing.Size(855, 417);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);

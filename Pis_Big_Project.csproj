@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>C:\Users\soul0\Desktop\Bunifu Ui Winform 1.10.0.0\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\soul0\Desktop\Bunifu Ui Winform 1.10.0.0\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AnalysisServices.AppLocal, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.AnalysisServices.AppLocal.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.AnalysisServices.AppLocal.Tabular, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
@@ -63,6 +69,8 @@
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -80,17 +88,17 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="Запити\Torgoviy_Zamovnik.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Запити\Torgoviy_Zamovnik.Designer.cs">
-      <DependentUpon>Torgoviy_Zamovnik.cs</DependentUpon>
-    </Compile>
     <Compile Include="Запити\Zamovlen_Zamovn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Запити\Zamovlen_Zamovn.Designer.cs">
       <DependentUpon>Zamovlen_Zamovn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Запити\Torgoviy_Zamovnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Запити\Torgoviy_Zamovnik.Designer.cs">
+      <DependentUpon>Torgoviy_Zamovnik.cs</DependentUpon>
     </Compile>
     <Compile Include="Запити\Zvit_vid_sum.cs">
       <SubType>Form</SubType>
@@ -295,6 +303,9 @@
     <EmbeddedResource Include="Grafik.resx">
       <DependentUpon>Grafik.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Запити\Zamovlen_Zamovn.resx">
+      <DependentUpon>Zamovlen_Zamovn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Zamov_User_Control.resx">
       <DependentUpon>Zamov_User_Control.cs</DependentUpon>
     </EmbeddedResource>
@@ -345,9 +356,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Запити\Torgoviy_Zamovnik.resx">
       <DependentUpon>Torgoviy_Zamovnik.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Запити\Zamovlen_Zamovn.resx">
-      <DependentUpon>Zamovlen_Zamovn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Запити\Zapyt_Data_Poshuk.resx">
       <DependentUpon>Zapyt_Data_Poshuk.cs</DependentUpon>

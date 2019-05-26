@@ -36,8 +36,8 @@
             System.Windows.Forms.Label виробник_товаруLabel;
             System.Windows.Forms.Label термін_зберіганняLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tovar));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
             this.товарBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.товарTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ТоварTableAdapter();
@@ -89,54 +89,60 @@
             // назва_товаруLabel
             // 
             назва_товаруLabel.AutoSize = true;
+            назва_товаруLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             назва_товаруLabel.Location = new System.Drawing.Point(10, 36);
             назва_товаруLabel.Name = "назва_товаруLabel";
-            назва_товаруLabel.Size = new System.Drawing.Size(79, 13);
+            назва_товаруLabel.Size = new System.Drawing.Size(99, 17);
             назва_товаруLabel.TabIndex = 4;
             назва_товаруLabel.Text = "Назва товару:";
             // 
             // вага_однієї_палети_кгLabel
             // 
             вага_однієї_палети_кгLabel.AutoSize = true;
+            вага_однієї_палети_кгLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             вага_однієї_палети_кгLabel.Location = new System.Drawing.Point(10, 62);
             вага_однієї_палети_кгLabel.Name = "вага_однієї_палети_кгLabel";
-            вага_однієї_палети_кгLabel.Size = new System.Drawing.Size(118, 13);
+            вага_однієї_палети_кгLabel.Size = new System.Drawing.Size(150, 17);
             вага_однієї_палети_кгLabel.TabIndex = 6;
             вага_однієї_палети_кгLabel.Text = "Вага однієї палети кг:";
             // 
             // кількість_товаруLabel
             // 
             кількість_товаруLabel.AutoSize = true;
+            кількість_товаруLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             кількість_товаруLabel.Location = new System.Drawing.Point(10, 88);
             кількість_товаруLabel.Name = "кількість_товаруLabel";
-            кількість_товаруLabel.Size = new System.Drawing.Size(93, 13);
+            кількість_товаруLabel.Size = new System.Drawing.Size(113, 17);
             кількість_товаруLabel.TabIndex = 8;
             кількість_товаруLabel.Text = "Кількість товару:";
             // 
             // ціна_однієї_палети_грнLabel
             // 
             ціна_однієї_палети_грнLabel.AutoSize = true;
+            ціна_однієї_палети_грнLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             ціна_однієї_палети_грнLabel.Location = new System.Drawing.Point(10, 114);
             ціна_однієї_палети_грнLabel.Name = "ціна_однієї_палети_грнLabel";
-            ціна_однієї_палети_грнLabel.Size = new System.Drawing.Size(122, 13);
+            ціна_однієї_палети_грнLabel.Size = new System.Drawing.Size(159, 17);
             ціна_однієї_палети_грнLabel.TabIndex = 10;
             ціна_однієї_палети_грнLabel.Text = "Ціна однієї палети грн:";
             // 
             // виробник_товаруLabel
             // 
             виробник_товаруLabel.AutoSize = true;
+            виробник_товаруLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             виробник_товаруLabel.Location = new System.Drawing.Point(10, 140);
             виробник_товаруLabel.Name = "виробник_товаруLabel";
-            виробник_товаруLabel.Size = new System.Drawing.Size(96, 13);
+            виробник_товаруLabel.Size = new System.Drawing.Size(125, 17);
             виробник_товаруLabel.TabIndex = 12;
             виробник_товаруLabel.Text = "Виробник товару:";
             // 
             // термін_зберіганняLabel
             // 
             термін_зберіганняLabel.AutoSize = true;
+            термін_зберіганняLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             термін_зберіганняLabel.Location = new System.Drawing.Point(10, 166);
             термін_зберіганняLabel.Name = "термін_зберіганняLabel";
-            термін_зберіганняLabel.Size = new System.Drawing.Size(103, 13);
+            термін_зберіганняLabel.Size = new System.Drawing.Size(131, 17);
             термін_зберіганняLabel.TabIndex = 14;
             термін_зберіганняLabel.Text = "Термін зберігання:";
             // 
@@ -305,14 +311,14 @@
             // 
             this.товарDataGridView.AutoGenerateColumns = false;
             this.товарDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.товарDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.товарDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.товарDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.товарDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -323,14 +329,14 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.товарDataGridView.DataSource = this.товарBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.товарDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.товарDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
             this.товарDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.товарDataGridView.EnableHeadersVisualStyles = false;
             this.товарDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
@@ -398,7 +404,7 @@
             // назва_товаруTextBox
             // 
             this.назва_товаруTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.товарBindingSource, "Назва_товару", true));
-            this.назва_товаруTextBox.Location = new System.Drawing.Point(138, 33);
+            this.назва_товаруTextBox.Location = new System.Drawing.Point(170, 33);
             this.назва_товаруTextBox.Name = "назва_товаруTextBox";
             this.назва_товаруTextBox.Size = new System.Drawing.Size(238, 20);
             this.назва_товаруTextBox.TabIndex = 5;
@@ -406,7 +412,7 @@
             // вага_однієї_палети_кгTextBox
             // 
             this.вага_однієї_палети_кгTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.товарBindingSource, "Вага_однієї_палети_кг", true));
-            this.вага_однієї_палети_кгTextBox.Location = new System.Drawing.Point(138, 59);
+            this.вага_однієї_палети_кгTextBox.Location = new System.Drawing.Point(170, 59);
             this.вага_однієї_палети_кгTextBox.Name = "вага_однієї_палети_кгTextBox";
             this.вага_однієї_палети_кгTextBox.Size = new System.Drawing.Size(238, 20);
             this.вага_однієї_палети_кгTextBox.TabIndex = 7;
@@ -414,7 +420,7 @@
             // кількість_товаруTextBox
             // 
             this.кількість_товаруTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.товарBindingSource, "Кількість_товару", true));
-            this.кількість_товаруTextBox.Location = new System.Drawing.Point(138, 85);
+            this.кількість_товаруTextBox.Location = new System.Drawing.Point(170, 85);
             this.кількість_товаруTextBox.Name = "кількість_товаруTextBox";
             this.кількість_товаруTextBox.Size = new System.Drawing.Size(238, 20);
             this.кількість_товаруTextBox.TabIndex = 9;
@@ -422,7 +428,7 @@
             // ціна_однієї_палети_грнTextBox
             // 
             this.ціна_однієї_палети_грнTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.товарBindingSource, "Ціна_однієї_палети_грн", true));
-            this.ціна_однієї_палети_грнTextBox.Location = new System.Drawing.Point(138, 111);
+            this.ціна_однієї_палети_грнTextBox.Location = new System.Drawing.Point(170, 111);
             this.ціна_однієї_палети_грнTextBox.Name = "ціна_однієї_палети_грнTextBox";
             this.ціна_однієї_палети_грнTextBox.Size = new System.Drawing.Size(238, 20);
             this.ціна_однієї_палети_грнTextBox.TabIndex = 11;
@@ -430,7 +436,7 @@
             // виробник_товаруTextBox
             // 
             this.виробник_товаруTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.товарBindingSource, "Виробник_товару", true));
-            this.виробник_товаруTextBox.Location = new System.Drawing.Point(138, 137);
+            this.виробник_товаруTextBox.Location = new System.Drawing.Point(170, 137);
             this.виробник_товаруTextBox.Name = "виробник_товаруTextBox";
             this.виробник_товаруTextBox.Size = new System.Drawing.Size(238, 20);
             this.виробник_товаруTextBox.TabIndex = 13;
@@ -438,7 +444,7 @@
             // термін_зберіганняTextBox
             // 
             this.термін_зберіганняTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.товарBindingSource, "Термін_зберігання", true));
-            this.термін_зберіганняTextBox.Location = new System.Drawing.Point(138, 163);
+            this.термін_зберіганняTextBox.Location = new System.Drawing.Point(170, 163);
             this.термін_зберіганняTextBox.Name = "термін_зберіганняTextBox";
             this.термін_зберіганняTextBox.Size = new System.Drawing.Size(238, 20);
             this.термін_зберіганняTextBox.TabIndex = 15;
@@ -446,18 +452,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(434, 62);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(443, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 13);
+            this.label1.Size = new System.Drawing.Size(199, 17);
             this.label1.TabIndex = 17;
             this.label1.Text = "Фільтрування за виробником";
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(544, 93);
+            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton2.Location = new System.Drawing.Point(587, 87);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(48, 17);
+            this.radioButton2.Size = new System.Drawing.Size(55, 21);
             this.radioButton2.TabIndex = 19;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Мрія";
@@ -467,9 +475,10 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(437, 93);
+            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton1.Location = new System.Drawing.Point(446, 91);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 17);
+            this.radioButton1.Size = new System.Drawing.Size(71, 21);
             this.radioButton1.TabIndex = 18;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Рошен";
@@ -478,7 +487,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(452, 116);
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(489, 118);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(127, 23);
             this.button1.TabIndex = 22;

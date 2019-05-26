@@ -89,9 +89,10 @@
             // тип_графікуLabel
             // 
             тип_графікуLabel.AutoSize = true;
-            тип_графікуLabel.Location = new System.Drawing.Point(12, 68);
+            тип_графікуLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            тип_графікуLabel.Location = new System.Drawing.Point(15, 58);
             тип_графікуLabel.Name = "тип_графікуLabel";
-            тип_графікуLabel.Size = new System.Drawing.Size(70, 13);
+            тип_графікуLabel.Size = new System.Drawing.Size(90, 17);
             тип_графікуLabel.TabIndex = 7;
             тип_графікуLabel.Text = "Тип графіку:";
             // 
@@ -274,7 +275,7 @@
             this.код_ЗамовникаComboBox.DataSource = this.замовникBindingSource;
             this.код_ЗамовникаComboBox.DisplayMember = "Назва_Підприємства";
             this.код_ЗамовникаComboBox.FormattingEnabled = true;
-            this.код_ЗамовникаComboBox.Location = new System.Drawing.Point(113, 38);
+            this.код_ЗамовникаComboBox.Location = new System.Drawing.Point(116, 28);
             this.код_ЗамовникаComboBox.Name = "код_ЗамовникаComboBox";
             this.код_ЗамовникаComboBox.Size = new System.Drawing.Size(215, 21);
             this.код_ЗамовникаComboBox.TabIndex = 4;
@@ -288,7 +289,7 @@
             // тип_графікуTextBox
             // 
             this.тип_графікуTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.графікBindingSource, "Тип_графіку", true));
-            this.тип_графікуTextBox.Location = new System.Drawing.Point(113, 65);
+            this.тип_графікуTextBox.Location = new System.Drawing.Point(116, 55);
             this.тип_графікуTextBox.Name = "тип_графікуTextBox";
             this.тип_графікуTextBox.Size = new System.Drawing.Size(215, 20);
             this.тип_графікуTextBox.TabIndex = 8;
@@ -414,9 +415,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 41);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(15, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(74, 17);
             this.label1.TabIndex = 13;
             this.label1.Text = "Замовник";
             // 

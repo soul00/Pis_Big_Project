@@ -180,7 +180,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Nakladni";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Nakladni";
+            this.Text = "Накладні";
             this.Load += new System.EventHandler(this.Nakladni_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.зведені_накладніBindingSource)).EndInit();

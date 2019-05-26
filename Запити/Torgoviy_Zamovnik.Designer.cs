@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
             this.торговий___ЗамовникBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.торговий___ЗамовникTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.Торговий___ЗамовникTableAdapter();
@@ -91,6 +91,7 @@
             // 
             // fillToolStrip
             // 
+            this.fillToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.fillToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nameToolStripLabel,
             this.nameToolStripTextBox,
@@ -103,8 +104,9 @@
             // 
             // nameToolStripLabel
             // 
+            this.nameToolStripLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.nameToolStripLabel.Name = "nameToolStripLabel";
-            this.nameToolStripLabel.Size = new System.Drawing.Size(165, 22);
+            this.nameToolStripLabel.Size = new System.Drawing.Size(194, 22);
             this.nameToolStripLabel.Text = "ПІБ Торгового представника";
             // 
             // nameToolStripTextBox
@@ -118,11 +120,11 @@
             // 
             this.fillToolStripButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
             this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillToolStripButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.fillToolStripButton.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.fillToolStripButton.ForeColor = System.Drawing.Color.White;
             this.fillToolStripButton.Margin = new System.Windows.Forms.Padding(10, 1, 0, 2);
             this.fillToolStripButton.Name = "fillToolStripButton";
-            this.fillToolStripButton.Size = new System.Drawing.Size(56, 22);
+            this.fillToolStripButton.Size = new System.Drawing.Size(60, 22);
             this.fillToolStripButton.Text = "Шукати";
             this.fillToolStripButton.Click += new System.EventHandler(this.FillToolStripButton_Click);
             // 
@@ -130,14 +132,14 @@
             // 
             this.торговий___ЗамовникDataGridView.AutoGenerateColumns = false;
             this.торговий___ЗамовникDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.торговий___ЗамовникDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.торговий___ЗамовникDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.торговий___ЗамовникDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.торговий___ЗамовникDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -221,7 +223,6 @@
             this.Controls.Add(this.fillToolStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Torgoviy_Zamovnik";
-            this.Text = "Torgoviy_Zamovnik";
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.торговий___ЗамовникBindingSource)).EndInit();
             this.fillToolStrip.ResumeLayout(false);

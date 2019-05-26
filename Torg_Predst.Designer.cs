@@ -73,27 +73,30 @@
             // пІБ_ПредставникаLabel
             // 
             пІБ_ПредставникаLabel.AutoSize = true;
-            пІБ_ПредставникаLabel.Location = new System.Drawing.Point(10, 34);
+            пІБ_ПредставникаLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            пІБ_ПредставникаLabel.Location = new System.Drawing.Point(17, 32);
             пІБ_ПредставникаLabel.Name = "пІБ_ПредставникаLabel";
-            пІБ_ПредставникаLabel.Size = new System.Drawing.Size(104, 13);
+            пІБ_ПредставникаLabel.Size = new System.Drawing.Size(129, 17);
             пІБ_ПредставникаLabel.TabIndex = 3;
             пІБ_ПредставникаLabel.Text = "ПІБ Представника:";
             // 
             // номерні_знаки_автоLabel
             // 
             номерні_знаки_автоLabel.AutoSize = true;
-            номерні_знаки_автоLabel.Location = new System.Drawing.Point(10, 60);
+            номерні_знаки_автоLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            номерні_знаки_автоLabel.Location = new System.Drawing.Point(17, 58);
             номерні_знаки_автоLabel.Name = "номерні_знаки_автоLabel";
-            номерні_знаки_автоLabel.Size = new System.Drawing.Size(111, 13);
+            номерні_знаки_автоLabel.Size = new System.Drawing.Size(144, 17);
             номерні_знаки_автоLabel.TabIndex = 5;
             номерні_знаки_автоLabel.Text = "Номерні знаки авто:";
             // 
             // телефон_представникаLabel
             // 
             телефон_представникаLabel.AutoSize = true;
-            телефон_представникаLabel.Location = new System.Drawing.Point(10, 86);
+            телефон_представникаLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            телефон_представникаLabel.Location = new System.Drawing.Point(17, 84);
             телефон_представникаLabel.Name = "телефон_представникаLabel";
-            телефон_представникаLabel.Size = new System.Drawing.Size(129, 13);
+            телефон_представникаLabel.Size = new System.Drawing.Size(168, 17);
             телефон_представникаLabel.TabIndex = 7;
             телефон_представникаLabel.Text = "Телефон представника:";
             // 
@@ -261,7 +264,7 @@
             // пІБ_ПредставникаTextBox
             // 
             this.пІБ_ПредставникаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.торговий_представникBindingSource, "ПІБ_Представника", true));
-            this.пІБ_ПредставникаTextBox.Location = new System.Drawing.Point(145, 31);
+            this.пІБ_ПредставникаTextBox.Location = new System.Drawing.Point(193, 31);
             this.пІБ_ПредставникаTextBox.Name = "пІБ_ПредставникаTextBox";
             this.пІБ_ПредставникаTextBox.Size = new System.Drawing.Size(210, 20);
             this.пІБ_ПредставникаTextBox.TabIndex = 4;
@@ -269,7 +272,7 @@
             // номерні_знаки_автоTextBox
             // 
             this.номерні_знаки_автоTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.торговий_представникBindingSource, "Номерні_знаки_авто", true));
-            this.номерні_знаки_автоTextBox.Location = new System.Drawing.Point(145, 57);
+            this.номерні_знаки_автоTextBox.Location = new System.Drawing.Point(193, 57);
             this.номерні_знаки_автоTextBox.Name = "номерні_знаки_автоTextBox";
             this.номерні_знаки_автоTextBox.Size = new System.Drawing.Size(210, 20);
             this.номерні_знаки_автоTextBox.TabIndex = 6;
@@ -277,7 +280,7 @@
             // телефон_представникаTextBox
             // 
             this.телефон_представникаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.торговий_представникBindingSource, "Телефон_представника", true));
-            this.телефон_представникаTextBox.Location = new System.Drawing.Point(145, 83);
+            this.телефон_представникаTextBox.Location = new System.Drawing.Point(193, 83);
             this.телефон_представникаTextBox.Name = "телефон_представникаTextBox";
             this.телефон_представникаTextBox.Size = new System.Drawing.Size(210, 20);
             this.телефон_представникаTextBox.TabIndex = 8;
