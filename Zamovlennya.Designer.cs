@@ -117,7 +117,7 @@
             this.зведені_ЗамовленняDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
             this.зведені_ЗамовленняDataGridView.Location = new System.Drawing.Point(0, 0);
             this.зведені_ЗамовленняDataGridView.Name = "зведені_ЗамовленняDataGridView";
-            this.зведені_ЗамовленняDataGridView.Size = new System.Drawing.Size(564, 200);
+            this.зведені_ЗамовленняDataGridView.Size = new System.Drawing.Size(704, 326);
             this.зведені_ЗамовленняDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn3
@@ -164,7 +164,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 200);
+            this.ClientSize = new System.Drawing.Size(704, 326);
             this.Controls.Add(this.зведені_ЗамовленняDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Zamovlennya";

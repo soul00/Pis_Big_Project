@@ -130,7 +130,7 @@
             this.зведений_РахунокDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
             this.зведений_РахунокDataGridView.Location = new System.Drawing.Point(0, 0);
             this.зведений_РахунокDataGridView.Name = "зведений_РахунокDataGridView";
-            this.зведений_РахунокDataGridView.Size = new System.Drawing.Size(747, 273);
+            this.зведений_РахунокDataGridView.Size = new System.Drawing.Size(829, 273);
             this.зведений_РахунокDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -185,7 +185,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 273);
+            this.ClientSize = new System.Drawing.Size(829, 273);
             this.Controls.Add(this.зведений_РахунокDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Rahunki";
