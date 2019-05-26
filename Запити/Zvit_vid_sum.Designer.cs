@@ -101,8 +101,9 @@
             // 
             // sumToolStripLabel
             // 
+            this.sumToolStripLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.sumToolStripLabel.Name = "sumToolStripLabel";
-            this.sumToolStripLabel.Size = new System.Drawing.Size(57, 22);
+            this.sumToolStripLabel.Size = new System.Drawing.Size(70, 22);
             this.sumToolStripLabel.Text = "Сума від ";
             // 
             // sumToolStripTextBox
@@ -113,8 +114,9 @@
             // fillToolStripButton
             // 
             this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillToolStripButton.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.fillToolStripButton.Name = "fillToolStripButton";
-            this.fillToolStripButton.Size = new System.Drawing.Size(52, 22);
+            this.fillToolStripButton.Size = new System.Drawing.Size(60, 22);
             this.fillToolStripButton.Text = "Шукати";
             this.fillToolStripButton.Click += new System.EventHandler(this.FillToolStripButton_Click);
             // 
@@ -181,7 +183,6 @@
             this.Controls.Add(this.fillToolStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Zvit_vid_sum";
-            this.Text = "Zvit_vid_sum";
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.замовлення_від_сумиBindingSource)).EndInit();
             this.fillToolStrip.ResumeLayout(false);

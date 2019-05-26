@@ -63,11 +63,7 @@
             this.e_MailTextBox = new System.Windows.Forms.TextBox();
             this.графікBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.графікDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.графікBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.замовникDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,6 +78,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             назва_ПідприємстваLabel = new System.Windows.Forms.Label();
             єДРПОУLabel = new System.Windows.Forms.Label();
             адресаLabel = new System.Windows.Forms.Label();
@@ -94,6 +95,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.графікBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.графікDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.графікBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.замовникDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -184,7 +186,7 @@
             this.замовникBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.замовникBindingNavigator.Name = "замовникBindingNavigator";
             this.замовникBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.замовникBindingNavigator.Size = new System.Drawing.Size(855, 25);
+            this.замовникBindingNavigator.Size = new System.Drawing.Size(847, 25);
             this.замовникBindingNavigator.TabIndex = 0;
             this.замовникBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -380,42 +382,10 @@
             this.графікDataGridView.Size = new System.Drawing.Size(185, 158);
             this.графікDataGridView.TabIndex = 15;
             // 
-            // dataGridViewTextBoxColumn1
+            // графікBindingSource1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Код_Графіку";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Код_Графіку";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Код_Замовника";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Код_Замовника";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Код_Замовлення";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Код_Замовлення";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Тип_графіку";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Тип_графіку";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 95;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Код_документу";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Код_документу";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Visible = false;
+            this.графікBindingSource1.DataMember = "Графік";
+            this.графікBindingSource1.DataSource = this.big_16_04DataSet;
             // 
             // замовникDataGridView
             // 
@@ -452,7 +422,7 @@
             this.замовникDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
             this.замовникDataGridView.Location = new System.Drawing.Point(0, 197);
             this.замовникDataGridView.Name = "замовникDataGridView";
-            this.замовникDataGridView.Size = new System.Drawing.Size(855, 220);
+            this.замовникDataGridView.Size = new System.Drawing.Size(847, 220);
             this.замовникDataGridView.TabIndex = 16;
             // 
             // dataGridViewTextBoxColumn6
@@ -569,11 +539,49 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Код_Графіку";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Код_Графіку";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Код_Замовника";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Код_Замовника";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Код_Замовлення";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Код_Замовлення";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Тип_графіку";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Тип_графіку";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn4.Width = 95;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Код_документу";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Код_документу";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Visible = false;
+            // 
             // Zamovnik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 417);
+            this.ClientSize = new System.Drawing.Size(847, 417);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -604,6 +612,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.графікBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.графікDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.графікBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.замовникDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -642,11 +651,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
@@ -654,5 +658,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.BindingSource графікBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
     }
 }
