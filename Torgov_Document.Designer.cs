@@ -114,7 +114,7 @@
             this.торговий___документDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
             this.торговий___документDataGridView.Location = new System.Drawing.Point(0, 0);
             this.торговий___документDataGridView.Name = "торговий___документDataGridView";
-            this.торговий___документDataGridView.Size = new System.Drawing.Size(755, 306);
+            this.торговий___документDataGridView.Size = new System.Drawing.Size(565, 306);
             this.торговий___документDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -153,7 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 306);
+            this.ClientSize = new System.Drawing.Size(565, 306);
             this.Controls.Add(this.торговий___документDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Torgov_Document";

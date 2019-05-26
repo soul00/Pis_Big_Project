@@ -44,7 +44,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Location = new System.Drawing.Point(29, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(194, 83);
             this.button1.TabIndex = 14;
@@ -61,11 +61,11 @@
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(3, 260);
+            this.button2.Location = new System.Drawing.Point(29, 260);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(194, 83);
             this.button2.TabIndex = 15;
-            this.button2.Text = "Замовлення сумою \r\nбільше ...";
+            this.button2.Text = "Сортування замовлень за сумою";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
@@ -78,7 +78,7 @@
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(298, 3);
+            this.button3.Location = new System.Drawing.Point(359, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(194, 83);
             this.button3.TabIndex = 16;
@@ -95,7 +95,7 @@
             this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(285, 92);
+            this.button4.Location = new System.Drawing.Point(346, 126);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(207, 83);
             this.button4.TabIndex = 17;
@@ -112,7 +112,7 @@
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(3, 92);
+            this.button5.Location = new System.Drawing.Point(29, 126);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(194, 83);
             this.button5.TabIndex = 18;

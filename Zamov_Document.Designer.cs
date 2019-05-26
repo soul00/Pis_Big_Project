@@ -122,7 +122,7 @@
             this.замовник___документDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
             this.замовник___документDataGridView.Location = new System.Drawing.Point(0, 63);
             this.замовник___документDataGridView.Name = "замовник___документDataGridView";
-            this.замовник___документDataGridView.Size = new System.Drawing.Size(737, 249);
+            this.замовник___документDataGridView.Size = new System.Drawing.Size(679, 249);
             this.замовник___документDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -222,7 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(737, 312);
+            this.ClientSize = new System.Drawing.Size(679, 312);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);

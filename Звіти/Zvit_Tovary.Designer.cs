@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
             this.товарBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.товарTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ТоварTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.товарBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).BeginInit();
             this.SuspendLayout();
+            // 
+            // товарBindingSource
+            // 
+            this.товарBindingSource.DataMember = "Товар";
+            this.товарBindingSource.DataSource = this.big_16_04DataSet;
+            // 
+            // big_16_04DataSet
+            // 
+            this.big_16_04DataSet.DataSetName = "Big_16_04DataSet";
+            this.big_16_04DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -51,16 +61,6 @@
             this.reportViewer1.Size = new System.Drawing.Size(944, 329);
             this.reportViewer1.TabIndex = 0;
             // 
-            // big_16_04DataSet
-            // 
-            this.big_16_04DataSet.DataSetName = "Big_16_04DataSet";
-            this.big_16_04DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // товарBindingSource
-            // 
-            this.товарBindingSource.DataMember = "Товар";
-            this.товарBindingSource.DataSource = this.big_16_04DataSet;
-            // 
             // товарTableAdapter
             // 
             this.товарTableAdapter.ClearBeforeFill = true;
@@ -71,11 +71,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(944, 329);
             this.Controls.Add(this.reportViewer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Zvit_Tovary";
-            this.Text = "Zvit_Tovary";
             this.Load += new System.EventHandler(this.Zvit_Tovary_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.товарBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

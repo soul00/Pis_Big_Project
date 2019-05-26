@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
             this.торговийпредставникBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.торговий_представникTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.Торговий_представникTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.торговийпредставникBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).BeginInit();
             this.SuspendLayout();
+            // 
+            // торговийпредставникBindingSource
+            // 
+            this.торговийпредставникBindingSource.DataMember = "Торговий_представник";
+            this.торговийпредставникBindingSource.DataSource = this.big_16_04DataSet;
+            // 
+            // big_16_04DataSet
+            // 
+            this.big_16_04DataSet.DataSetName = "Big_16_04DataSet";
+            this.big_16_04DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -51,16 +61,6 @@
             this.reportViewer1.Size = new System.Drawing.Size(800, 450);
             this.reportViewer1.TabIndex = 0;
             // 
-            // big_16_04DataSet
-            // 
-            this.big_16_04DataSet.DataSetName = "Big_16_04DataSet";
-            this.big_16_04DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // торговийпредставникBindingSource
-            // 
-            this.торговийпредставникBindingSource.DataMember = "Торговий_представник";
-            this.торговийпредставникBindingSource.DataSource = this.big_16_04DataSet;
-            // 
             // торговий_представникTableAdapter
             // 
             this.торговий_представникTableAdapter.ClearBeforeFill = true;
@@ -71,11 +71,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Zvit_Torg_Predst";
-            this.Text = "Zvit_Torg_Predst";
             this.Load += new System.EventHandler(this.Zvit_Torg_Predst_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.торговийпредставникBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

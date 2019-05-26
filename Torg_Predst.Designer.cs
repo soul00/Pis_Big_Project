@@ -163,7 +163,7 @@
             this.торговий_представникBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.торговий_представникBindingNavigator.Name = "торговий_представникBindingNavigator";
             this.торговий_представникBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.торговий_представникBindingNavigator.Size = new System.Drawing.Size(673, 25);
+            this.торговий_представникBindingNavigator.Size = new System.Drawing.Size(467, 25);
             this.торговий_представникBindingNavigator.TabIndex = 0;
             this.торговий_представникBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -317,7 +317,7 @@
             this.торговий_представникDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
             this.торговий_представникDataGridView.Location = new System.Drawing.Point(0, 109);
             this.торговий_представникDataGridView.Name = "торговий_представникDataGridView";
-            this.торговий_представникDataGridView.Size = new System.Drawing.Size(673, 235);
+            this.торговий_представникDataGridView.Size = new System.Drawing.Size(467, 235);
             this.торговий_представникDataGridView.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn1
@@ -356,7 +356,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 344);
+            this.ClientSize = new System.Drawing.Size(467, 344);
             this.Controls.Add(this.торговий_представникDataGridView);
             this.Controls.Add(пІБ_ПредставникаLabel);
             this.Controls.Add(this.пІБ_ПредставникаTextBox);
