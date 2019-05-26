@@ -19,12 +19,28 @@ namespace Pis_Big_Project
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
+            new Звіти.Zvit_document().ShowDialog();
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
             new Запити.Zvit_vid_sum().ShowDialog();
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            new Звіти.Zvit_zamovn().ShowDialog();
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            new Звіти.Zvit_Torg_Predst().ShowDialog();
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            new Звіти.Zvit_Tovary().ShowDialog();
+
         }
     }
 }

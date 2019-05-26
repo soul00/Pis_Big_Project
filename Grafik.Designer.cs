@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label тип_графікуLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Grafik));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
             this.графікBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.графікTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ГрафікTableAdapter();
@@ -110,17 +113,23 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.UpdateOrder = Pis_Big_Project.Big_16_04DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.БатончикTableAdapter = null;
+            this.tableAdapterManager.БісквітиTableAdapter = null;
+            this.tableAdapterManager.ВафліTableAdapter = null;
             this.tableAdapterManager.ГрафікTableAdapter = this.графікTableAdapter;
             this.tableAdapterManager.ДокументTableAdapter = null;
             this.tableAdapterManager.ЗамовленняTableAdapter = null;
             this.tableAdapterManager.ЗамовникTableAdapter = this.замовникTableAdapter;
             this.tableAdapterManager.Накладна_відправленняTableAdapter = null;
             this.tableAdapterManager.Одноразовий_графікTableAdapter = this.одноразовий_графікTableAdapter;
+            this.tableAdapterManager.ПечивоTableAdapter = null;
             this.tableAdapterManager.Постійний_графікTableAdapter = this.постійний_графікTableAdapter;
             this.tableAdapterManager.Рахунок_фактураTableAdapter = null;
             this.tableAdapterManager.Рядок_замовленняTableAdapter = null;
             this.tableAdapterManager.ТоварTableAdapter = null;
             this.tableAdapterManager.Торговий_представникTableAdapter = null;
+            this.tableAdapterManager.ЦукеркиTableAdapter = null;
+            this.tableAdapterManager.ШоколадTableAdapter = null;
             // 
             // замовникTableAdapter
             // 
@@ -293,13 +302,31 @@
             // 
             this.одноразовий_графікDataGridView.AutoGenerateColumns = false;
             this.одноразовий_графікDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.одноразовий_графікDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.одноразовий_графікDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.одноразовий_графікDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.одноразовий_графікDataGridView.DataSource = this.одноразовий_графікBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.одноразовий_графікDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.одноразовий_графікDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.одноразовий_графікDataGridView.EnableHeadersVisualStyles = false;
+            this.одноразовий_графікDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
             this.одноразовий_графікDataGridView.Location = new System.Drawing.Point(3, 3);
             this.одноразовий_графікDataGridView.Name = "одноразовий_графікDataGridView";
             this.одноразовий_графікDataGridView.Size = new System.Drawing.Size(361, 125);
@@ -315,15 +342,19 @@
             // 
             // dataGridViewTextBoxColumn2
             // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Дата_відвідування";
             this.dataGridViewTextBoxColumn2.HeaderText = "Дата_відвідування";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 127;
             // 
             // dataGridViewTextBoxColumn3
             // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Час";
             this.dataGridViewTextBoxColumn3.HeaderText = "Час";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 52;
             // 
             // постійний_графікBindingSource
             // 
@@ -334,6 +365,14 @@
             // 
             this.постійний_графікDataGridView.AutoGenerateColumns = false;
             this.постійний_графікDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.постійний_графікDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.постійний_графікDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.постійний_графікDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn4,
@@ -341,9 +380,11 @@
             this.dataGridViewTextBoxColumn6});
             this.постійний_графікDataGridView.DataSource = this.постійний_графікBindingSource;
             this.постійний_графікDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.постійний_графікDataGridView.EnableHeadersVisualStyles = false;
+            this.постійний_графікDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
             this.постійний_графікDataGridView.Location = new System.Drawing.Point(3, 3);
             this.постійний_графікDataGridView.Name = "постійний_графікDataGridView";
-            this.постійний_графікDataGridView.Size = new System.Drawing.Size(299, 125);
+            this.постійний_графікDataGridView.Size = new System.Drawing.Size(361, 125);
             this.постійний_графікDataGridView.TabIndex = 12;
             // 
             // dataGridViewTextBoxColumn4
@@ -356,15 +397,19 @@
             // 
             // dataGridViewTextBoxColumn5
             // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Інтервал_відвідувань_днів";
             this.dataGridViewTextBoxColumn5.HeaderText = "Інтервал_відвідувань_днів";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 165;
             // 
             // dataGridViewTextBoxColumn6
             // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn6.DataPropertyName = "Час";
             this.dataGridViewTextBoxColumn6.HeaderText = "Час";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 52;
             // 
             // label1
             // 
@@ -402,7 +447,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(305, 131);
+            this.tabPage2.Size = new System.Drawing.Size(367, 131);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Постійний";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -471,14 +516,14 @@
         private System.Windows.Forms.DataGridView постійний_графікDataGridView;
         private System.Windows.Forms.BindingSource замовникBindingSource;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
     }
 }

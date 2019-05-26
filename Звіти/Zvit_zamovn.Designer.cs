@@ -1,0 +1,90 @@
+﻿namespace Pis_Big_Project.Звіти
+{
+    partial class Zvit_zamovn
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
+            this.замовникBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.замовникTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ЗамовникTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.замовникBindingSource)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.замовникBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Pis_Big_Project.Звіти.zvit_po_zamovnikam.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.reportViewer1.TabIndex = 0;
+            // 
+            // big_16_04DataSet
+            // 
+            this.big_16_04DataSet.DataSetName = "Big_16_04DataSet";
+            this.big_16_04DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // замовникBindingSource
+            // 
+            this.замовникBindingSource.DataMember = "Замовник";
+            this.замовникBindingSource.DataSource = this.big_16_04DataSet;
+            // 
+            // замовникTableAdapter
+            // 
+            this.замовникTableAdapter.ClearBeforeFill = true;
+            // 
+            // Zvit_zamovn
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.reportViewer1);
+            this.Name = "Zvit_zamovn";
+            this.Text = "Zvit_zamovn";
+            this.Load += new System.EventHandler(this.Zvit_zamovn_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.замовникBindingSource)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Big_16_04DataSet big_16_04DataSet;
+        private System.Windows.Forms.BindingSource замовникBindingSource;
+        private Big_16_04DataSetTableAdapters.ЗамовникTableAdapter замовникTableAdapter;
+    }
+}

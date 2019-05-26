@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rahunki));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.зведений_РахунокBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.зведений_РахунокBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -91,7 +93,7 @@
             this.зведений_РахунокBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.зведений_РахунокBindingNavigator.Name = "зведений_РахунокBindingNavigator";
             this.зведений_РахунокBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.зведений_РахунокBindingNavigator.Size = new System.Drawing.Size(800, 25);
+            this.зведений_РахунокBindingNavigator.Size = new System.Drawing.Size(832, 25);
             this.зведений_РахунокBindingNavigator.TabIndex = 0;
             this.зведений_РахунокBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -208,17 +210,23 @@
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Connection = null;
             this.tableAdapterManager.UpdateOrder = Pis_Big_Project.Big_16_04DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.БатончикTableAdapter = null;
+            this.tableAdapterManager.БісквітиTableAdapter = null;
+            this.tableAdapterManager.ВафліTableAdapter = null;
             this.tableAdapterManager.ГрафікTableAdapter = null;
             this.tableAdapterManager.ДокументTableAdapter = null;
             this.tableAdapterManager.ЗамовленняTableAdapter = null;
             this.tableAdapterManager.ЗамовникTableAdapter = null;
             this.tableAdapterManager.Накладна_відправленняTableAdapter = null;
             this.tableAdapterManager.Одноразовий_графікTableAdapter = null;
+            this.tableAdapterManager.ПечивоTableAdapter = null;
             this.tableAdapterManager.Постійний_графікTableAdapter = null;
             this.tableAdapterManager.Рахунок_фактураTableAdapter = null;
             this.tableAdapterManager.Рядок_замовленняTableAdapter = null;
             this.tableAdapterManager.ТоварTableAdapter = null;
             this.tableAdapterManager.Торговий_представникTableAdapter = null;
+            this.tableAdapterManager.ЦукеркиTableAdapter = null;
+            this.tableAdapterManager.ШоколадTableAdapter = null;
             // 
             // зведені_ЗамовленняBindingSource
             // 
@@ -233,6 +241,14 @@
             // 
             this.зведений_РахунокDataGridView.AutoGenerateColumns = false;
             this.зведений_РахунокDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.зведений_РахунокDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.зведений_РахунокDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.зведений_РахунокDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -242,53 +258,75 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.зведений_РахунокDataGridView.DataSource = this.зведений_РахунокBindingSource;
-            this.зведений_РахунокDataGridView.Dock = System.Windows.Forms.DockStyle.Top;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.зведений_РахунокDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.зведений_РахунокDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.зведений_РахунокDataGridView.EnableHeadersVisualStyles = false;
+            this.зведений_РахунокDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
             this.зведений_РахунокDataGridView.Location = new System.Drawing.Point(0, 25);
             this.зведений_РахунокDataGridView.Name = "зведений_РахунокDataGridView";
-            this.зведений_РахунокDataGridView.Size = new System.Drawing.Size(800, 220);
+            this.зведений_РахунокDataGridView.Size = new System.Drawing.Size(832, 248);
             this.зведений_РахунокDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Дата_оформлення";
             this.dataGridViewTextBoxColumn1.HeaderText = "Дата_оформлення";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 128;
             // 
             // dataGridViewTextBoxColumn2
             // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Сумарна_вартість";
             this.dataGridViewTextBoxColumn2.HeaderText = "Сумарна_вартість";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 124;
             // 
             // dataGridViewTextBoxColumn3
             // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Термін_Дії_до";
             this.dataGridViewTextBoxColumn3.HeaderText = "Термін_Дії_до";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 105;
             // 
             // dataGridViewTextBoxColumn4
             // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Підстава";
             this.dataGridViewTextBoxColumn4.HeaderText = "Підстава";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 77;
             // 
             // dataGridViewTextBoxColumn5
             // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Назва_Підприємства";
             this.dataGridViewTextBoxColumn5.HeaderText = "Назва_Підприємства";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 141;
             // 
             // dataGridViewTextBoxColumn6
             // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn6.DataPropertyName = "ПІБ_Представника";
             this.dataGridViewTextBoxColumn6.HeaderText = "ПІБ_Представника";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 129;
             // 
             // Rahunki
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(832, 273);
             this.Controls.Add(this.зведений_РахунокDataGridView);
             this.Controls.Add(this.зведений_РахунокBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;

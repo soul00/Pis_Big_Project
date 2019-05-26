@@ -6,23 +6,23 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.875in</Width>
+              <Width>0.7474in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.26562in</Height>
+              <Height>0.25in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox2">
+                    <Textbox Name="Textbox9">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Вид документу</Value>
+                              <Value />
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -31,11 +31,11 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Right</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox2</rd:DefaultName>
+                      <rd:DefaultName>Textbox9</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -57,28 +57,30 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.26562in</Height>
+              <Height>0.25in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Вид_документу">
+                    <Textbox Name="Код_ТоргПредст">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Вид_документу.Value</Value>
+                              <Value />
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Вид_документу</rd:DefaultName>
+                      <rd:DefaultName>Код_ТоргПредст</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -105,16 +107,16 @@
           <TablixMembers>
             <TablixMember>
               <TablixHeader>
-                <Size>1.875in</Size>
+                <Size>1.86198in</Size>
                 <CellContents>
-                  <Textbox Name="Textbox9">
+                  <Textbox Name="Textbox7">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>Вид документу</Value>
+                            <Value>ПІБ Представника</Value>
                             <Style>
                               <FontSize>11pt</FontSize>
                               <FontWeight>Bold</FontWeight>
@@ -123,11 +125,11 @@
                           </TextRun>
                         </TextRuns>
                         <Style>
-                          <TextAlign>Right</TextAlign>
+                          <TextAlign>Center</TextAlign>
                         </Style>
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox9</rd:DefaultName>
+                    <rd:DefaultName>Textbox7</rd:DefaultName>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -149,16 +151,16 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1.875in</Size>
+                    <Size>2.23698in</Size>
                     <CellContents>
-                      <Textbox Name="Textbox7">
+                      <Textbox Name="Textbox5">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Дата оформлення</Value>
+                                <Value>Номерні знаки авто</Value>
                                 <Style>
                                   <FontSize>11pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
@@ -167,11 +169,11 @@
                               </TextRun>
                             </TextRuns>
                             <Style>
-                              <TextAlign>Right</TextAlign>
+                              <TextAlign>Center</TextAlign>
                             </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Textbox7</rd:DefaultName>
+                        <rd:DefaultName>Textbox5</rd:DefaultName>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -193,16 +195,16 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>1.875in</Size>
+                        <Size>2.15365in</Size>
                         <CellContents>
-                          <Textbox Name="Textbox5">
+                          <Textbox Name="Textbox3">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>ПІБ Представника</Value>
+                                    <Value>Телефон представника</Value>
                                     <Style>
                                       <FontSize>11pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
@@ -211,11 +213,11 @@
                                   </TextRun>
                                 </TextRuns>
                                 <Style>
-                                  <TextAlign>Right</TextAlign>
+                                  <TextAlign>Center</TextAlign>
                                 </Style>
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>Textbox5</rd:DefaultName>
+                            <rd:DefaultName>Textbox3</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Style>None</Style>
@@ -235,92 +237,47 @@
                         </CellContents>
                       </TablixHeader>
                       <TablixMembers>
-                        <TablixMember>
-                          <TablixHeader>
-                            <Size>1.875in</Size>
-                            <CellContents>
-                              <Textbox Name="Textbox3">
-                                <CanGrow>true</CanGrow>
-                                <KeepTogether>true</KeepTogether>
-                                <Paragraphs>
-                                  <Paragraph>
-                                    <TextRuns>
-                                      <TextRun>
-                                        <Value>Телефон представника</Value>
-                                        <Style>
-                                          <FontSize>11pt</FontSize>
-                                          <FontWeight>Bold</FontWeight>
-                                          <Color>#666666</Color>
-                                        </Style>
-                                      </TextRun>
-                                    </TextRuns>
-                                    <Style>
-                                      <TextAlign>Right</TextAlign>
-                                    </Style>
-                                  </Paragraph>
-                                </Paragraphs>
-                                <rd:DefaultName>Textbox3</rd:DefaultName>
-                                <Style>
-                                  <Border>
-                                    <Style>None</Style>
-                                  </Border>
-                                  <BottomBorder>
-                                    <Color>LightGrey</Color>
-                                    <Style>Solid</Style>
-                                    <Width>1pt</Width>
-                                  </BottomBorder>
-                                  <BackgroundColor>White</BackgroundColor>
-                                  <PaddingLeft>2pt</PaddingLeft>
-                                  <PaddingRight>2pt</PaddingRight>
-                                  <PaddingTop>2pt</PaddingTop>
-                                  <PaddingBottom>2pt</PaddingBottom>
-                                </Style>
-                              </Textbox>
-                            </CellContents>
-                          </TablixHeader>
-                          <TablixMembers>
-                            <TablixMember />
-                          </TablixMembers>
-                        </TablixMember>
+                        <TablixMember />
                       </TablixMembers>
                     </TablixMember>
                   </TablixMembers>
                 </TablixMember>
               </TablixMembers>
-              <KeepWithGroup>After</KeepWithGroup>
             </TablixMember>
             <TablixMember>
-              <Group Name="Вид_документу">
+              <Group Name="ПІБ_Представника">
                 <GroupExpressions>
-                  <GroupExpression>=Fields!Вид_документу.Value</GroupExpression>
+                  <GroupExpression>=Fields!ПІБ_Представника.Value</GroupExpression>
                 </GroupExpressions>
               </Group>
               <SortExpressions>
                 <SortExpression>
-                  <Value>=Fields!Вид_документу.Value</Value>
+                  <Value>=Fields!ПІБ_Представника.Value</Value>
                 </SortExpression>
               </SortExpressions>
               <TablixHeader>
-                <Size>1.875in</Size>
+                <Size>1.86198in</Size>
                 <CellContents>
-                  <Textbox Name="Вид_документу1">
+                  <Textbox Name="ПІБ_Представника">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>=Fields!Вид_документу.Value</Value>
+                            <Value>=Fields!ПІБ_Представника.Value</Value>
                             <Style>
                               <FontWeight>Normal</FontWeight>
                               <Color>#333333</Color>
                             </Style>
                           </TextRun>
                         </TextRuns>
-                        <Style />
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Вид_документу1</rd:DefaultName>
+                    <rd:DefaultName>ПІБ_Представника</rd:DefaultName>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -341,37 +298,39 @@
               </TablixHeader>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="Дата_оформлення">
+                  <Group Name="Номерні_знаки_авто">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Дата_оформлення.Value</GroupExpression>
+                      <GroupExpression>=Fields!Номерні_знаки_авто.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Дата_оформлення.Value</Value>
+                      <Value>=Fields!Номерні_знаки_авто.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>1.875in</Size>
+                    <Size>2.23698in</Size>
                     <CellContents>
-                      <Textbox Name="Дата_оформлення">
+                      <Textbox Name="Номерні_знаки_авто">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!Дата_оформлення.Value</Value>
+                                <Value>=Fields!Номерні_знаки_авто.Value</Value>
                                 <Style>
                                   <FontWeight>Normal</FontWeight>
                                   <Color>#333333</Color>
                                 </Style>
                               </TextRun>
                             </TextRuns>
-                            <Style />
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Дата_оформлення</rd:DefaultName>
+                        <rd:DefaultName>Номерні_знаки_авто</rd:DefaultName>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -392,37 +351,39 @@
                   </TablixHeader>
                   <TablixMembers>
                     <TablixMember>
-                      <Group Name="ПІБ_Представника">
+                      <Group Name="Телефон_представника">
                         <GroupExpressions>
-                          <GroupExpression>=Fields!ПІБ_Представника.Value</GroupExpression>
+                          <GroupExpression>=Fields!Телефон_представника.Value</GroupExpression>
                         </GroupExpressions>
                       </Group>
                       <SortExpressions>
                         <SortExpression>
-                          <Value>=Fields!ПІБ_Представника.Value</Value>
+                          <Value>=Fields!Телефон_представника.Value</Value>
                         </SortExpression>
                       </SortExpressions>
                       <TablixHeader>
-                        <Size>1.875in</Size>
+                        <Size>2.15365in</Size>
                         <CellContents>
-                          <Textbox Name="ПІБ_Представника">
+                          <Textbox Name="Телефон_представника">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>=Fields!ПІБ_Представника.Value</Value>
+                                    <Value>=Fields!Телефон_представника.Value</Value>
                                     <Style>
                                       <FontWeight>Normal</FontWeight>
                                       <Color>#333333</Color>
                                     </Style>
                                   </TextRun>
                                 </TextRuns>
-                                <Style />
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>ПІБ_Представника</rd:DefaultName>
+                            <rd:DefaultName>Телефон_представника</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Style>None</Style>
@@ -442,62 +403,7 @@
                         </CellContents>
                       </TablixHeader>
                       <TablixMembers>
-                        <TablixMember>
-                          <Group Name="Телефон_представника">
-                            <GroupExpressions>
-                              <GroupExpression>=Fields!Телефон_представника.Value</GroupExpression>
-                            </GroupExpressions>
-                          </Group>
-                          <SortExpressions>
-                            <SortExpression>
-                              <Value>=Fields!Телефон_представника.Value</Value>
-                            </SortExpression>
-                          </SortExpressions>
-                          <TablixHeader>
-                            <Size>1.875in</Size>
-                            <CellContents>
-                              <Textbox Name="Телефон_представника">
-                                <CanGrow>true</CanGrow>
-                                <KeepTogether>true</KeepTogether>
-                                <Paragraphs>
-                                  <Paragraph>
-                                    <TextRuns>
-                                      <TextRun>
-                                        <Value>=Fields!Телефон_представника.Value</Value>
-                                        <Style>
-                                          <FontWeight>Normal</FontWeight>
-                                          <Color>#333333</Color>
-                                        </Style>
-                                      </TextRun>
-                                    </TextRuns>
-                                    <Style />
-                                  </Paragraph>
-                                </Paragraphs>
-                                <rd:DefaultName>Телефон_представника</rd:DefaultName>
-                                <Style>
-                                  <Border>
-                                    <Style>None</Style>
-                                  </Border>
-                                  <BottomBorder>
-                                    <Color>LightGrey</Color>
-                                    <Style>Solid</Style>
-                                    <Width>1pt</Width>
-                                  </BottomBorder>
-                                  <BackgroundColor>White</BackgroundColor>
-                                  <PaddingLeft>2pt</PaddingLeft>
-                                  <PaddingRight>2pt</PaddingRight>
-                                  <PaddingTop>2pt</PaddingTop>
-                                  <PaddingBottom>2pt</PaddingBottom>
-                                </Style>
-                              </Textbox>
-                            </CellContents>
-                          </TablixHeader>
-                          <TablixMembers>
-                            <TablixMember>
-                              <Group Name="Подробности" />
-                            </TablixMember>
-                          </TablixMembers>
-                        </TablixMember>
+                        <TablixMember />
                       </TablixMembers>
                     </TablixMember>
                   </TablixMembers>
@@ -507,8 +413,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Height>0.53125in</Height>
-        <Width>9.375in</Width>
+        <Height>0.5in</Height>
+        <Width>7in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -516,10 +422,10 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>5.25in</Height>
+    <Height>2in</Height>
     <Style />
   </Body>
-  <Width>9.375in</Width>
+  <Width>7in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
@@ -534,7 +440,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>f975694e-9fe7-4365-b9d6-744558a477c7</rd:DataSourceID>
+      <rd:DataSourceID>3afb9a1e-8c42-4dd7-8c1e-10997cb24406</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -544,16 +450,16 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Вид_документу">
-          <DataField>Вид_документу</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Дата_оформлення">
-          <DataField>Дата_оформлення</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+        <Field Name="Код_ТоргПредст">
+          <DataField>Код_ТоргПредст</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="ПІБ_Представника">
           <DataField>ПІБ_Представника</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Номерні_знаки_авто">
+          <DataField>Номерні_знаки_авто</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Телефон_представника">
@@ -564,13 +470,13 @@
       <rd:DataSetInfo>
         <rd:DataSetName>Big_16_04DataSet</rd:DataSetName>
         <rd:SchemaPath>D:\Education\Универ\4 курс\2019\ПІС\Pis_Project_\Pis_Big_Project\Big_16_04DataSet.xsd</rd:SchemaPath>
-        <rd:TableName>Торговий + документ</rd:TableName>
+        <rd:TableName>Торговий_представник</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>Торговий___документTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>Торговий_представникTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>8c8214d0-e88f-426f-90df-f2d57b942db7</rd:ReportID>
+  <rd:ReportID>413831ca-923f-427f-a84e-674056c9347b</rd:ReportID>
 </Report>

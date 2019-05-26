@@ -86,11 +86,41 @@
     <Compile Include="Запити\Torgoviy_Zamovnik.Designer.cs">
       <DependentUpon>Torgoviy_Zamovnik.cs</DependentUpon>
     </Compile>
+    <Compile Include="Запити\Zamovlen_Zamovn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Запити\Zamovlen_Zamovn.Designer.cs">
+      <DependentUpon>Zamovlen_Zamovn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Запити\Zvit_vid_sum.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Запити\Zvit_vid_sum.Designer.cs">
       <DependentUpon>Zvit_vid_sum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Звіти\Zvit_document.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Звіти\Zvit_document.Designer.cs">
+      <DependentUpon>Zvit_document.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Звіти\Zvit_Torg_Predst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Звіти\Zvit_Torg_Predst.Designer.cs">
+      <DependentUpon>Zvit_Torg_Predst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Звіти\Zvit_Tovary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Звіти\Zvit_Tovary.Designer.cs">
+      <DependentUpon>Zvit_Tovary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Звіти\Zvit_zamovn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Звіти\Zvit_zamovn.Designer.cs">
+      <DependentUpon>Zvit_zamovn.cs</DependentUpon>
     </Compile>
     <Compile Include="Товари\Baton.cs">
       <SubType>Form</SubType>
@@ -316,6 +346,9 @@
     <EmbeddedResource Include="Запити\Torgoviy_Zamovnik.resx">
       <DependentUpon>Torgoviy_Zamovnik.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Запити\Zamovlen_Zamovn.resx">
+      <DependentUpon>Zamovlen_Zamovn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Запити\Zapyt_Data_Poshuk.resx">
       <DependentUpon>Zapyt_Data_Poshuk.cs</DependentUpon>
     </EmbeddedResource>
@@ -327,6 +360,22 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Запити\Zvit_vid_sum.resx">
       <DependentUpon>Zvit_vid_sum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Звіти\zvit_document.rdlc" />
+    <EmbeddedResource Include="Звіти\Zvit_document.resx">
+      <DependentUpon>Zvit_document.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Звіти\zvit_po_zamovnikam.rdlc" />
+    <EmbeddedResource Include="Звіти\Zvit_torg_predst.rdlc" />
+    <EmbeddedResource Include="Звіти\Zvit_Torg_Predst.resx">
+      <DependentUpon>Zvit_Torg_Predst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Звіти\Zvit_tovar.rdlc" />
+    <EmbeddedResource Include="Звіти\Zvit_Tovary.resx">
+      <DependentUpon>Zvit_Tovary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Звіти\Zvit_zamovn.resx">
+      <DependentUpon>Zvit_zamovn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Товари\Baton.resx">
       <DependentUpon>Baton.cs</DependentUpon>

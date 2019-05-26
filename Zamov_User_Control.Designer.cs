@@ -43,7 +43,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(355, 29);
+            this.button1.Location = new System.Drawing.Point(32, 28);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(194, 83);
             this.button1.TabIndex = 12;
@@ -94,7 +94,7 @@
             this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(32, 29);
+            this.button4.Location = new System.Drawing.Point(355, 28);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(194, 83);
             this.button4.TabIndex = 15;
@@ -103,7 +103,7 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
-            // Klienty_User_Control
+            // Zamov_User_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -111,7 +111,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Klienty_User_Control";
+            this.Name = "Zamov_User_Control";
             this.Size = new System.Drawing.Size(587, 346);
             this.ResumeLayout(false);
 
