@@ -44,10 +44,15 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.рахунок_фактураBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.рахунок_фактураTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.Рахунок_фактураTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.зведений_РахунокBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.зведені_ЗамовленняBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.зведений_РахунокDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.рахунок_фактураBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // зведений_РахунокBindingSource
@@ -125,12 +130,12 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.зведений_РахунокDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.зведений_РахунокDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.зведений_РахунокDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.зведений_РахунокDataGridView.EnableHeadersVisualStyles = false;
             this.зведений_РахунокDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            this.зведений_РахунокDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.зведений_РахунокDataGridView.Location = new System.Drawing.Point(0, 57);
             this.зведений_РахунокDataGridView.Name = "зведений_РахунокDataGridView";
-            this.зведений_РахунокDataGridView.Size = new System.Drawing.Size(829, 273);
+            this.зведений_РахунокDataGridView.Size = new System.Drawing.Size(816, 273);
             this.зведений_РахунокDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -181,11 +186,39 @@
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Width = 129;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(12, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(237, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Пошук за датою оформлення";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(266, 34);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(168, 20);
+            this.textBox1.TabIndex = 4;
+            // 
+            // рахунок_фактураBindingSource
+            // 
+            this.рахунок_фактураBindingSource.DataMember = "Рахунок_фактура";
+            this.рахунок_фактураBindingSource.DataSource = this.big_16_04DataSet;
+            // 
+            // рахунок_фактураTableAdapter
+            // 
+            this.рахунок_фактураTableAdapter.ClearBeforeFill = true;
+            // 
             // Rahunki
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(829, 273);
+            this.ClientSize = new System.Drawing.Size(816, 330);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.зведений_РахунокDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Rahunki";
@@ -196,7 +229,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.зведені_ЗамовленняBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.зведений_РахунокDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.рахунок_фактураBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -215,5 +250,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.BindingSource рахунок_фактураBindingSource;
+        private Big_16_04DataSetTableAdapters.Рахунок_фактураTableAdapter рахунок_фактураTableAdapter;
     }
 }

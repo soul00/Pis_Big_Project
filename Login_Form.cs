@@ -13,8 +13,6 @@ namespace Pis_Big_Project
 {
     public partial class Login_Form : Form
     {
-        static int attempt = 3;
-
         public Login_Form()
         {
             InitializeComponent();

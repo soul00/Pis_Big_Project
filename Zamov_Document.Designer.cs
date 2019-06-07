@@ -198,7 +198,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.button1.Location = new System.Drawing.Point(200, 12);
+            this.button1.Location = new System.Drawing.Point(200, 29);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 23);
             this.button1.TabIndex = 4;
@@ -210,7 +210,7 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.button2.Location = new System.Drawing.Point(297, 12);
+            this.button2.Location = new System.Drawing.Point(311, 29);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 23);
             this.button2.TabIndex = 5;

@@ -19,6 +19,8 @@ namespace Pis_Big_Project
 
         private void Torgov_Document_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "big_16_04DataSet.Документ". При необходимости она может быть перемещена или удалена.
+            this.документTableAdapter.Fill(this.big_16_04DataSet.Документ);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "big_16_04DataSet._Торговий___документ". При необходимости она может быть перемещена или удалена.
             this.торговий___документTableAdapter.Fill(this.big_16_04DataSet._Торговий___документ);
 

@@ -299,7 +299,7 @@
                         <Style>Solid</Style>
                         <Width>1pt</Width>
                       </BottomBorder>
-                      <BackgroundColor>White</BackgroundColor>
+                      <BackgroundColor>LightSteelBlue</BackgroundColor>
                       <PaddingLeft>2pt</PaddingLeft>
                       <PaddingRight>2pt</PaddingRight>
                       <PaddingTop>2pt</PaddingTop>
@@ -431,7 +431,7 @@
                                     <Style>Solid</Style>
                                     <Width>1pt</Width>
                                   </BottomBorder>
-                                  <BackgroundColor>White</BackgroundColor>
+                                  <BackgroundColor>Tan</BackgroundColor>
                                   <PaddingLeft>2pt</PaddingLeft>
                                   <PaddingRight>2pt</PaddingRight>
                                   <PaddingTop>2pt</PaddingTop>
@@ -475,7 +475,7 @@
                                         <Style>Solid</Style>
                                         <Width>1pt</Width>
                                       </BottomBorder>
-                                      <BackgroundColor>White</BackgroundColor>
+                                      <BackgroundColor>Plum</BackgroundColor>
                                       <PaddingLeft>2pt</PaddingLeft>
                                       <PaddingRight>2pt</PaddingRight>
                                       <PaddingTop>2pt</PaddingTop>
@@ -723,7 +723,7 @@
                         <Style>Solid</Style>
                         <Width>1pt</Width>
                       </BottomBorder>
-                      <BackgroundColor>White</BackgroundColor>
+                      <BackgroundColor>LightSteelBlue</BackgroundColor>
                       <PaddingLeft>2pt</PaddingLeft>
                       <PaddingRight>2pt</PaddingRight>
                       <PaddingTop>2pt</PaddingTop>
@@ -882,7 +882,7 @@
                                     <Style>Solid</Style>
                                     <Width>1pt</Width>
                                   </BottomBorder>
-                                  <BackgroundColor>White</BackgroundColor>
+                                  <BackgroundColor>Tan</BackgroundColor>
                                   <PaddingLeft>2pt</PaddingLeft>
                                   <PaddingRight>2pt</PaddingRight>
                                   <PaddingTop>2pt</PaddingTop>
@@ -935,7 +935,7 @@
                                         <Style>Solid</Style>
                                         <Width>1pt</Width>
                                       </BottomBorder>
-                                      <BackgroundColor>White</BackgroundColor>
+                                      <BackgroundColor>Plum</BackgroundColor>
                                       <PaddingLeft>2pt</PaddingLeft>
                                       <PaddingRight>2pt</PaddingRight>
                                       <PaddingTop>2pt</PaddingTop>
@@ -1180,7 +1180,7 @@
         </TablixRowHierarchy>
         <DataSetName>Document_Zvit</DataSetName>
         <Height>0.5in</Height>
-        <Width>19.36458in</Width>
+        <Width>19.36459in</Width>
         <Style>
           <Border>
             <Style>None</Style>

@@ -29,8 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.Label дата_оформленняLabel;
+            System.Windows.Forms.Label пІБ_ПредставникаLabel;
+            System.Windows.Forms.Label телефон_представникаLabel;
+            System.Windows.Forms.Label вид_документуLabel1;
             this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
             this.торговий___документBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.торговий___документTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.Торговий___документTableAdapter();
@@ -40,9 +44,20 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.дата_оформленняDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.пІБ_ПредставникаTextBox = new System.Windows.Forms.TextBox();
+            this.телефон_представникаTextBox = new System.Windows.Forms.TextBox();
+            this.вид_документуComboBox = new System.Windows.Forms.ComboBox();
+            this.документBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.документTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.ДокументTableAdapter();
+            дата_оформленняLabel = new System.Windows.Forms.Label();
+            пІБ_ПредставникаLabel = new System.Windows.Forms.Label();
+            телефон_представникаLabel = new System.Windows.Forms.Label();
+            вид_документуLabel1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.торговий___документBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.торговий___документDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.документBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // big_16_04DataSet
@@ -86,14 +101,14 @@
             // 
             this.торговий___документDataGridView.AutoGenerateColumns = false;
             this.торговий___документDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.торговий___документDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.торговий___документDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.торговий___документDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.торговий___документDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -101,20 +116,20 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.торговий___документDataGridView.DataSource = this.торговий___документBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.торговий___документDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.торговий___документDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.торговий___документDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
+            this.торговий___документDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.торговий___документDataGridView.EnableHeadersVisualStyles = false;
             this.торговий___документDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            this.торговий___документDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.торговий___документDataGridView.Location = new System.Drawing.Point(0, 127);
             this.торговий___документDataGridView.Name = "торговий___документDataGridView";
-            this.торговий___документDataGridView.Size = new System.Drawing.Size(565, 306);
+            this.торговий___документDataGridView.Size = new System.Drawing.Size(668, 306);
             this.торговий___документDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -149,21 +164,113 @@
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 154;
             // 
+            // дата_оформленняLabel
+            // 
+            дата_оформленняLabel.AutoSize = true;
+            дата_оформленняLabel.Location = new System.Drawing.Point(11, 42);
+            дата_оформленняLabel.Name = "дата_оформленняLabel";
+            дата_оформленняLabel.Size = new System.Drawing.Size(103, 13);
+            дата_оформленняLabel.TabIndex = 3;
+            дата_оформленняLabel.Text = "Дата оформлення:";
+            // 
+            // дата_оформленняDateTimePicker
+            // 
+            this.дата_оформленняDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.торговий___документBindingSource, "Дата_оформлення", true));
+            this.дата_оформленняDateTimePicker.Location = new System.Drawing.Point(146, 38);
+            this.дата_оформленняDateTimePicker.Name = "дата_оформленняDateTimePicker";
+            this.дата_оформленняDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.дата_оформленняDateTimePicker.TabIndex = 4;
+            // 
+            // пІБ_ПредставникаLabel
+            // 
+            пІБ_ПредставникаLabel.AutoSize = true;
+            пІБ_ПредставникаLabel.Location = new System.Drawing.Point(11, 67);
+            пІБ_ПредставникаLabel.Name = "пІБ_ПредставникаLabel";
+            пІБ_ПредставникаLabel.Size = new System.Drawing.Size(104, 13);
+            пІБ_ПредставникаLabel.TabIndex = 5;
+            пІБ_ПредставникаLabel.Text = "ПІБ Представника:";
+            // 
+            // пІБ_ПредставникаTextBox
+            // 
+            this.пІБ_ПредставникаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.торговий___документBindingSource, "ПІБ_Представника", true));
+            this.пІБ_ПредставникаTextBox.Location = new System.Drawing.Point(146, 64);
+            this.пІБ_ПредставникаTextBox.Name = "пІБ_ПредставникаTextBox";
+            this.пІБ_ПредставникаTextBox.Size = new System.Drawing.Size(200, 20);
+            this.пІБ_ПредставникаTextBox.TabIndex = 6;
+            // 
+            // телефон_представникаLabel
+            // 
+            телефон_представникаLabel.AutoSize = true;
+            телефон_представникаLabel.Location = new System.Drawing.Point(11, 93);
+            телефон_представникаLabel.Name = "телефон_представникаLabel";
+            телефон_представникаLabel.Size = new System.Drawing.Size(129, 13);
+            телефон_представникаLabel.TabIndex = 7;
+            телефон_представникаLabel.Text = "Телефон представника:";
+            // 
+            // телефон_представникаTextBox
+            // 
+            this.телефон_представникаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.торговий___документBindingSource, "Телефон_представника", true));
+            this.телефон_представникаTextBox.Location = new System.Drawing.Point(146, 90);
+            this.телефон_представникаTextBox.Name = "телефон_представникаTextBox";
+            this.телефон_представникаTextBox.Size = new System.Drawing.Size(200, 20);
+            this.телефон_представникаTextBox.TabIndex = 8;
+            // 
+            // вид_документуLabel1
+            // 
+            вид_документуLabel1.AutoSize = true;
+            вид_документуLabel1.Location = new System.Drawing.Point(12, 14);
+            вид_документуLabel1.Name = "вид_документуLabel1";
+            вид_документуLabel1.Size = new System.Drawing.Size(85, 13);
+            вид_документуLabel1.TabIndex = 8;
+            вид_документуLabel1.Text = "Вид документу:";
+            // 
+            // вид_документуComboBox
+            // 
+            this.вид_документуComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.торговий___документBindingSource, "Вид_документу", true));
+            this.вид_документуComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.документBindingSource, "Код_документу", true));
+            this.вид_документуComboBox.DataSource = this.документBindingSource;
+            this.вид_документуComboBox.DisplayMember = "Вид_документу";
+            this.вид_документуComboBox.FormattingEnabled = true;
+            this.вид_документуComboBox.Location = new System.Drawing.Point(146, 11);
+            this.вид_документуComboBox.Name = "вид_документуComboBox";
+            this.вид_документуComboBox.Size = new System.Drawing.Size(200, 21);
+            this.вид_документуComboBox.TabIndex = 9;
+            this.вид_документуComboBox.ValueMember = "Код_документу";
+            // 
+            // документBindingSource
+            // 
+            this.документBindingSource.DataMember = "Документ";
+            this.документBindingSource.DataSource = this.big_16_04DataSet;
+            // 
+            // документTableAdapter
+            // 
+            this.документTableAdapter.ClearBeforeFill = true;
+            // 
             // Torgov_Document
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 306);
+            this.ClientSize = new System.Drawing.Size(668, 433);
+            this.Controls.Add(вид_документуLabel1);
+            this.Controls.Add(this.вид_документуComboBox);
+            this.Controls.Add(дата_оформленняLabel);
+            this.Controls.Add(this.дата_оформленняDateTimePicker);
+            this.Controls.Add(пІБ_ПредставникаLabel);
+            this.Controls.Add(this.пІБ_ПредставникаTextBox);
+            this.Controls.Add(телефон_представникаLabel);
+            this.Controls.Add(this.телефон_представникаTextBox);
             this.Controls.Add(this.торговий___документDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Torgov_Document";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Доукменти представників";
+            this.Text = "Документи представників";
             this.Load += new System.EventHandler(this.Torgov_Document_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.торговий___документBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.торговий___документDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.документBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -178,5 +285,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DateTimePicker дата_оформленняDateTimePicker;
+        private System.Windows.Forms.TextBox пІБ_ПредставникаTextBox;
+        private System.Windows.Forms.TextBox телефон_представникаTextBox;
+        private System.Windows.Forms.ComboBox вид_документуComboBox;
+        private System.Windows.Forms.BindingSource документBindingSource;
+        private Big_16_04DataSetTableAdapters.ДокументTableAdapter документTableAdapter;
     }
 }

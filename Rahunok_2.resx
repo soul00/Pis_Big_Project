@@ -120,31 +120,98 @@
   <metadata name="big_16_04DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="торговий___документBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="рахунок_фактураBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>166, 17</value>
   </metadata>
-  <metadata name="торговий___документTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>418, 17</value>
+  <metadata name="рахунок_фактураTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>393, 17</value>
   </metadata>
   <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>664, 17</value>
+    <value>614, 17</value>
   </metadata>
-  <metadata name="дата_оформленняLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="товарTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>180, 56</value>
+  </metadata>
+  <metadata name="рахунок_фактураBindingNavigator.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>785, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bindingNavigatorAddNewItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAABHSURBVDhPYxjcICYmxgGEoVzSAVBzAwhDuaSDIWYAUCEowMAakPABKEYXxwxYkCCaIhAm3gBs
+        AKYByiUdDA8DKEvKdAAMDAAH7URxY2MOlQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bindingNavigatorDeleteItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACgSURBVDhPzZJbCsIwFESDrsoH6AJq/MpHHovJ9nQr9aN1Bc7AtFRsY4uCHhga5s5cQon5L3LO
+        Kx0nmcw459Yxxqv3/iDrhZTSEZkLs7KeQXmPwA2qZPVgduKMGVnjjC3pytBOVhkGWWBxcblDS+5Qu7hM
+        8MMsig3FW8ieh8o1vltKZ6txmWFZFr15S0IIZwZx5Y2snrdLvvKQPnrKP8KYB1HZW8pFs/SwAAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAADeSURBVDhPYxjcIDo62jo2NlYTxHZwcGAB8uPBEsSAmJgYKyB+BdTkBtW8Eoh3hIaGskGV4AZR
+        UVGOQMUvgQbYpqWlsQLZ64B4A1GagZocQJqBhthBNa8F4o1EaY6MjLQHKn4N1OwCcjaQXkO0ZqBiY6Di
+        F0AXeDc0NDAB2QuAeDdQMydUCX4A8i9Qw1uQASCnQ20n3gAQgLriJRAHAjUyA+lFQHwkKSmJF6qEMIB5
+        BdkQoKsOA9k8UCWEAVJ4BJBtCDRMXgOxG1KYEJeQYAAYrTawpAw1JAEsMYgAAwMAbGxwnbtC/T8AAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAB+SURBVDhPYxjGICoqKjo0NJQTyiUNREdHVwLxrYSEBAmoEPEAaHM9UPPl2NhYMagQ8SAmJqYW
+        qPkKWZqBGguAtr8FGtIHxA2EMFQbAgANqKPIABAAShQBDXoINEgJKkQ6gBkCDAdFqBDpAGgIKDDJi0YY
+        ABoQQ3ZCGkqAgQEAjWNHk2HydQcAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAB8SURBVDhPYxgBIDQ0lDMqKioayiUdJCQkSERHR98C4gqoEOkgNjZWDGjAZSCugwqRDqCGXAF6
+        pwYqhApiYmIaiMB9QAPeAul8qDYEQFOIC8MMqIVqIx4ANSoBvfAQqLkIKkQ8APpfkWzNsGgky9kgAEpI
+        QANioNzhBxgYAAFpR5GKHVuxAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAADgSURBVDhPYxh8IDo6Ot7BwYEFxI6NjdUE8q3BEsSA0NBQNqCGnUC8AmRIVFSUe0xMzCsgtoIq
+        IQyghmwE4nVpaWmsQEPsgOyXQNoRqoQwQDJkLdQQFyD7NdAlDlAlhAGSIatB3gFqdgUZAnIRVAlhADSE
+        E6hpDxDPb2hoYALSPkD8AmiYEVQJfgAzAGjrGpBXoAa8BRpgC1WCGyQlJfECFR8B4kVAg5iBhkQANYJi
+        hLDt6JqBdCAQE+d0oAYeoMLD5GqGJSRwyAOd7Q5kv46MjLSBKiEMgJoSyE7KAwAYGADAjW/945pYXAAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="рахунок_фактураBindingNavigatorSaveItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACoSURBVDhPzZLLDYMwEERdWLgQmvCvjlw5IVqgllxTCdekh2QGecX6k3CLGOnJy+54ZKQ155Fz
+        bgghzMR7/2hhrb0key1cHGG6I+iG8806ITXPZ4yxT1dyMYCwpnlrQroHruCFXrcNtcoA+RYkFOckvkxi
+        1HVJ6cv0dVDoMIDwuS20J13bpYctw9H8JAH4T9m6VdVVrxnANeUWggUm2cIMzuj5udJ/ljEfv2e+E+A+
+        BegAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="печатьToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB/SURBVDhPzZDBCYAwEARTitiUduLHhy/xYVn2INiM7oqB
+        I5eN4kMcGEg2xwYu/JIB7kK+3cKh3KDKHa8LatjD5XJKjDlnKujY4Ai7G2e4QgeX1MLmvJXhrCMbCooF
+        XBTPOeMSeXbEUG3b5rIgqgrsjMT+ZFG5I/3J+qjgS0I4ALQFOXWTLblwAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="сумарна_вартістьLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="пІБ_ПредставникаLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="термін_Дії_доLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="телефон_представникаLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="вид_документуLabel1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="документBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="товарBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 56</value>
-  </metadata>
-  <metadata name="документTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>201, 56</value>
   </metadata>
 </root>

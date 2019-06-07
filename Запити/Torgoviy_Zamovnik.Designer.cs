@@ -113,8 +113,9 @@
             // 
             this.nameToolStripTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.nameToolStripTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.nameToolStripTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nameToolStripTextBox.Name = "nameToolStripTextBox";
-            this.nameToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            this.nameToolStripTextBox.Size = new System.Drawing.Size(200, 25);
             // 
             // fillToolStripButton
             // 

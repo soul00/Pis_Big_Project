@@ -47,5 +47,10 @@ namespace Pis_Big_Project
             int itemFound = this.замовникBindingSource.Find("Телефон", textBox1.Text);
             this.замовникBindingSource.Position = itemFound;
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            new Grafik().ShowDialog();
+        }
     }
 }

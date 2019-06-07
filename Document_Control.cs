@@ -39,7 +39,7 @@ namespace Pis_Big_Project
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            new Rahunki().ShowDialog();
+            new Rahunok_2().ShowDialog();
         }
     }
 }

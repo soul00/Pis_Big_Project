@@ -46,5 +46,10 @@ namespace Pis_Big_Project
         {
             товарBindingSource.RemoveFilter();
         }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

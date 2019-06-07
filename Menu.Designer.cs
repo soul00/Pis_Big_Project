@@ -229,12 +229,13 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(374, 25);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(368, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(299, 28);
+            this.label2.Size = new System.Drawing.Size(364, 44);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Формування замовлень";
+            this.label2.Text = "Інформаційна система підтримки \r\nформування та реалізації замовлень";
             // 
             // button7
             // 

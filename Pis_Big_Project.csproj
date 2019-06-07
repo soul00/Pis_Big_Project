@@ -100,6 +100,12 @@
     <Compile Include="Login_Form.Designer.cs">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Rahunok_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rahunok_2.Designer.cs">
+      <DependentUpon>Rahunok_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Запити\Zamovlen_Zamovn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -320,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rahunok_2.resx">
+      <DependentUpon>Rahunok_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Запити\Zamovlen_Zamovn.resx">
       <DependentUpon>Zamovlen_Zamovn.cs</DependentUpon>
