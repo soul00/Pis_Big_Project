@@ -73,6 +73,7 @@
             this.tableAdapterManager.ЗамовленняTableAdapter = null;
             this.tableAdapterManager.ЗамовникTableAdapter = null;
             this.tableAdapterManager.Накладна_відправленняTableAdapter = null;
+            this.tableAdapterManager.Нема_ТоваруTableAdapter = null;
             this.tableAdapterManager.Одноразовий_графікTableAdapter = null;
             this.tableAdapterManager.ПечивоTableAdapter = this.печивоTableAdapter;
             this.tableAdapterManager.Постійний_графікTableAdapter = null;
@@ -176,6 +177,7 @@
             this.Controls.Add(this.печивоDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Cookies";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Печиво";
             this.Load += new System.EventHandler(this.Cookies_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();

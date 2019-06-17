@@ -73,6 +73,7 @@
             this.tableAdapterManager.ЗамовленняTableAdapter = null;
             this.tableAdapterManager.ЗамовникTableAdapter = null;
             this.tableAdapterManager.Накладна_відправленняTableAdapter = null;
+            this.tableAdapterManager.Нема_ТоваруTableAdapter = null;
             this.tableAdapterManager.Одноразовий_графікTableAdapter = null;
             this.tableAdapterManager.ПечивоTableAdapter = null;
             this.tableAdapterManager.Постійний_графікTableAdapter = null;
@@ -176,6 +177,7 @@
             this.Controls.Add(this.шоколадDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Chocolate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Шоколад";
             this.Load += new System.EventHandler(this.Chocolate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();

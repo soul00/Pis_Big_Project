@@ -36,5 +36,10 @@ namespace Pis_Big_Project
         {
             new Zapyt_Zamov_Grafik().ShowDialog();
         }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            new Запити.Zamov_Zamovlennya().ShowDialog();
+        }
     }
 }

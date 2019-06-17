@@ -29,7 +29,7 @@ namespace Pis_Big_Project
 
         private void Button5_Click(object sender, EventArgs e)
         {
-            new Nakladni().ShowDialog();
+            new Nakladna2().ShowDialog();
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -40,6 +40,11 @@ namespace Pis_Big_Project
         private void Button2_Click(object sender, EventArgs e)
         {
             new Rahunok_2().ShowDialog();
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            new Запити.Docu__Date().ShowDialog();
         }
     }
 }

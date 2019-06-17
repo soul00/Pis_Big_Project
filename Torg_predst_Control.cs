@@ -31,5 +31,10 @@ namespace Pis_Big_Project
         {
             new Запити.Torgoviy_Zamovnik().ShowDialog();
         }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

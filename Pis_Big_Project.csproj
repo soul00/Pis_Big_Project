@@ -100,11 +100,29 @@
     <Compile Include="Login_Form.Designer.cs">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nakladna2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nakladna2.Designer.cs">
+      <DependentUpon>Nakladna2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Rahunok_2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Rahunok_2.Designer.cs">
       <DependentUpon>Rahunok_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Запити\Docu,_Date.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Запити\Docu,_Date.Designer.cs">
+      <DependentUpon>Docu,_Date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Запити\NoTovar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Запити\NoTovar.Designer.cs">
+      <DependentUpon>NoTovar.cs</DependentUpon>
     </Compile>
     <Compile Include="Запити\Zamovlen_Zamovn.cs">
       <SubType>Form</SubType>
@@ -117,6 +135,12 @@
     </Compile>
     <Compile Include="Запити\Torgoviy_Zamovnik.Designer.cs">
       <DependentUpon>Torgoviy_Zamovnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Запити\Zamov_Zamovlennya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Запити\Zamov_Zamovlennya.Designer.cs">
+      <DependentUpon>Zamov_Zamovlennya.cs</DependentUpon>
     </Compile>
     <Compile Include="Запити\Zvit_vid_sum.cs">
       <SubType>Form</SubType>
@@ -327,8 +351,17 @@
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Nakladna2.resx">
+      <DependentUpon>Nakladna2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Rahunok_2.resx">
       <DependentUpon>Rahunok_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Запити\Docu,_Date.resx">
+      <DependentUpon>Docu,_Date.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Запити\NoTovar.resx">
+      <DependentUpon>NoTovar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Запити\Zamovlen_Zamovn.resx">
       <DependentUpon>Zamovlen_Zamovn.cs</DependentUpon>
@@ -383,6 +416,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Запити\Torgoviy_Zamovnik.resx">
       <DependentUpon>Torgoviy_Zamovnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Запити\Zamov_Zamovlennya.resx">
+      <DependentUpon>Zamov_Zamovlennya.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Запити\Zapyt_Data_Poshuk.resx">
       <DependentUpon>Zapyt_Data_Poshuk.cs</DependentUpon>

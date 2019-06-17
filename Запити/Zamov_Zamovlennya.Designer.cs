@@ -1,6 +1,6 @@
 ﻿namespace Pis_Big_Project.Запити
 {
-    partial class Torgoviy_Zamovnik
+    partial class Zamov_Zamovlennya
     {
         /// <summary>
         /// Required designer variable.
@@ -32,25 +32,25 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.big_16_04DataSet = new Pis_Big_Project.Big_16_04DataSet();
-            this.торговий___ЗамовникBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.торговий___ЗамовникTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.Торговий___ЗамовникTableAdapter();
+            this.замовл_ЗамовнBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.замовл_ЗамовнTableAdapter = new Pis_Big_Project.Big_16_04DataSetTableAdapters.Замовл_ЗамовнTableAdapter();
             this.tableAdapterManager = new Pis_Big_Project.Big_16_04DataSetTableAdapters.TableAdapterManager();
             this.fillToolStrip = new System.Windows.Forms.ToolStrip();
-            this.nameToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.nameToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.nameZamovToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.nameZamovToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.торговий___ЗамовникDataGridView = new System.Windows.Forms.DataGridView();
+            this.замовл_ЗамовнDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.торговий___ЗамовникBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.замовл_ЗамовнBindingSource)).BeginInit();
             this.fillToolStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.торговий___ЗамовникDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.замовл_ЗамовнDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // big_16_04DataSet
@@ -58,14 +58,14 @@
             this.big_16_04DataSet.DataSetName = "Big_16_04DataSet";
             this.big_16_04DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // торговий___ЗамовникBindingSource
+            // замовл_ЗамовнBindingSource
             // 
-            this.торговий___ЗамовникBindingSource.DataMember = "Торговий + Замовник";
-            this.торговий___ЗамовникBindingSource.DataSource = this.big_16_04DataSet;
+            this.замовл_ЗамовнBindingSource.DataMember = "Замовл_Замовн";
+            this.замовл_ЗамовнBindingSource.DataSource = this.big_16_04DataSet;
             // 
-            // торговий___ЗамовникTableAdapter
+            // замовл_ЗамовнTableAdapter
             // 
-            this.торговий___ЗамовникTableAdapter.ClearBeforeFill = true;
+            this.замовл_ЗамовнTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
@@ -93,174 +93,164 @@
             // 
             // fillToolStrip
             // 
-            this.fillToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.fillToolStrip.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.fillToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nameToolStripLabel,
-            this.nameToolStripTextBox,
+            this.nameZamovToolStripLabel,
+            this.nameZamovToolStripTextBox,
             this.fillToolStripButton});
             this.fillToolStrip.Location = new System.Drawing.Point(0, 0);
             this.fillToolStrip.Name = "fillToolStrip";
-            this.fillToolStrip.Size = new System.Drawing.Size(902, 25);
+            this.fillToolStrip.Size = new System.Drawing.Size(961, 25);
             this.fillToolStrip.TabIndex = 1;
             this.fillToolStrip.Text = "fillToolStrip";
             // 
-            // nameToolStripLabel
+            // nameZamovToolStripLabel
             // 
-            this.nameToolStripLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.nameToolStripLabel.Name = "nameToolStripLabel";
-            this.nameToolStripLabel.Size = new System.Drawing.Size(194, 22);
-            this.nameToolStripLabel.Text = "ПІБ Торгового представника";
+            this.nameZamovToolStripLabel.Name = "nameZamovToolStripLabel";
+            this.nameZamovToolStripLabel.Size = new System.Drawing.Size(134, 22);
+            this.nameZamovToolStripLabel.Text = "Назва підприємства:";
             // 
-            // nameToolStripTextBox
+            // nameZamovToolStripTextBox
             // 
-            this.nameToolStripTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-            this.nameToolStripTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
-            this.nameToolStripTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nameToolStripTextBox.Name = "nameToolStripTextBox";
-            this.nameToolStripTextBox.Size = new System.Drawing.Size(200, 25);
+            this.nameZamovToolStripTextBox.Name = "nameZamovToolStripTextBox";
+            this.nameZamovToolStripTextBox.Size = new System.Drawing.Size(130, 25);
             // 
             // fillToolStripButton
             // 
-            this.fillToolStripButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
             this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillToolStripButton.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.fillToolStripButton.ForeColor = System.Drawing.Color.White;
-            this.fillToolStripButton.Margin = new System.Windows.Forms.Padding(10, 1, 0, 2);
             this.fillToolStripButton.Name = "fillToolStripButton";
-            this.fillToolStripButton.Size = new System.Drawing.Size(60, 22);
+            this.fillToolStripButton.Size = new System.Drawing.Size(56, 22);
             this.fillToolStripButton.Text = "Шукати";
-            this.fillToolStripButton.Click += new System.EventHandler(this.FillToolStripButton_Click);
+            this.fillToolStripButton.Click += new System.EventHandler(this.FillToolStripButton_Click_1);
             // 
-            // торговий___ЗамовникDataGridView
+            // замовл_ЗамовнDataGridView
             // 
-            this.торговий___ЗамовникDataGridView.AutoGenerateColumns = false;
-            this.торговий___ЗамовникDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
+            this.замовл_ЗамовнDataGridView.AutoGenerateColumns = false;
+            this.замовл_ЗамовнDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.торговий___ЗамовникDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.торговий___ЗамовникDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.торговий___ЗамовникDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.замовл_ЗамовнDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.замовл_ЗамовнDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.замовл_ЗамовнDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7});
-            this.торговий___ЗамовникDataGridView.DataSource = this.торговий___ЗамовникBindingSource;
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.замовл_ЗамовнDataGridView.DataSource = this.замовл_ЗамовнBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.торговий___ЗамовникDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.торговий___ЗамовникDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.торговий___ЗамовникDataGridView.EnableHeadersVisualStyles = false;
-            this.торговий___ЗамовникDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            this.торговий___ЗамовникDataGridView.Location = new System.Drawing.Point(0, 25);
-            this.торговий___ЗамовникDataGridView.Name = "торговий___ЗамовникDataGridView";
-            this.торговий___ЗамовникDataGridView.Size = new System.Drawing.Size(902, 281);
-            this.торговий___ЗамовникDataGridView.TabIndex = 2;
+            this.замовл_ЗамовнDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.замовл_ЗамовнDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.замовл_ЗамовнDataGridView.EnableHeadersVisualStyles = false;
+            this.замовл_ЗамовнDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
+            this.замовл_ЗамовнDataGridView.Location = new System.Drawing.Point(0, 25);
+            this.замовл_ЗамовнDataGridView.Name = "замовл_ЗамовнDataGridView";
+            this.замовл_ЗамовнDataGridView.Size = new System.Drawing.Size(961, 200);
+            this.замовл_ЗамовнDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ПІБ_Представника";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ПІБ_Представника";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Назва_товару";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Назва товару";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 129;
+            this.dataGridViewTextBoxColumn1.Width = 108;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Номерні_знаки_авто";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Номерні_знаки_авто";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Кількість_палет";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Кількість палет";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 139;
+            this.dataGridViewTextBoxColumn2.Width = 112;
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Телефон_представника";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Телефон_представника";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Статус";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Статус";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 154;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Назва_Підприємства";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Назва_Підприємства";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Дата_оформлення";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Дата оформлення";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 141;
+            this.dataGridViewTextBoxColumn4.Width = 140;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Контактна_особа";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Контактна_особа";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Виробник_товару";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Виробник товару";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 121;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Телефон";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Телефон";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 77;
+            this.dataGridViewTextBoxColumn5.Width = 129;
             // 
             // dataGridViewTextBoxColumn7
             // 
-            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "E_Mail";
-            this.dataGridViewTextBoxColumn7.HeaderText = "E_Mail";
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Телефон";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Телефон";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 64;
             // 
-            // Torgoviy_Zamovnik
+            // dataGridViewTextBoxColumn8
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Ціна_однієї_палети_грн";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Ціна однієї палети грн";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 157;
+            // 
+            // Zamov_Zamovlennya
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 306);
-            this.Controls.Add(this.торговий___ЗамовникDataGridView);
+            this.ClientSize = new System.Drawing.Size(961, 225);
+            this.Controls.Add(this.замовл_ЗамовнDataGridView);
             this.Controls.Add(this.fillToolStrip);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Torgoviy_Zamovnik";
+            this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "Zamov_Zamovlennya";
             ((System.ComponentModel.ISupportInitialize)(this.big_16_04DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.торговий___ЗамовникBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.замовл_ЗамовнBindingSource)).EndInit();
             this.fillToolStrip.ResumeLayout(false);
             this.fillToolStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.торговий___ЗамовникDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.замовл_ЗамовнDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private Big_16_04DataSet big_16_04DataSet;
-        private System.Windows.Forms.BindingSource торговий___ЗамовникBindingSource;
-        private Big_16_04DataSetTableAdapters.Торговий___ЗамовникTableAdapter торговий___ЗамовникTableAdapter;
+        private System.Windows.Forms.BindingSource замовл_ЗамовнBindingSource;
+        private Big_16_04DataSetTableAdapters.Замовл_ЗамовнTableAdapter замовл_ЗамовнTableAdapter;
         private Big_16_04DataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.ToolStrip fillToolStrip;
-        private System.Windows.Forms.ToolStripLabel nameToolStripLabel;
+        private System.Windows.Forms.ToolStripLabel nameZamovToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox nameZamovToolStripTextBox;
         private System.Windows.Forms.ToolStripButton fillToolStripButton;
-        private System.Windows.Forms.DataGridView торговий___ЗамовникDataGridView;
-        private System.Windows.Forms.ToolStripTextBox nameToolStripTextBox;
+        private System.Windows.Forms.DataGridView замовл_ЗамовнDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }

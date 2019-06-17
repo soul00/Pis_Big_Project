@@ -55,6 +55,8 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.товарBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.печатьToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.товарDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,8 +78,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.печатьToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.button3 = new System.Windows.Forms.Button();
             назва_товаруLabel = new System.Windows.Forms.Label();
             вага_однієї_палети_кгLabel = new System.Windows.Forms.Label();
             кількість_товаруLabel = new System.Windows.Forms.Label();
@@ -314,6 +315,20 @@
             this.товарBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.товарBindingNavigatorSaveItem.Click += new System.EventHandler(this.ТоварBindingNavigatorSaveItem_Click);
             // 
+            // печатьToolStripButton
+            // 
+            this.печатьToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.печатьToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("печатьToolStripButton.Image")));
+            this.печатьToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.печатьToolStripButton.Name = "печатьToolStripButton";
+            this.печатьToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.печатьToolStripButton.Text = "&Печать";
+            // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
             // товарDataGridView
             // 
             this.товарDataGridView.AutoGenerateColumns = false;
@@ -460,17 +475,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(414, 111);
+            this.label1.Location = new System.Drawing.Point(414, 129);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 17);
+            this.label1.Size = new System.Drawing.Size(203, 17);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Фільтрування за виробником";
+            this.label1.Text = "Фільтрування за виробником:";
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton2.Location = new System.Drawing.Point(749, 111);
+            this.radioButton2.Location = new System.Drawing.Point(743, 129);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(55, 21);
             this.radioButton2.TabIndex = 19;
@@ -483,7 +498,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton1.Location = new System.Drawing.Point(619, 110);
+            this.radioButton1.Location = new System.Drawing.Point(634, 128);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(71, 21);
             this.radioButton1.TabIndex = 18;
@@ -495,7 +510,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(656, 140);
+            this.button1.Location = new System.Drawing.Point(654, 158);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(127, 23);
             this.button1.TabIndex = 22;
@@ -506,7 +521,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.button2.Location = new System.Drawing.Point(656, 56);
+            this.button2.Location = new System.Drawing.Point(675, 90);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 25;
@@ -515,7 +530,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(591, 33);
+            this.textBox1.Location = new System.Drawing.Point(600, 64);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(192, 20);
             this.textBox1.TabIndex = 24;
@@ -525,31 +540,29 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label2.Location = new System.Drawing.Point(414, 34);
+            this.label2.Location = new System.Drawing.Point(423, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(171, 17);
             this.label2.TabIndex = 23;
             this.label2.Text = "Пошук товару за назвою";
             // 
-            // печатьToolStripButton
+            // button3
             // 
-            this.печатьToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.печатьToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("печатьToolStripButton.Image")));
-            this.печатьToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.печатьToolStripButton.Name = "печатьToolStripButton";
-            this.печатьToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.печатьToolStripButton.Text = "&Печать";
-            // 
-            // toolStripSeparator
-            // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.button3.Location = new System.Drawing.Point(500, 28);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(215, 23);
+            this.button3.TabIndex = 26;
+            this.button3.Text = "Переглянути відстуній товар";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // Tovar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 411);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -629,5 +642,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripButton печатьToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
+        private System.Windows.Forms.Button button3;
     }
 }

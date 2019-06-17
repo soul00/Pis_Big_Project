@@ -76,6 +76,7 @@
             this.tableAdapterManager.ЗамовленняTableAdapter = null;
             this.tableAdapterManager.ЗамовникTableAdapter = null;
             this.tableAdapterManager.Накладна_відправленняTableAdapter = null;
+            this.tableAdapterManager.Нема_ТоваруTableAdapter = null;
             this.tableAdapterManager.Одноразовий_графікTableAdapter = null;
             this.tableAdapterManager.ПечивоTableAdapter = null;
             this.tableAdapterManager.Постійний_графікTableAdapter = null;
@@ -123,12 +124,12 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.зведені_накладніDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.зведені_накладніDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.зведені_накладніDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.зведені_накладніDataGridView.EnableHeadersVisualStyles = false;
             this.зведені_накладніDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            this.зведені_накладніDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.зведені_накладніDataGridView.Location = new System.Drawing.Point(0, 4);
             this.зведені_накладніDataGridView.Name = "зведені_накладніDataGridView";
-            this.зведені_накладніDataGridView.Size = new System.Drawing.Size(703, 283);
+            this.зведені_накладніDataGridView.Size = new System.Drawing.Size(703, 181);
             this.зведені_накладніDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn3
@@ -175,7 +176,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(703, 283);
+            this.ClientSize = new System.Drawing.Size(703, 185);
             this.Controls.Add(this.зведені_накладніDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Nakladni";

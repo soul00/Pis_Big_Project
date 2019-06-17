@@ -51,5 +51,10 @@ namespace Pis_Big_Project
         {
 
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            new Запити.NoTovar().ShowDialog();
+        }
     }
 }
