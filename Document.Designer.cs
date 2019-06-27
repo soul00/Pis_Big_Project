@@ -99,6 +99,10 @@
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.документBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.документBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             сумаLabel = new System.Windows.Forms.Label();
             дата_оформленняLabel = new System.Windows.Forms.Label();
             вид_документуLabel = new System.Windows.Forms.Label();
@@ -123,7 +127,7 @@
             // 
             сумаLabel.AutoSize = true;
             сумаLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            сумаLabel.Location = new System.Drawing.Point(13, 146);
+            сумаLabel.Location = new System.Drawing.Point(13, 153);
             сумаLabel.Name = "сумаLabel";
             сумаLabel.Size = new System.Drawing.Size(49, 17);
             сумаLabel.TabIndex = 8;
@@ -133,7 +137,7 @@
             // 
             дата_оформленняLabel.AutoSize = true;
             дата_оформленняLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            дата_оформленняLabel.Location = new System.Drawing.Point(13, 94);
+            дата_оформленняLabel.Location = new System.Drawing.Point(13, 101);
             дата_оформленняLabel.Name = "дата_оформленняLabel";
             дата_оформленняLabel.Size = new System.Drawing.Size(138, 17);
             дата_оформленняLabel.TabIndex = 10;
@@ -143,7 +147,7 @@
             // 
             вид_документуLabel.AutoSize = true;
             вид_документуLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            вид_документуLabel.Location = new System.Drawing.Point(13, 119);
+            вид_документуLabel.Location = new System.Drawing.Point(13, 126);
             вид_документуLabel.Name = "вид_документуLabel";
             вид_документуLabel.Size = new System.Drawing.Size(107, 17);
             вид_документуLabel.TabIndex = 12;
@@ -175,6 +179,7 @@
             this.tableAdapterManager.ЗамовленняTableAdapter = this.замовленняTableAdapter;
             this.tableAdapterManager.ЗамовникTableAdapter = this.замовникTableAdapter;
             this.tableAdapterManager.Накладна_відправленняTableAdapter = this.накладна_відправленняTableAdapter;
+            this.tableAdapterManager.Нема_ТоваруTableAdapter = null;
             this.tableAdapterManager.Одноразовий_графікTableAdapter = null;
             this.tableAdapterManager.ПечивоTableAdapter = null;
             this.tableAdapterManager.Постійний_графікTableAdapter = null;
@@ -216,7 +221,7 @@
             this.код_ЗамовникаComboBox.DisplayMember = "Назва_Підприємства";
             this.код_ЗамовникаComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.код_ЗамовникаComboBox.FormattingEnabled = true;
-            this.код_ЗамовникаComboBox.Location = new System.Drawing.Point(170, 37);
+            this.код_ЗамовникаComboBox.Location = new System.Drawing.Point(170, 44);
             this.код_ЗамовникаComboBox.Name = "код_ЗамовникаComboBox";
             this.код_ЗамовникаComboBox.Size = new System.Drawing.Size(172, 21);
             this.код_ЗамовникаComboBox.TabIndex = 5;
@@ -234,7 +239,7 @@
             this.код_ТоргПредстComboBox.DisplayMember = "ПІБ_Представника";
             this.код_ТоргПредстComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.код_ТоргПредстComboBox.FormattingEnabled = true;
-            this.код_ТоргПредстComboBox.Location = new System.Drawing.Point(170, 64);
+            this.код_ТоргПредстComboBox.Location = new System.Drawing.Point(170, 71);
             this.код_ТоргПредстComboBox.Name = "код_ТоргПредстComboBox";
             this.код_ТоргПредстComboBox.Size = new System.Drawing.Size(172, 21);
             this.код_ТоргПредстComboBox.TabIndex = 7;
@@ -248,7 +253,7 @@
             // сумаTextBox
             // 
             this.сумаTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.документBindingSource, "Сума", true));
-            this.сумаTextBox.Location = new System.Drawing.Point(170, 145);
+            this.сумаTextBox.Location = new System.Drawing.Point(170, 152);
             this.сумаTextBox.Name = "сумаTextBox";
             this.сумаTextBox.Size = new System.Drawing.Size(172, 20);
             this.сумаTextBox.TabIndex = 9;
@@ -256,7 +261,7 @@
             // дата_оформленняDateTimePicker
             // 
             this.дата_оформленняDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.документBindingSource, "Дата_оформлення", true));
-            this.дата_оформленняDateTimePicker.Location = new System.Drawing.Point(170, 92);
+            this.дата_оформленняDateTimePicker.Location = new System.Drawing.Point(170, 99);
             this.дата_оформленняDateTimePicker.Name = "дата_оформленняDateTimePicker";
             this.дата_оформленняDateTimePicker.Size = new System.Drawing.Size(172, 20);
             this.дата_оформленняDateTimePicker.TabIndex = 11;
@@ -270,7 +275,7 @@
             "Накладна",
             "Замовлення",
             "Рахунок-фактура"});
-            this.вид_документуComboBox.Location = new System.Drawing.Point(170, 118);
+            this.вид_документуComboBox.Location = new System.Drawing.Point(170, 125);
             this.вид_документуComboBox.Name = "вид_документуComboBox";
             this.вид_документуComboBox.Size = new System.Drawing.Size(172, 21);
             this.вид_документуComboBox.TabIndex = 13;
@@ -310,9 +315,9 @@
             this.рядок_замовленняDataGridView.Dock = System.Windows.Forms.DockStyle.Right;
             this.рядок_замовленняDataGridView.EnableHeadersVisualStyles = false;
             this.рядок_замовленняDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            this.рядок_замовленняDataGridView.Location = new System.Drawing.Point(550, 25);
+            this.рядок_замовленняDataGridView.Location = new System.Drawing.Point(561, 25);
             this.рядок_замовленняDataGridView.Name = "рядок_замовленняDataGridView";
-            this.рядок_замовленняDataGridView.Size = new System.Drawing.Size(275, 379);
+            this.рядок_замовленняDataGridView.Size = new System.Drawing.Size(275, 402);
             this.рядок_замовленняDataGridView.TabIndex = 13;
             // 
             // dataGridViewTextBoxColumn1
@@ -391,7 +396,7 @@
             this.замовленняDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
             this.замовленняDataGridView.EnableHeadersVisualStyles = false;
             this.замовленняDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            this.замовленняDataGridView.Location = new System.Drawing.Point(358, 25);
+            this.замовленняDataGridView.Location = new System.Drawing.Point(362, 26);
             this.замовленняDataGridView.Name = "замовленняDataGridView";
             this.замовленняDataGridView.Size = new System.Drawing.Size(185, 72);
             this.замовленняDataGridView.TabIndex = 14;
@@ -452,7 +457,7 @@
             this.накладна_відправленняDataGridView.DefaultCellStyle = dataGridViewCellStyle7;
             this.накладна_відправленняDataGridView.EnableHeadersVisualStyles = false;
             this.накладна_відправленняDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            this.накладна_відправленняDataGridView.Location = new System.Drawing.Point(358, 103);
+            this.накладна_відправленняDataGridView.Location = new System.Drawing.Point(363, 128);
             this.накладна_відправленняDataGridView.Name = "накладна_відправленняDataGridView";
             this.накладна_відправленняDataGridView.Size = new System.Drawing.Size(185, 79);
             this.накладна_відправленняDataGridView.TabIndex = 15;
@@ -516,9 +521,9 @@
             this.рахунок_фактураDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.рахунок_фактураDataGridView.EnableHeadersVisualStyles = false;
             this.рахунок_фактураDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(179)))), ((int)(((byte)(161)))));
-            this.рахунок_фактураDataGridView.Location = new System.Drawing.Point(0, 188);
+            this.рахунок_фактураDataGridView.Location = new System.Drawing.Point(0, 211);
             this.рахунок_фактураDataGridView.Name = "рахунок_фактураDataGridView";
-            this.рахунок_фактураDataGridView.Size = new System.Drawing.Size(550, 216);
+            this.рахунок_фактураDataGridView.Size = new System.Drawing.Size(561, 216);
             this.рахунок_фактураDataGridView.TabIndex = 16;
             // 
             // dataGridViewTextBoxColumn11
@@ -568,7 +573,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 38);
+            this.label1.Location = new System.Drawing.Point(12, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 17);
             this.label1.TabIndex = 17;
@@ -578,7 +583,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(12, 65);
+            this.label2.Location = new System.Drawing.Point(12, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(155, 17);
             this.label2.TabIndex = 18;
@@ -707,15 +712,59 @@
             this.документBindingNavigator.Name = "документBindingNavigator";
             this.документBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
             this.документBindingNavigator.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.документBindingNavigator.Size = new System.Drawing.Size(825, 25);
+            this.документBindingNavigator.Size = new System.Drawing.Size(836, 25);
             this.документBindingNavigator.TabIndex = 1;
             this.документBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(3, 194);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 17);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Рахунок-фактура:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(363, 107);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(78, 17);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Накладна:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(363, 8);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(92, 17);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Замовлення:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(563, 7);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 17);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Товари:";
             // 
             // Document
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 404);
+            this.ClientSize = new System.Drawing.Size(836, 427);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.рахунок_фактураDataGridView);
@@ -815,5 +864,9 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
         private System.Windows.Forms.ToolStripButton документBindingNavigatorSaveItem;
         private System.Windows.Forms.BindingNavigator документBindingNavigator;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
